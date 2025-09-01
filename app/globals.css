@@ -1,0 +1,300 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0); /* White background */
+  --foreground: oklch(0.2 0 0); /* Dark text for readability */
+  --card: oklch(0.98 0 0); /* Light card background */
+  --card-foreground: oklch(0.2 0 0); /* Dark card text */
+  --popover: oklch(1 0 0); /* White popover */
+  --popover-foreground: oklch(0.2 0 0); /* Dark popover text */
+  --primary: oklch(0.35 0.15 300); /* Vivo purple #660099 */
+  --primary-foreground: oklch(1 0 0); /* White text on primary */
+  --secondary: oklch(0.6 0.2 340); /* Vivo magenta #E91E63 */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.94 0 0); /* Light muted background */
+  --muted-foreground: oklch(0.5 0 0); /* Muted text */
+  --accent: oklch(0.6 0.2 340); /* Magenta accent */
+  --accent-foreground: oklch(1 0 0); /* White text on accent */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0 0); /* Light border */
+  --input: oklch(0.98 0 0); /* Light input background */
+  --ring: oklch(0.35 0.15 300 / 0.5); /* Purple focus ring */
+  --chart-1: oklch(0.5 0.2 260); /* Purple chart color */
+  --chart-2: oklch(0.6 0.2 340); /* Magenta chart color */
+  --chart-3: oklch(0.4 0.15 300); /* Dark purple */
+  --chart-4: oklch(0.7 0.15 320); /* Light purple */
+  --chart-5: oklch(0.55 0.18 350); /* Pink purple */
+  --radius: 0.625rem;
+  --sidebar: oklch(0.98 0 0);
+  --sidebar-foreground: oklch(0.2 0 0);
+  --sidebar-primary: oklch(0.35 0.15 300);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.6 0.2 340);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.9 0 0);
+  --sidebar-ring: oklch(0.35 0.15 300 / 0.5);
+
+  /* Adicionando cores oficiais da Vivo */
+  --vivo-purple: #660099;
+  --vivo-pink: #eb3c7d;
+  --vivo-lilac: #bd4aff;
+  --vivo-dark-purple: #380054;
+  --vivo-rose: #ff9b2f;
+  --vivo-magenta: #cc3d70;
+  --vivo-mint: #b2d682;
+  --vivo-lime: #82d400;
+  --vivo-light-orange: #ffb84c;
+  --vivo-orange: #ff9900;
+}
+
+.dark {
+  --background: oklch(0.1 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.15 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.15 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.5 0.2 300); /* Lighter purple for dark mode */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.7 0.25 340); /* Lighter magenta for dark mode */
+  --secondary-foreground: oklch(0.1 0 0);
+  --muted: oklch(0.2 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.7 0.25 340);
+  --accent-foreground: oklch(0.1 0 0);
+  --destructive: oklch(0.6 0.25 25);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.25 0 0);
+  --input: oklch(0.2 0 0);
+  --ring: oklch(0.5 0.2 300 / 0.5);
+  --chart-1: oklch(0.6 0.25 260);
+  --chart-2: oklch(0.7 0.25 340);
+  --chart-3: oklch(0.5 0.2 300);
+  --chart-4: oklch(0.8 0.2 320);
+  --chart-5: oklch(0.65 0.22 350);
+  --sidebar: oklch(0.12 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.5 0.2 300);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.7 0.25 340);
+  --sidebar-accent-foreground: oklch(0.1 0 0);
+  --sidebar-border: oklch(0.25 0 0);
+  --sidebar-ring: oklch(0.5 0.2 300 / 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.professional-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.professional-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Atualizando gradientes com paleta oficial da Vivo */
+.vivo-gradient {
+  background: linear-gradient(135deg, var(--vivo-purple) 0%, var(--vivo-lilac) 50%, var(--vivo-pink) 100%);
+}
+
+.vivo-gradient-subtle {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 0, 153, 0.1) 0%,
+    rgba(189, 74, 255, 0.1) 50%,
+    rgba(235, 60, 125, 0.1) 100%
+  );
+}
+
+/* Adicionando novos gradientes oficiais da Vivo */
+.vivo-gradient-premium {
+  background: linear-gradient(135deg, var(--vivo-purple) 0%, #000000 100%);
+}
+
+.vivo-gradient-expert {
+  background: linear-gradient(135deg, var(--vivo-purple) 0%, var(--vivo-dark-purple) 100%);
+}
+
+.vivo-gradient-digital {
+  background: linear-gradient(135deg, var(--vivo-purple) 0%, var(--vivo-pink) 100%);
+}
+
+/* Classes utilitárias para cores da Vivo */
+.text-vivo-purple {
+  color: var(--vivo-purple);
+}
+.text-vivo-pink {
+  color: var(--vivo-pink);
+}
+.text-vivo-lilac {
+  color: var(--vivo-lilac);
+}
+.text-vivo-dark-purple {
+  color: var(--vivo-dark-purple);
+}
+.text-vivo-rose {
+  color: var(--vivo-rose);
+}
+.text-vivo-magenta {
+  color: var(--vivo-magenta);
+}
+.text-vivo-mint {
+  color: var(--vivo-mint);
+}
+.text-vivo-lime {
+  color: var(--vivo-lime);
+}
+
+.bg-vivo-purple {
+  background-color: var(--vivo-purple);
+}
+.bg-vivo-pink {
+  background-color: var(--vivo-pink);
+}
+.bg-vivo-lilac {
+  background-color: var(--vivo-lilac);
+}
+.bg-vivo-dark-purple {
+  background-color: var(--vivo-dark-purple);
+}
+.bg-vivo-rose {
+  background-color: var(--vivo-rose);
+}
+.bg-vivo-magenta {
+  background-color: var(--vivo-magenta);
+}
+.bg-vivo-mint {
+  background-color: var(--vivo-mint);
+}
+.bg-vivo-lime {
+  background-color: var(--vivo-lime);
+}
+
+.border-vivo-purple {
+  border-color: var(--vivo-purple);
+}
+.border-vivo-pink {
+  border-color: var(--vivo-pink);
+}
+.border-vivo-lilac {
+  border-color: var(--vivo-lilac);
+}
