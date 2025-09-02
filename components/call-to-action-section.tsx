@@ -56,7 +56,7 @@ export function CallToActionSection() {
         {/* Main CTA */}
         <div className="relative overflow-hidden rounded-3xl mb-20">
           {/* Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#660099] via-[#8B00FF] to-[#E91E63]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#660099] to-[#EB3C7D]" />
           <div className="absolute inset-0 bg-black/10" />
 
           {/* Geometric patterns */}
@@ -74,7 +74,7 @@ export function CallToActionSection() {
 
             <h2 className="text-4xl lg:text-6xl font-bold mb-6">
               Transforme sua empresa
-              <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                              <span className="block bg-gradient-to-r from-[#660099] to-[#EB3C7D] bg-clip-text text-transparent">
                 hoje mesmo!
               </span>
             </h2>
@@ -133,14 +133,14 @@ export function CallToActionSection() {
                 key={index}
                 className={`professional-card p-8 rounded-2xl border-2 ${
                   option.primary
-                    ? "border-[#E91E63] bg-gradient-to-br from-[#E91E63]/5 to-[#660099]/5"
+                    ? "border-[#EB3C7D] bg-gradient-to-br from-[#EB3C7D]/5 to-[#660099]/5"
                     : "border-gray-200 bg-white"
                 }`}
               >
                 <div className="flex items-center justify-center mb-6">
                   <div
                     className={`p-4 rounded-2xl ${
-                      option.primary ? "bg-gradient-to-br from-[#660099] to-[#E91E63]" : "bg-gray-100"
+                      option.primary ? "bg-gradient-to-br from-[#660099] to-[#EB3C7D]" : "bg-gray-100"
                     }`}
                   >
                     <option.icon className={`w-8 h-8 ${option.primary ? "text-white" : "text-gray-600"}`} />
@@ -153,7 +153,7 @@ export function CallToActionSection() {
 
                 <Button
                   className={`w-full ${
-                    option.primary ? "bg-[#E91E63] hover:bg-[#E91E63]/90" : "bg-[#660099] hover:bg-[#660099]/90"
+                    option.primary ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"
                   }`}
                 >
                   {option.action}

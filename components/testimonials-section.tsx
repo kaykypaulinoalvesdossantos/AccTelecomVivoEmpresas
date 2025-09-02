@@ -137,7 +137,7 @@ export function TestimonialsSection() {
                   <Quote className="w-8 h-8 text-[#660099]/30" />
                   <div className="flex items-center space-x-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-4 h-4 fill-[#EB3C7D] text-[#EB3C7D]" />
                     ))}
                   </div>
                 </div>
@@ -176,7 +176,7 @@ export function TestimonialsSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-[#660099] to-[#E91E63] rounded-3xl p-12 text-white">
+          <div className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-3xl p-12 text-white">
             <Building className="w-16 h-16 mx-auto mb-6 text-white/80" />
             <h3 className="text-3xl font-bold mb-4">Sua empresa pode ser a próxima!</h3>
             <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">

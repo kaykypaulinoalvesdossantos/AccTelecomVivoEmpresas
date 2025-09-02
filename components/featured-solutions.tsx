@@ -22,7 +22,7 @@ const solutions = [
     description: "Planos corporativos com tecnologia 5G, dados ilimitados e gestão centralizada de linhas.",
     features: ["5G Nacional", "Dados ilimitados", "Gestão online", "Roaming internacional"],
     badge: "5G",
-    color: "from-purple-500 to-pink-500",
+    color: "from-[#660099] to-[#EB3C7D]",
     href: "/planos/moveis",
   },
   {
@@ -40,7 +40,7 @@ const solutions = [
     description: "Proteção completa contra ameaças digitais com monitoramento 24/7 e resposta a incidentes.",
     features: ["Firewall avançado", "Antivírus corporativo", "Monitoramento 24/7", "Consultoria especializada"],
     badge: "Segurança",
-    color: "from-red-500 to-orange-500",
+    color: "from-[#660099] to-[#EB3C7D]",
     href: "/solucoes",
   },
 ]
@@ -75,7 +75,7 @@ export function FeaturedSolutions() {
                     <solution.icon className="w-8 h-8 text-white" />
                   </div>
                   {solution.badge && (
-                    <Badge className="absolute -top-2 -right-2 bg-[#E91E63] text-white">{solution.badge}</Badge>
+                    <Badge className="absolute -top-2 -right-2 bg-[#EB3C7D] text-white">{solution.badge}</Badge>
                   )}
                 </div>
 
@@ -93,7 +93,7 @@ export function FeaturedSolutions() {
                 </ul>
 
                 <Link href={solution.href}>
-                  <Button className="w-full bg-[#660099] hover:bg-[#660099]/90 group-hover:bg-[#E91E63] transition-colors duration-300">
+                  <Button className="w-full bg-[#660099] hover:bg-[#660099]/90 group-hover:bg-[#EB3C7D] transition-colors duration-300">
                     Saiba Mais
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
@@ -105,7 +105,7 @@ export function FeaturedSolutions() {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-[#660099] to-[#E91E63] rounded-3xl p-12 text-white">
+          <div className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Precisa de uma solução personalizada?</h3>
             <p className="text-xl mb-8 text-white/90">
               Nossos especialistas estão prontos para criar a solução ideal para sua empresa.

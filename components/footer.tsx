@@ -28,9 +28,12 @@ export function Footer() {
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="text-3xl font-bold">vivo</div>
-              <span className="text-sm opacity-80">empresas</span>
+            <div className="flex items-center">
+              <img
+                src="/230919_Vivo-empresas_RGB_neg-branco.png"
+                alt="Vivo Empresas Logo"
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-sm opacity-80">
               Conectando empresas ao futuro digital com as melhores soluções em tecnologia e conectividade.

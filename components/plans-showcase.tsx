@@ -151,18 +151,18 @@ export function PlansShowcase() {
               {fiberPlans.map((plan, index) => (
                 <Card
                   key={index}
-                  className={`professional-card relative ${plan.popular ? "ring-2 ring-[#E91E63] scale-105" : ""}`}
+                  className={`professional-card relative ${plan.popular ? "ring-2 ring-[#EB3C7D] scale-105" : ""}`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-[#E91E63] text-white px-4 py-1">Mais Contratado</Badge>
+                      <Badge className="bg-[#EB3C7D] text-white px-4 py-1">Mais Contratado</Badge>
                     </div>
                   )}
 
                   <CardContent className="p-8">
                     <div className="text-center mb-8">
                       <div className="flex items-center justify-center mb-4">
-                        <div className="p-3 bg-gradient-to-br from-[#660099] to-[#E91E63] rounded-2xl">
+                        <div className="p-3 bg-gradient-to-br from-[#660099] to-[#EB3C7D] rounded-2xl">
                           <Wifi className="w-8 h-8 text-white" />
                         </div>
                       </div>
@@ -174,7 +174,7 @@ export function PlansShowcase() {
                         <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
                         <div className="text-right">
                           <div className="text-sm text-gray-500 line-through">{plan.originalPrice}</div>
-                          <Badge variant="secondary" className="bg-green-100 text-green-700">
+                          <Badge variant="secondary" className="bg-[#660099]/10 text-[#660099]">
                             {plan.discount}
                           </Badge>
                         </div>
@@ -186,7 +186,7 @@ export function PlansShowcase() {
                     <ul className="space-y-3 mb-8">
                       {plan.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-gray-700">
-                          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-[#660099] mr-3 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
@@ -197,7 +197,7 @@ export function PlansShowcase() {
                       <ul className="space-y-2">
                         {plan.extras.map((extra, idx) => (
                           <li key={idx} className="flex items-center text-sm text-gray-600">
-                            <Zap className="w-4 h-4 text-[#E91E63] mr-2 flex-shrink-0" />
+                            <Zap className="w-4 h-4 text-[#EB3C7D] mr-2 flex-shrink-0" />
                             {extra}
                           </li>
                         ))}
@@ -205,7 +205,7 @@ export function PlansShowcase() {
                     </div>
 
                     <Button
-                      className={`w-full ${plan.popular ? "bg-[#E91E63] hover:bg-[#E91E63]/90" : "bg-[#660099] hover:bg-[#660099]/90"}`}
+                      className={`w-full ${plan.popular ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"}`}
                     >
                       Contratar Agora
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -221,18 +221,18 @@ export function PlansShowcase() {
               {mobilePlans.map((plan, index) => (
                 <Card
                   key={index}
-                  className={`professional-card relative ${plan.popular ? "ring-2 ring-[#E91E63] scale-105" : ""}`}
+                  className={`professional-card relative ${plan.popular ? "ring-2 ring-[#EB3C7D] scale-105" : ""}`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-[#E91E63] text-white px-4 py-1">Mais Contratado</Badge>
+                      <Badge className="bg-[#EB3C7D] text-white px-4 py-1">Mais Contratado</Badge>
                     </div>
                   )}
 
                   <CardContent className="p-8">
                     <div className="text-center mb-8">
                       <div className="flex items-center justify-center mb-4">
-                        <div className="p-3 bg-gradient-to-br from-[#660099] to-[#E91E63] rounded-2xl">
+                        <div className="p-3 bg-gradient-to-br from-[#660099] to-[#EB3C7D] rounded-2xl">
                           <Smartphone className="w-8 h-8 text-white" />
                         </div>
                       </div>
@@ -244,7 +244,7 @@ export function PlansShowcase() {
                         <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
                         <div className="text-right">
                           <div className="text-sm text-gray-500 line-through">{plan.originalPrice}</div>
-                          <Badge variant="secondary" className="bg-green-100 text-green-700">
+                          <Badge variant="secondary" className="bg-[#660099]/10 text-[#660099]">
                             {plan.discount}
                           </Badge>
                         </div>
@@ -256,7 +256,7 @@ export function PlansShowcase() {
                     <ul className="space-y-3 mb-8">
                       {plan.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-gray-700">
-                          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-[#660099] mr-3 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
@@ -267,7 +267,7 @@ export function PlansShowcase() {
                       <ul className="space-y-2">
                         {plan.extras.map((extra, idx) => (
                           <li key={idx} className="flex items-center text-sm text-gray-600">
-                            <Zap className="w-4 h-4 text-[#E91E63] mr-2 flex-shrink-0" />
+                            <Zap className="w-4 h-4 text-[#EB3C7D] mr-2 flex-shrink-0" />
                             {extra}
                           </li>
                         ))}
@@ -275,7 +275,7 @@ export function PlansShowcase() {
                     </div>
 
                     <Button
-                      className={`w-full ${plan.popular ? "bg-[#E91E63] hover:bg-[#E91E63]/90" : "bg-[#660099] hover:bg-[#660099]/90"}`}
+                      className={`w-full ${plan.popular ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"}`}
                     >
                       Contratar Agora
                       <ArrowRight className="ml-2 h-4 w-4" />

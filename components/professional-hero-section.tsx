@@ -8,7 +8,7 @@ export function ProfessionalHeroSection() {
   return (
     <section className="relative overflow-hidden min-h-screen">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#660099] via-[#8B00FF] to-[#E91E63]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#660099] to-[#EB3C7D]" />
       <div className="absolute inset-0 bg-black/20" />
 
       {/* Geometric patterns */}
@@ -28,11 +28,8 @@ export function ProfessionalHeroSection() {
                 Líder em Conectividade Empresarial
               </Badge>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
-                Transforme seu
-                <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                  negócio digital
-                </span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-white">
+                Transforme seu negócio digital
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
@@ -44,15 +41,15 @@ export function ProfessionalHeroSection() {
             {/* Key metrics */}
             <div className="grid grid-cols-3 gap-8 py-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-300">1GB</div>
+                <div className="text-3xl font-bold text-white">1GB</div>
                 <div className="text-sm text-white/80">Velocidade Fibra</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-300">5G</div>
+                <div className="text-3xl font-bold text-white">5G</div>
                 <div className="text-sm text-white/80">Tecnologia Móvel</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-300">24/7</div>
+                <div className="text-3xl font-bold text-white">24/7</div>
                 <div className="text-sm text-white/80">Suporte Técnico</div>
               </div>
             </div>
@@ -91,13 +88,13 @@ export function ProfessionalHeroSection() {
           </div>
 
           {/* Hero Visual */}
-          <div className="relative lg:h-[600px] flex items-center justify-center">
+          <div className="relative flex items-center justify-center">
             <div className="relative z-20 w-full max-w-lg">
-              <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20">
+              <div className="w-full overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src="/modern-business-professional-in-purple-shirt-using.png"
                   alt="Executivo Vivo Empresas"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-auto object-cover object-center"
                 />
               </div>
             </div>
@@ -116,8 +113,8 @@ export function ProfessionalHeroSection() {
 
             <div className="absolute -bottom-8 -right-8 z-30 bg-white rounded-2xl p-6 shadow-xl animate-float-delayed">
               <div className="flex items-center space-x-3">
-                <div className="p-2 bg-[#E91E63]/10 rounded-lg">
-                  <Shield className="h-6 w-6 text-[#E91E63]" />
+                <div className="p-2 bg-[#EB3C7D]/10 rounded-lg">
+                  <Shield className="h-6 w-6 text-[#EB3C7D]" />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Segurança Total</div>

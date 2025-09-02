@@ -19,7 +19,7 @@ const benefits = [
     description:
       "Proteção multicamadas com firewall, antivírus corporativo e monitoramento 24/7 contra ameaças digitais.",
     stats: "99.9% de proteção",
-    color: "from-red-500 to-orange-500",
+    color: "from-[#660099] to-[#EB3C7D]",
   },
   {
     icon: Clock,
@@ -35,7 +35,7 @@ const benefits = [
     description:
       "Plataforma única para gerenciar todas as linhas, serviços e custos da sua empresa de forma simples e eficiente.",
     stats: "Economia de 30% no tempo",
-    color: "from-purple-500 to-pink-500",
+    color: "from-[#660099] to-[#EB3C7D]",
   },
   {
     icon: Award,
@@ -43,7 +43,7 @@ const benefits = [
     description:
       "Acordo de nível de serviço com 99.9% de disponibilidade e compensação automática em caso de indisponibilidade.",
     stats: "SLA 99.9% uptime",
-    color: "from-yellow-500 to-orange-500",
+    color: "from-[#660099] to-[#EB3C7D]",
   },
   {
     icon: Globe,
@@ -51,7 +51,7 @@ const benefits = [
     description:
       "Rede de fibra óptica e 5G com cobertura em todo território nacional, garantindo conectividade onde você estiver.",
     stats: "Cobertura em 5.570 cidades",
-    color: "from-indigo-500 to-purple-500",
+    color: "from-[#660099] to-[#EB3C7D]",
   },
 ]
 
@@ -102,7 +102,7 @@ export function BusinessBenefits() {
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="flex items-center justify-center mb-4">
-                <div className="p-3 bg-gradient-to-br from-[#660099] to-[#E91E63] rounded-2xl">
+                <div className="p-3 bg-gradient-to-br from-[#660099] to-[#EB3C7D] rounded-2xl">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -136,7 +136,7 @@ export function BusinessBenefits() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-20 bg-gradient-to-r from-[#660099] to-[#E91E63] rounded-3xl p-12 text-white text-center">
+        <div className="mt-20 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-3xl p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">Pronto para transformar sua empresa?</h3>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
             Junte-se a mais de 50.000 empresas que já confiam na Vivo para suas soluções de conectividade e tecnologia.

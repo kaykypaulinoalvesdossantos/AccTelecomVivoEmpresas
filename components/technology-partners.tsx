@@ -116,7 +116,7 @@ export function TechnologyPartners() {
         </div>
 
         {/* Certifications */}
-        <div className="bg-gradient-to-r from-[#660099] to-[#E91E63] rounded-3xl p-12">
+        <div className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-3xl p-12">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-white mb-4">Certificações e Reconhecimentos</h3>
             <p className="text-xl text-white/90">

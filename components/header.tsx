@@ -8,6 +8,7 @@ import { Menu, X, ChevronDown } from "lucide-react"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null)
+  const [isScrolled, setIsScrolled] = useState(false)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const handleMouseEnter = (menuKey: string) => {
@@ -25,7 +26,13 @@ export function Header() {
   }
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handleScroll)
     return () => {
+      window.removeEventListener('scroll', handleScroll)
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current)
       }
@@ -40,7 +47,7 @@ export function Header() {
           title: "MÓVEL",
           items: [
             { label: "Planos", href: "/planos/moveis" },
-            { label: "Portabilidade", href: "/planos/moveis#portabilidade" },
+            { label: "Portabilidade", href: "/planos/portabilidade" },
             { label: "Roteador 5G", href: "/planos/roteador-5g" },
             { label: "Modem 4G e Internet Box", href: "/dispositivos#modem-4g" },
             { label: "eSIM", href: "/planos/esim" },
@@ -157,18 +164,28 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
+    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-gradient-to-r from-white/85 via-white/80 to-white/85 backdrop-blur-xl border-b border-[#660099]/20 shadow-2xl' 
+        : 'bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm'
+    }`}>
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="flex items-center space-x-1">
-              <div className="text-3xl font-bold bg-gradient-to-r from-[#660099] to-[#E91E63] bg-clip-text text-transparent">
-                vivo
+            <div className="flex items-center space-x-3">
+              <img
+                src="/logo-acctelecom.png"
+                alt="Acc Telecom Logo"
+                className="h-12 w-auto object-contain"
+              />
+              <div className="flex flex-col">
+                <div className="text-2xl font-bold bg-gradient-to-r from-[#660099] to-[#EB3C7D] bg-clip-text text-transparent">
+                  Acc Telecom
+                </div>
+                <span className="text-sm font-medium text-gray-600 group-hover:text-[#660099] transition-colors">
+                  Parceiro Autorizado
+                </span>
               </div>
-              <div className="h-6 w-px bg-gradient-to-b from-[#660099] to-[#E91E63]" />
-              <span className="text-lg font-semibold text-gray-700 group-hover:text-[#660099] transition-colors">
-                empresas
-              </span>
             </div>
           </Link>
 
@@ -221,7 +238,7 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <Button
               asChild
-              className="bg-gradient-to-r from-[#660099] to-[#8B00FF] hover:from-[#7a0bb3] hover:to-[#9f1aff] text-white font-semibold px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-200"
+              className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-200"
             >
               <Link href="/contato">Fale Conosco</Link>
             </Button>
@@ -235,7 +252,11 @@ export function Header() {
 
         {activeMegaMenu && megaMenuData[activeMegaMenu as keyof typeof megaMenuData] && (
           <div
-            className="absolute left-0 right-0 top-full bg-white/98 backdrop-blur-md border-b border-gray-200/50 shadow-2xl z-40 -mt-px"
+            className={`absolute left-0 right-0 top-full transition-all duration-300 ${
+              isScrolled 
+                ? 'bg-white/90 backdrop-blur-2xl border-b border-white/40 shadow-2xl' 
+                : 'bg-white/98 backdrop-blur-md border-b border-gray-200/50 shadow-2xl'
+            } z-40 -mt-px`}
             onMouseEnter={() => handleMouseEnter(activeMegaMenu)}
             onMouseLeave={handleMouseLeave}
           >
@@ -279,6 +300,13 @@ export function Header() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Planos Móveis
+                  </Link>
+                  <Link
+                    href="/planos/portabilidade"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Portabilidade
                   </Link>
                   <Link
                     href="/planos/internet"

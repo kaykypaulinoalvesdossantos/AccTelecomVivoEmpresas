@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Check, Star, Wifi } from "lucide-react"
+import { Check, Star, Wifi, Zap } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export function DetailedPlansSection() {
@@ -26,7 +26,7 @@ export function DetailedPlansSection() {
       ],
       additionalInfo: "Instalação e Wi-Fi 6 Grátis",
       popular: false,
-      color: "from-blue-500 to-blue-600",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       name: "Vivo Empresas",
@@ -49,7 +49,7 @@ export function DetailedPlansSection() {
       ],
       additionalInfo: "Instalação e Wi-Fi 6 Grátis",
       popular: true,
-      color: "from-purple-500 to-pink-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       name: "Vivo Empresas",
@@ -74,7 +74,7 @@ export function DetailedPlansSection() {
       ],
       additionalInfo: "Instalação e Wi-Fi 6 Grátis + Roteador Premium",
       popular: false,
-      color: "from-emerald-500 to-teal-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
   ]
 
@@ -99,7 +99,7 @@ export function DetailedPlansSection() {
       ],
       additionalInfo: "Instalação e Wi-Fi 6 Grátis",
       popular: false,
-      color: "from-orange-500 to-red-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       name: "Vivo Fibra",
@@ -123,7 +123,7 @@ export function DetailedPlansSection() {
       ],
       additionalInfo: "700 Mega + 23 GB + 1 Móvel",
       popular: true,
-      color: "from-purple-500 to-pink-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       name: "Vivo Fibra",
@@ -146,7 +146,7 @@ export function DetailedPlansSection() {
       ],
       additionalInfo: "600 Mega + Móvel 5GB",
       popular: false,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       name: "Vivo Fibra",
@@ -172,15 +172,25 @@ export function DetailedPlansSection() {
   ]
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-br from-[#660099]/5 via-background to-[#EB3C7D]/5 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-[#660099]/10 to-[#EB3C7D]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-tl from-[#EB3C7D]/10 to-[#660099]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <Tabs defaultValue="mobile" className="w-full">
           <div className="text-center mb-12">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8">
-              <TabsTrigger value="mobile">Móvel</TabsTrigger>
-              <TabsTrigger value="fiber">Fibra</TabsTrigger>
-              <TabsTrigger value="combo">Fibra + Pós</TabsTrigger>
-              <TabsTrigger value="devices">Móvel + Aparelho</TabsTrigger>
+            <Badge className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] text-white px-6 py-2 mb-6 backdrop-blur-sm">
+              <Zap className="w-4 h-4 mr-2" />
+              PLANOS FUTURISTAS
+            </Badge>
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-white/10 backdrop-blur-sm border border-white/20">
+              <TabsTrigger value="mobile" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white">Móvel</TabsTrigger>
+              <TabsTrigger value="fiber" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white">Fibra</TabsTrigger>
+              <TabsTrigger value="combo" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white">Fibra + Pós</TabsTrigger>
+              <TabsTrigger value="devices" className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white">Móvel + Aparelho</TabsTrigger>
             </TabsList>
           </div>
 
@@ -198,20 +208,20 @@ export function DetailedPlansSection() {
               {mobilePlans.map((plan, index) => (
                 <Card
                   key={index}
-                  className={`relative transition-all duration-300 hover:scale-105 hover:shadow-xl ${
-                    plan.popular ? "border-2 border-secondary shadow-lg scale-105" : "border"
+                  className={`relative transition-all duration-500 hover:scale-105 hover:shadow-2xl bg-white/80 backdrop-blur-sm border border-white/20 ${
+                    plan.popular ? "ring-2 ring-[#EB3C7D] shadow-2xl scale-105 animate-pulse-glow" : "hover:ring-1 hover:ring-[#660099]/30"
                   }`}
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                      <Badge className="bg-secondary text-white px-4 py-2 text-sm font-semibold">
+                      <Badge className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] text-white px-4 py-2 text-sm font-semibold shadow-lg">
                         <Star className="w-4 h-4 mr-1" />
                         MAIS CONTRATADO
                       </Badge>
                     </div>
                   )}
 
-                  <div className={`h-2 bg-gradient-to-r ${plan.color} rounded-t-lg`}></div>
+                  <div className={`h-3 bg-gradient-to-r ${plan.color} rounded-t-lg shadow-lg`}></div>
 
                   <CardHeader className="text-center pb-4">
                     <div className="space-y-2">

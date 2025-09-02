@@ -12,7 +12,7 @@ export function PlansBenefitsSection() {
       subtitle: "Tecnologia",
       description:
         "Navegue na rede 5G mais rápida do Brasil. Tenha velocidade e baixa latência para aplicações críticas do seu negócio.",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       icon: <Award className="w-8 h-8 text-primary" />,
@@ -20,7 +20,7 @@ export function PlansBenefitsSection() {
       subtitle: "Reconhecimento",
       description:
         "Melhor operadora em qualidade de rede segundo a Opensignal. Cobertura e velocidade premiadas nacionalmente.",
-      color: "from-purple-500 to-pink-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       icon: <Wifi className="w-8 h-8 text-primary" />,
@@ -28,7 +28,7 @@ export function PlansBenefitsSection() {
       subtitle: "Tecnologia",
       description:
         "Roteador Wi-Fi 6 incluso nos planos fibra. Maior velocidade, menor latência e suporte para mais dispositivos.",
-      color: "from-green-500 to-emerald-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       icon: <Headphones className="w-8 h-8 text-primary" />,
@@ -36,7 +36,7 @@ export function PlansBenefitsSection() {
       subtitle: "Atendimento",
       description:
         "Suporte técnico especializado 24 horas por dia, 7 dias por semana. Atendimento prioritário para empresas.",
-      color: "from-orange-500 to-red-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
@@ -44,14 +44,14 @@ export function PlansBenefitsSection() {
       subtitle: "Gratuita",
       description:
         "Instalação profissional gratuita em até 5 dias úteis. Técnicos especializados e equipamentos de última geração.",
-      color: "from-indigo-500 to-purple-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
       title: "Gerente",
       subtitle: "Dedicado",
       description: "Gerente de conta dedicado para planos premium. Atendimento personalizado e soluções sob medida.",
-      color: "from-pink-500 to-rose-500",
+      color: "from-[#660099] to-[#EB3C7D]",
     },
   ]
 
