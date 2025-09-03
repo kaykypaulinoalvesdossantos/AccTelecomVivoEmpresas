@@ -1,0 +1,53 @@
+"use client"
+
+import React from "react"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, MessageCircle } from "lucide-react"
+
+export function Router5GCTASection(): React.JSX.Element {
+  return (
+    <section className="py-16 bg-gradient-to-r from-[#660099] to-[#EB3C7D]">
+      <div className="container mx-auto px-4">
+        <div className="text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Pronto para a Velocidade 5G?
+          </h2>
+          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+            Transforme sua conectividade com o Roteador 5G Vivo. 
+            Velocidade, estabilidade e cobertura nacional para impulsionar seu negócio.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg">
+              Contratar Agora
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-8 py-4 text-lg"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Falar com Consultor
+            </Button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="text-2xl font-bold text-white mb-1">1Gbps</div>
+              <div className="text-sm text-white/80">Velocidade Máxima</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="text-2xl font-bold text-white mb-1">64</div>
+              <div className="text-sm text-white/80">Dispositivos Simultâneos</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="text-2xl font-bold text-white mb-1">400+</div>
+              <div className="text-sm text-white/80">Cidades com 5G</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

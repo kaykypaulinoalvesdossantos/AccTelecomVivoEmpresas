@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer"
 import { Breadcrumb } from "@/components/breadcrumb"
 import { PortabilityHeroSection } from "@/components/portability-hero-section"
 import { PortabilityPlansSection } from "@/components/portability-plans-section"
-import { PortabilityInfoSection } from "@/components/portability-info-section"
 import { PortabilityTypesSection } from "@/components/portability-types-section"
 import { PortabilityImportantInfoSection } from "@/components/portability-important-info-section"
 import { PortabilityStepsSection } from "@/components/portability-steps-section"
@@ -25,7 +24,6 @@ export default function PortabilidadePage() {
         </div>
         <PortabilityHeroSection />
         <PortabilityPlansSection />
-        <PortabilityInfoSection />
         <PortabilityTypesSection />
         <PortabilityImportantInfoSection />
         <PortabilityStepsSection />
