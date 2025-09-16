@@ -37,8 +37,13 @@ export function ESimCTASection(): React.JSX.Element {
               <p className="text-white/90 mb-4">
                 Fale diretamente com nossos especialistas
               </p>
-              <Button className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-2 rounded-lg">
-                0800 777 0000
+              <Button 
+                className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-2 rounded-lg"
+                asChild
+              >
+                <a href="tel:1123629665">
+                  (11) 2362-9665
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -54,8 +59,13 @@ export function ESimCTASection(): React.JSX.Element {
               <p className="text-white/90 mb-4">
                 Tire suas dúvidas em tempo real
               </p>
-              <Button className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-2 rounded-lg">
-                Iniciar chat
+              <Button 
+                className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-2 rounded-lg"
+                asChild
+              >
+                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
+                </a>
               </Button>
             </CardContent>
           </Card>

@@ -21,8 +21,13 @@ export function RoamingRelatedSection(): React.JSX.Element {
               <p className="text-gray-600 mb-6">
                 Baixe nosso guia e esteja preparado para a sua viagem
               </p>
-              <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg">
-                Confira
+              <Button 
+                className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg"
+                asChild
+              >
+                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  Confira
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -38,8 +43,13 @@ export function RoamingRelatedSection(): React.JSX.Element {
               <p className="text-gray-600 mb-6">
                 Tire suas dúvidas sobre os serviços Vivo Empresas
               </p>
-              <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg">
-                Consulte
+              <Button 
+                className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg"
+                asChild
+              >
+                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  Consulte
+                </a>
               </Button>
             </CardContent>
           </Card>

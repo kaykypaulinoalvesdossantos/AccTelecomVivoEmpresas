@@ -52,9 +52,14 @@ export function RoamingPlansSection(): React.JSX.Element {
                         Verifique operadoras parceiras, serviços disponíveis e mais informações 
                         que podem ajudar na viagem.
                       </p>
-                      <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300">
-                        <Search className="w-4 h-4 mr-2" />
-                        Consultar país
+                      <Button 
+                        className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300"
+                        asChild
+                      >
+                        <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                          <Search className="w-4 h-4 mr-2" />
+                          Consultar país
+                        </a>
                       </Button>
                     </div>
                   </div>
@@ -77,8 +82,13 @@ export function RoamingPlansSection(): React.JSX.Element {
                         Contrate um plano Vivo e tenha acesso ao Vivo Travel para suas viagens internacionais. 
                         Conectividade global com a qualidade Vivo.
                       </p>
-                      <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300">
-                        Contratar Plano
+                      <Button 
+                        className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300"
+                        asChild
+                      >
+                        <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                          Contratar Plano
+                        </a>
                       </Button>
                     </div>
                   </div>

@@ -9,14 +9,12 @@ import Link from "next/link"
 
 const fiberPlans = [
   {
-    name: "Fibra 200 Mega",
-    speed: "200 Mbps",
-    price: "R$ 89,90",
-    originalPrice: "R$ 129,90",
-    discount: "31% OFF",
+    name: "Fibra 400 Mega",
+    speed: "400 Mbps",
+    price: "R$ 79,99",
     popular: false,
     features: [
-      "200 Mbps de velocidade",
+      "400 Mbps de velocidade",
       "Upload simétrico",
       "Wi-Fi 6 incluso",
       "Instalação gratuita",
@@ -28,10 +26,8 @@ const fiberPlans = [
   {
     name: "Fibra 500 Mega",
     speed: "500 Mbps",
-    price: "R$ 129,90",
-    originalPrice: "R$ 179,90",
-    discount: "28% OFF",
-    popular: true,
+    price: "R$ 89,99",
+    popular: false,
     features: [
       "500 Mbps de velocidade",
       "Upload simétrico",
@@ -43,34 +39,30 @@ const fiberPlans = [
     extras: ["Roteador Wi-Fi 6 Pro", "Instalação em 24h", "Técnico especializado"],
   },
   {
-    name: "Fibra 1 Giga",
-    speed: "1 Gbps",
-    price: "R$ 199,90",
-    originalPrice: "R$ 279,90",
-    discount: "29% OFF",
-    popular: false,
+    name: "Fibra 700 Mega",
+    speed: "700 Mbps",
+    price: "R$ 99,99",
+    popular: true,
     features: [
-      "1 Gbps de velocidade",
+      "700 Mbps de velocidade",
       "Upload simétrico",
-      "Wi-Fi 6E incluso",
+      "Wi-Fi 6 Pro incluso",
       "Instalação gratuita",
-      "Suporte VIP 24/7",
+      "Suporte prioritário 24/7",
       "SLA 99.9%",
     ],
-    extras: ["Roteador Wi-Fi 6E", "Instalação prioritária", "Gerente de conta dedicado"],
+    extras: ["Roteador Wi-Fi 6 Pro", "Instalação em 24h", "Técnico especializado"],
   },
 ]
 
 const mobilePlans = [
   {
-    name: "Empresarial 20GB",
-    data: "20 GB",
-    price: "R$ 59,90",
-    originalPrice: "R$ 79,90",
-    discount: "25% OFF",
+    name: "Empresarial 6GB",
+    data: "6 GB",
+    price: "R$ 39,99",
     popular: false,
     features: [
-      "20GB de internet",
+      "6GB de internet",
       "Ligações ilimitadas",
       "SMS ilimitado",
       "5G Nacional",
@@ -80,38 +72,34 @@ const mobilePlans = [
     extras: ["Apps ilimitados", "Portabilidade gratuita"],
   },
   {
-    name: "Empresarial 50GB",
-    data: "50 GB",
-    price: "R$ 89,90",
-    originalPrice: "R$ 119,90",
-    discount: "25% OFF",
-    popular: true,
-    features: [
-      "50GB de internet",
-      "Ligações ilimitadas",
-      "SMS ilimitado",
-      "5G Nacional",
-      "Roaming Nacional e Internacional",
-      "Gestão online avançada",
-    ],
-    extras: ["Apps ilimitados", "Portabilidade gratuita", "Desconto em aparelhos"],
-  },
-  {
-    name: "Empresarial Ilimitado",
-    data: "Ilimitado",
-    price: "R$ 149,90",
-    originalPrice: "R$ 199,90",
-    discount: "25% OFF",
+    name: "Empresarial 15GB",
+    data: "15 GB",
+    price: "R$ 54,99",
     popular: false,
     features: [
-      "Internet ilimitada",
+      "15GB de internet",
       "Ligações ilimitadas",
       "SMS ilimitado",
       "5G Nacional",
-      "Roaming Internacional Premium",
-      "Gestão online completa",
+      "Roaming Nacional",
+      "Gestão online",
     ],
-    extras: ["Apps ilimitados", "Portabilidade gratuita", "Aparelho incluso", "Suporte VIP"],
+    extras: ["Apps ilimitados", "Portabilidade gratuita"],
+  },
+  {
+    name: "Empresarial 20GB",
+    data: "20 GB",
+    price: "R$ 59,99",
+    popular: true,
+    features: [
+      "20GB de internet",
+      "Ligações ilimitadas",
+      "SMS ilimitado",
+      "5G Nacional",
+      "Roaming Nacional",
+      "Gestão online",
+    ],
+    extras: ["Apps ilimitados", "Portabilidade gratuita"],
   },
 ]
 
@@ -147,7 +135,7 @@ export function PlansShowcase() {
           </TabsList>
 
           <TabsContent value="fiber">
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {fiberPlans.map((plan, index) => (
                 <Card
                   key={index}
@@ -172,12 +160,6 @@ export function PlansShowcase() {
 
                       <div className="flex items-center justify-center gap-2 mb-4">
                         <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
-                        <div className="text-right">
-                          <div className="text-sm text-gray-500 line-through">{plan.originalPrice}</div>
-                          <Badge variant="secondary" className="bg-[#660099]/10 text-[#660099]">
-                            {plan.discount}
-                          </Badge>
-                        </div>
                       </div>
 
                       <p className="text-sm text-gray-600">por mês nos primeiros 12 meses</p>
@@ -217,7 +199,7 @@ export function PlansShowcase() {
           </TabsContent>
 
           <TabsContent value="mobile">
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {mobilePlans.map((plan, index) => (
                 <Card
                   key={index}
@@ -242,12 +224,6 @@ export function PlansShowcase() {
 
                       <div className="flex items-center justify-center gap-2 mb-4">
                         <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
-                        <div className="text-right">
-                          <div className="text-sm text-gray-500 line-through">{plan.originalPrice}</div>
-                          <Badge variant="secondary" className="bg-[#660099]/10 text-[#660099]">
-                            {plan.discount}
-                          </Badge>
-                        </div>
                       </div>
 
                       <p className="text-sm text-gray-600">por linha/mês nos primeiros 12 meses</p>

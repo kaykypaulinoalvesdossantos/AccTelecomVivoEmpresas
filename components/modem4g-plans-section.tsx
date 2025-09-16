@@ -1,112 +1,109 @@
 "use client"
 
-import React from "react"
+import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Check, Wifi, Smartphone } from "lucide-react"
+import { Check, ChevronLeft, ChevronRight } from "lucide-react"
 
 export function Modem4GPlansSection(): React.JSX.Element {
-  const planosInternet = [
+  // Planos Pen/Box com valores corretos do print
+  const planosPenBox = [
     {
-      gb: "10 GB",
-      preco: "R$ 39,99",
-      descricao: "Ideal para uso básico",
+      gb: "10GB",
+      preco: "R$ 49,90",
+      descricao: "Ideal para pequenas empresas",
       features: [
-        "Internet 4G de alta velocidade",
-        "Modem portátil incluso",
-        "Cobertura nacional",
-        "Suporte técnico"
+        "Conexão móvel 4G/5G",
+        "Roteador Wi-Fi incluso",
+        "Gestão de dados inclusa",
+        "Skeelo incluso"
       ],
       popular: false,
-      badge: "OFERTA IMPERDÍVEL"
+      badge: "OFERTA ESPECIAL"
     },
     {
-      gb: "40 GB",
-      preco: "R$ 59,99",
-      descricao: "Para uso moderado",
+      gb: "40GB",
+      preco: "R$ 69,90",
+      descricao: "Para empresas médias",
       features: [
-        "Internet 4G de alta velocidade",
-        "Modem portátil incluso",
-        "Cobertura nacional",
-        "Suporte técnico",
-        "Apps ilimitados"
+        "Conexão móvel 4G/5G",
+        "Roteador Wi-Fi incluso",
+        "Gestão de dados inclusa",
+        "Skeelo incluso"
       ],
       popular: false,
-      badge: "OFERTA IMPERDÍVEL"
-    },
-    {
-      gb: "100 GB",
-      preco: "R$ 79,99",
-      descricao: "Para uso intenso",
-      features: [
-        "Internet 4G de alta velocidade",
-        "Modem portátil incluso",
-        "Cobertura nacional",
-        "Suporte técnico",
-        "Apps ilimitados",
-        "Prioridade na rede"
-      ],
-      popular: true,
-      badge: "MAIS VENDIDO"
-    }
-  ]
-
-  const planosCelular = [
-    {
-      gb: "6GB",
-      preco: "R$ 39,99",
-      descricao: "Ideal para uso básico",
-      features: [
-        "Utilize também seu celular como modem",
-        "4G mais rápido do mundo",
-        "Apps ilimitados",
-        "Ligações ilimitadas"
-      ],
-      popular: false,
-      badge: "OFERTA IMPERDÍVEL"
-    },
-    {
-      gb: "15GB",
-      preco: "R$ 44,99",
-      descricao: "Para uso moderado",
-      features: [
-        "Utilize também seu celular como modem",
-        "4G mais rápido do mundo",
-        "Apps ilimitados",
-        "Ligações ilimitadas"
-      ],
-      popular: false,
-      badge: "OFERTA IMPERDÍVEL"
-    },
-    {
-      gb: "20GB",
-      preco: "R$ 54,99",
-      descricao: "Para uso intenso",
-      features: [
-        "Utilize também seu celular como modem",
-        "4G mais rápido do mundo",
-        "Apps ilimitados",
-        "Ligações ilimitadas"
-      ],
-      popular: true,
-      badge: "MAIS VENDIDO"
+      badge: "OFERTA ESPECIAL"
     },
     {
       gb: "100GB",
-      preco: "R$ 59,99",
-      descricao: "Uso ilimitado",
+      preco: "R$ 99,90",
+      descricao: "Para empresas com alta demanda",
       features: [
-        "Utilize também seu celular como modem",
-        "4G mais rápido do mundo",
-        "Apps ilimitados",
-        "Ligações ilimitadas"
+        "Conexão móvel 4G/5G",
+        "Roteador Wi-Fi incluso",
+        "Gestão de dados inclusa",
+        "Skeelo incluso"
       ],
       popular: false,
-      badge: "OFERTA IMPERDÍVEL"
+      badge: "OFERTA ESPECIAL"
+    },
+    {
+      gb: "200GB",
+      preco: "R$ 199,90",
+      descricao: "Máxima performance",
+      features: [
+        "Conexão móvel 4G/5G",
+        "Roteador Wi-Fi incluso",
+        "Gestão de dados inclusa",
+        "Skeelo incluso"
+      ],
+      popular: true,
+      badge: "MAIS CONTRATADO"
+    },
+    {
+      gb: "300GB",
+      preco: "R$ 279,90",
+      descricao: "Para múltiplas equipes",
+      features: [
+        "Conexão móvel 4G/5G",
+        "Roteador Wi-Fi incluso",
+        "Gestão de dados inclusa",
+        "Skeelo incluso"
+      ],
+      popular: false,
+      badge: "OFERTA ESPECIAL"
+    },
+    {
+      gb: "500GB",
+      preco: "R$ 449,90",
+      descricao: "Máxima capacidade",
+      features: [
+        "Conexão móvel 4G/5G",
+        "Roteador Wi-Fi incluso",
+        "Gestão de dados inclusa",
+        "Skeelo incluso"
+      ],
+      popular: false,
+      badge: "OFERTA ESPECIAL"
     }
   ]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = Math.max(0, planosPenBox.length - 3)
+      return prevIndex >= maxIndex ? 0 : prevIndex + 1
+    })
+  }
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = Math.max(0, planosPenBox.length - 3)
+      return prevIndex <= 0 ? maxIndex : prevIndex - 1
+    })
+  }
 
   const renderPlanCard = (plano: any, isPopular: boolean = false) => {
     return (
@@ -149,8 +146,13 @@ export function Modem4GPlansSection(): React.JSX.Element {
             ))}
           </div>
           
-          <Button className="w-full bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold py-3 rounded-lg transition-all duration-300">
-            Assine já
+          <Button 
+            className="w-full bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold py-3 rounded-lg transition-all duration-300"
+            asChild
+          >
+            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              Assine já
+            </a>
           </Button>
         </CardContent>
       </Card>
@@ -158,54 +160,81 @@ export function Modem4GPlansSection(): React.JSX.Element {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="planos" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Escolha o plano ideal para sua empresa
+            Móvel Pen/Box | Planos de Dados
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Todos os planos contam com o menor preço por giga de dados. Aproveite a tecnologia 4G 
-            para impulsionar sua conectividade empresarial.
+            Nossos clientes conectados a todo o momento! Conectividade móvel empresarial com máxima flexibilidade.
           </p>
         </div>
 
-        <Tabs defaultValue="internet" className="w-full">
-          <div className="text-center mb-8">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-gray-100 p-1 rounded-lg">
-              <TabsTrigger 
-                value="internet" 
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600"
+        {/* Carousel de Planos */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <div className="relative">
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevSlide}
+              disabled={currentIndex === 0}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronLeft className="w-6 h-6 text-gray-600" />
+            </button>
+            
+            <button
+              onClick={nextSlide}
+              disabled={currentIndex >= Math.max(0, planosPenBox.length - 3)}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronRight className="w-6 h-6 text-gray-600" />
+            </button>
+
+            {/* Carousel Container */}
+            <div className="overflow-hidden px-16 py-8">
+              <div 
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
               >
-                Planos de internet
-              </TabsTrigger>
-              <TabsTrigger 
-                value="celular" 
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600"
-              >
-                Planos de celular
-              </TabsTrigger>
-            </TabsList>
+                {planosPenBox.map((plano) => (
+                  <div key={plano.gb} className="w-1/3 flex-shrink-0 px-4">
+                    {renderPlanCard(plano, plano.popular)}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center space-x-2 mt-6">
+              {Array.from({ length: Math.max(1, planosPenBox.length - 2) }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-3 h-3 rounded-full transition-colors ${
+                    index === currentIndex ? 'bg-purple-500' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
-
-          <TabsContent value="internet" className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {planosInternet.map((plano) => renderPlanCard(plano, plano.popular))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="celular" className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {planosCelular.map((plano) => renderPlanCard(plano, plano.popular))}
-            </div>
-          </TabsContent>
-        </Tabs>
+          
+          <p className="text-sm text-gray-500 text-center mt-6">
+            Consulte as informações de input no arquivo de Regras Comerciais.
+          </p>
+        </div>
 
         {/* Banner CTA */}
         <div className="mt-12 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-2xl p-8 text-center text-white shadow-xl">
-          <h3 className="text-2xl font-bold mb-4">Quer ver mais opções?</h3>
-          <Button size="lg" className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white">
-            VER MAIS PLANOS
+          <h3 className="text-2xl font-bold mb-4">Quer contratar agora?</h3>
+          <Button 
+            size="lg" 
+            className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white"
+            asChild
+          >
+            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              CONTRATAR PELO WHATSAPP
+            </a>
           </Button>
         </div>
       </div>

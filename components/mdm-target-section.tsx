@@ -76,7 +76,7 @@ export function MDMTargetSection(): React.JSX.Element {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#660099]">0800 777 0000</div>
+                  <div className="text-2xl font-bold text-[#660099]">(11) 2362-9665</div>
                   <p className="text-sm text-gray-600">Central de Atendimento</p>
                 </div>
                 <div className="text-center">

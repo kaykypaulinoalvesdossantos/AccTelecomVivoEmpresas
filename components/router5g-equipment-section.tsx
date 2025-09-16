@@ -15,8 +15,8 @@ export function Router5GEquipmentSection(): React.JSX.Element {
               Saiba mais sobre o equipamento
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              O Roteador 5G Vivo é portátil e possui slot para chip. Você pode utilizá-lo em qualquer lugar 
-              onde tenha cobertura 5G da Vivo, conectando-se via Wi-Fi ou cabo de rede.
+              O CPE 5G é um roteador portátil, com espaço para chip 5G. Por isso, é tão fácil de usar: 
+              insira o Vivo Chip no equipamento e conecte-se ao Wi-Fi no seu smartphone, computador ou tablet.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -56,20 +56,20 @@ export function Router5GEquipmentSection(): React.JSX.Element {
 
           {/* Equipment Image */}
           <div className="relative">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-md border border-purple-200/20 rounded-3xl p-8 shadow-2xl">
               <div className="relative">
-                {/* Placeholder for router image */}
-                <div className="w-full h-80 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <Wifi className="w-20 h-20 mx-auto mb-4 opacity-50" />
-                    <p className="text-xl font-semibold">Roteador 5G Vivo</p>
-                    <p className="text-sm opacity-70">Equipamento portátil com chip integrado</p>
-                  </div>
+                {/* Real router image */}
+                <div className="w-full h-80 bg-white rounded-2xl flex items-center justify-center p-8">
+                  <img 
+                    src="/router-5g/vivo-empresas-roteador-5g-2405-943x832.png" 
+                    alt="CPE 5G Vivo - Roteador portátil empresarial"
+                    className="max-w-full max-h-full object-contain"
+                  />
                 </div>
                 
                 {/* Floating Elements */}
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-[#660099] to-[#EB3C7D] rounded-full animate-bounce"></div>
-                <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-br from-[#EB3C7D] to-[#660099] rounded-full animate-bounce delay-500"></div>
+                <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full animate-bounce"></div>
+                <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full animate-bounce delay-500"></div>
               </div>
             </div>
           </div>

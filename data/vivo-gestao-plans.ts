@@ -3,43 +3,41 @@ export const mockPlansData = {
   portabilidade: [
     {
       id: 1,
-      offerType: "5G",
+      offerType: "OFERTA POR TEMPO LIMITADO",
       title: "Plano de Celular 5G",
-      data: "16 GB",
+      data: "6 GB",
+      dataDetails: "6 GB uso livre + bônus",
+      portabilityBonus: "10 GB de bônus para portabilidade",
+      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
       price: "R$ 39,99",
-      period: "por mês",
-      benefits: ["Ligações ilimitadas", "SMS ilimitado", "Apps ilimitados", "5G incluso"],
+      period: "/mês",
+      benefits: ["VR", "Buser", "Cultura"],
       isFeatured: false
     },
     {
       id: 2,
-      offerType: "MDM",
-      title: "16 GB MDM",
-      data: "25 GB",
-      price: "R$ 44,99",
-      period: "por mês",
-      benefits: ["Ligações ilimitadas", "SMS ilimitado", "Apps ilimitados", "5G incluso", "Gestão de dispositivos"],
-      isFeatured: true,
-      featuredBadge: "MAIS CONTRATADO"
+      offerType: "OFERTA POR TEMPO LIMITADO",
+      title: "Plano de Celular 5G",
+      data: "15 GB",
+      dataDetails: "15 GB uso livre + bônus",
+      portabilityBonus: "10 GB de bônus para portabilidade",
+      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
+      price: "R$ 54,99",
+      period: "/mês",
+      benefits: ["VR", "Buser", "Cultura"],
+      isFeatured: true
     },
     {
       id: 3,
-      offerType: "EMPRESARIAL",
-      title: "Plano Empresarial",
-      data: "110 GB",
-      price: "R$ 54,99",
-      period: "por mês",
-      benefits: ["Ligações ilimitadas", "SMS ilimitado", "Apps ilimitados", "5G incluso", "Suporte prioritário"],
-      isFeatured: false
-    },
-    {
-      id: 4,
-      offerType: "PREMIUM",
-      title: "Plano Premium",
-      data: "200 GB",
+      offerType: "OFERTA POR TEMPO LIMITADO",
+      title: "Plano de Celular 5G",
+      data: "20 GB",
+      dataDetails: "20 GB uso livre + bônus",
+      portabilityBonus: "10 GB de bônus para portabilidade",
+      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
       price: "R$ 59,99",
-      period: "por mês",
-      benefits: ["Ligações ilimitadas", "SMS ilimitado", "Apps ilimitados", "5G incluso", "Suporte VIP", "Roaming internacional"],
+      period: "/mês",
+      benefits: ["VR", "Buser", "Cultura"],
       isFeatured: false
     }
   ],
@@ -66,33 +64,16 @@ export const mockPlansData = {
       price: "R$ 54,99",
       period: "/mês",
       benefits: ["VR", "Buser", "Cultura"],
-      isFeatured: false
+      isFeatured: true
     },
     {
       id: 3,
       offerType: "OFERTA EXCLUSIVA",
-      title: "Plano de Celular + MDM",
-      data: "6 GB",
-      dataDetails: "6 GB uso livre + bônus",
-      planType: "Plano Pós 5G",
-      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
-      mdm: {
-        title: "MDM",
-        features: ["Gestão de dispositivos", "Plano Bloqueio de Chip"]
-      },
-      price: "R$ 44,99",
-      period: "/mês",
-      benefits: ["VR", "Buser", "Cultura"],
-      isFeatured: false
-    },
-    {
-      id: 4,
-      offerType: "MENOR PREÇO POR GB",
       title: "Plano de Celular 5G",
-      data: "100 GB",
-      dataDetails: "100 GB uso livre + bônus",
+      data: "20 GB",
+      dataDetails: "20 GB uso livre + bônus",
       features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
-      price: "R$ 99,99",
+      price: "R$ 59,99",
       period: "/mês",
       benefits: ["VR", "Buser", "Cultura"],
       isFeatured: false
@@ -101,64 +82,57 @@ export const mockPlansData = {
   mdm: [
     {
       id: 1,
-      offerType: "OFERTA EXCLUSIVA",
+      offerType: "OFERTA POR TEMPO LIMITADO",
       title: "Plano de Celular + MDM",
       data: "6 GB",
+      dataDetails: "6 GB uso livre + bônus",
+      portabilityBonus: "10 GB de bônus para portabilidade",
       planType: "Planos Pós 5G",
       network: "Melhor rede móvel do Brasil",
+      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
       mdm: {
         title: "MDM",
         features: ["Gestão de dispositivos", "Plano Bloqueio de Chip"]
       },
-      price: "R$ 44,99",
+      price: "R$ 39,99",
       period: "/mês",
       benefits: ["VR", "Buser", "Cultura"],
       isFeatured: false
     },
     {
       id: 2,
-      offerType: "OFERTA EXCLUSIVA",
+      offerType: "OFERTA POR TEMPO LIMITADO",
       title: "Plano de Celular + MDM",
       data: "15 GB",
+      dataDetails: "15 GB uso livre + bônus",
+      portabilityBonus: "10 GB de bônus para portabilidade",
       planType: "Planos Pós 5G",
       network: "Melhor rede móvel do Brasil",
+      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
+      mdm: {
+        title: "MDM",
+        features: ["Gestão de dispositivos", "Plano Bloqueio de Chip"]
+      },
+      price: "R$ 54,99",
+      period: "/mês",
+      benefits: ["VR", "Buser", "Cultura"],
+      isFeatured: true
+    },
+    {
+      id: 3,
+      offerType: "OFERTA POR TEMPO LIMITADO",
+      title: "Plano de Celular + MDM",
+      data: "20 GB",
+      dataDetails: "20 GB uso livre + bônus",
+      portabilityBonus: "10 GB de bônus para portabilidade",
+      planType: "Planos Pós 5G",
+      network: "Melhor rede móvel do Brasil",
+      features: ["5G mais rápido do mundo", "Gestão de Voz e Dados inclusa"],
       mdm: {
         title: "MDM",
         features: ["Gestão de dispositivos", "Plano Bloqueio de Chip"]
       },
       price: "R$ 59,99",
-      period: "/mês",
-      benefits: ["VR", "Buser", "Cultura"],
-      isFeatured: false
-    },
-    {
-      id: 3,
-      offerType: "OFERTA EXCLUSIVA",
-      title: "Plano de Celular + MDM",
-      data: "20 GB",
-      planType: "Planos Pós 5G",
-      network: "Melhor rede móvel do Brasil",
-      mdm: {
-        title: "MDM",
-        features: ["Gestão de dispositivos", "Plano Bloqueio de Chip"]
-      },
-      price: "R$ 64,99",
-      period: "/mês",
-      benefits: ["VR", "Buser", "Cultura"],
-      isFeatured: false
-    },
-    {
-      id: 4,
-      offerType: "OFERTA EXCLUSIVA",
-      title: "Plano de Celular + MDM",
-      data: "30 GB",
-      planType: "Planos Pós 5G",
-      network: "Melhor rede móvel do Brasil",
-      mdm: {
-        title: "MDM",
-        features: ["Gestão de dispositivos", "Plano Bloqueio de Chip"]
-      },
-      price: "R$ 74,99",
       period: "/mês",
       benefits: ["VR", "Buser", "Cultura"],
       isFeatured: false
@@ -168,7 +142,7 @@ export const mockPlansData = {
     {
       id: 1,
       offerType: "PACOTE ADICIONAL",
-      data: "16 GB",
+      data: "10 GB",
       calls: "Ligações e SMS para qualquer operadora",
       options: [
         { name: "Redes Sociais", apps: "Instagram, Facebook, X e mais...", selected: true },
@@ -176,56 +150,8 @@ export const mockPlansData = {
         { name: "Comunicação", apps: "Microsoft Teams e Cisco Webex", selected: false }
       ],
       speed: "5G mais rápido do mundo",
-      price: "R$ 49,99",
-      period: "/mês",
-      benefits: ["VR", "Buser", "Gubee"],
-      isFeatured: false
-    },
-    {
-      id: 2,
-      offerType: "PACOTE ADICIONAL",
-      data: "25 GB",
-      calls: "Ligações e SMS para qualquer operadora",
-      options: [
-        { name: "Redes Sociais", apps: "Instagram, Facebook, X e mais...", selected: true },
-        { name: "Streaming", apps: "Netflix, Youtube, Spotify e mais..", selected: false },
-        { name: "Comunicação", apps: "Microsoft Teams e Cisco Webex", selected: false }
-      ],
-      speed: "5G mais rápido do mundo",
-      price: "R$ 64,99",
-      period: "/mês",
-      benefits: ["VR", "Buser", "Gubee"],
-      isFeatured: false
-    },
-    {
-      id: 3,
-      offerType: "PACOTE ADICIONAL",
-      data: "30 GB",
-      calls: "Ligações e SMS para qualquer operadora",
-      options: [
-        { name: "Redes Sociais", apps: "Instagram, Facebook, X e mais...", selected: true },
-        { name: "Streaming", apps: "Netflix, Youtube, Spotify e mais..", selected: false },
-        { name: "Comunicação", apps: "Microsoft Teams e Cisco Webex", selected: false }
-      ],
-      speed: "5G mais rápido do mundo",
-      price: "R$ 69,99",
-      period: "/mês",
-      benefits: ["VR", "Buser", "Gubee"],
-      isFeatured: false
-    },
-    {
-      id: 4,
-      offerType: "PACOTE ADICIONAL",
-      data: "40 GB",
-      calls: "Ligações e SMS para qualquer operadora",
-      options: [
-        { name: "Redes Sociais", apps: "Instagram, Facebook, X e mais...", selected: true },
-        { name: "Streaming", apps: "Netflix, Youtube, Spotify e mais..", selected: false },
-        { name: "Comunicação", apps: "Microsoft Teams e Cisco Webex", selected: false }
-      ],
-      speed: "5G mais rápido do mundo",
-      price: "R$ 79,99",
-      period: "/mês",
+      price: "R$ 10,00",
+      period: "/mês por linha",
       benefits: ["VR", "Buser", "Gubee"],
       isFeatured: false
     }

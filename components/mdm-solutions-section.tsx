@@ -52,8 +52,13 @@ export function MDMSolutionsSection(): React.JSX.Element {
                 <p className="text-gray-600 mb-6">
                   {solution.description}
                 </p>
-                <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg">
-                  {solution.button}
+                <Button 
+                  className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg"
+                  asChild
+                >
+                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                    {solution.button}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -73,7 +78,7 @@ export function MDMSolutionsSection(): React.JSX.Element {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#660099]">0800 777 0000</div>
+                  <div className="text-2xl font-bold text-[#660099]">(11) 2362-9665</div>
                   <p className="text-sm text-gray-600">Central de Atendimento</p>
                 </div>
                 <div className="text-center">

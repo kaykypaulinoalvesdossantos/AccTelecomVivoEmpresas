@@ -1,10 +1,10 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Check, Smartphone, ChevronLeft, ChevronRight } from "lucide-react"
+import { Check, Smartphone, ChevronLeft, ChevronRight, Star } from "lucide-react"
 
 export function ESimPlansSection(): React.JSX.Element {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -23,7 +23,7 @@ export function ESimPlansSection(): React.JSX.Element {
         "Ligações ilimitadas"
       ],
       popular: false,
-      badge: "OFERTA IMPERDÍVEL"
+      badge: "OFERTA ESPECIAL"
     },
     {
       id: 2,
@@ -38,26 +38,70 @@ export function ESimPlansSection(): React.JSX.Element {
         "Ligações ilimitadas"
       ],
       popular: false,
-      badge: "OFERTA IMPERDÍVEL"
+      badge: "OFERTA ESPECIAL"
     },
     {
       id: 3,
-      nome: "6 GB + MDM",
-      gb: "6GB",
-      preco: "R$ 44,99",
+      nome: "20 GB",
+      gb: "20GB",
+      preco: "R$ 59,99",
       descricao: "Plano de Celular 5G",
       recursos: [
         "Utilize também seu celular como roteador",
         "5G mais rápido do mundo",
         "Apps ilimitados",
-        "Ligações ilimitadas",
-        "MDM incluso"
+        "Ligações ilimitadas"
       ],
       popular: true,
-      badge: "OFERTA MAIS VENDIDA"
+      badge: "MAIS CONTRATADO"
     },
     {
       id: 4,
+      nome: "30 GB",
+      gb: "30GB",
+      preco: "R$ 69,99",
+      descricao: "Plano de Celular 5G",
+      recursos: [
+        "Utilize também seu celular como roteador",
+        "5G mais rápido do mundo",
+        "Apps ilimitados",
+        "Ligações ilimitadas"
+      ],
+      popular: false,
+      badge: "OFERTA ESPECIAL"
+    },
+    {
+      id: 5,
+      nome: "40 GB",
+      gb: "40GB",
+      preco: "R$ 79,99",
+      descricao: "Plano de Celular 5G",
+      recursos: [
+        "Utilize também seu celular como roteador",
+        "5G mais rápido do mundo",
+        "Apps ilimitados",
+        "Ligações ilimitadas"
+      ],
+      popular: false,
+      badge: "OFERTA ESPECIAL"
+    },
+    {
+      id: 6,
+      nome: "50 GB",
+      gb: "50GB",
+      preco: "R$ 89,99",
+      descricao: "Plano de Celular 5G",
+      recursos: [
+        "Utilize também seu celular como roteador",
+        "5G mais rápido do mundo",
+        "Apps ilimitados",
+        "Ligações ilimitadas"
+      ],
+      popular: false,
+      badge: "OFERTA ESPECIAL"
+    },
+    {
+      id: 7,
       nome: "100 GB",
       gb: "100GB",
       preco: "R$ 99,99",
@@ -69,103 +113,85 @@ export function ESimPlansSection(): React.JSX.Element {
         "Ligações ilimitadas"
       ],
       popular: false,
-      badge: "OFERTA IMPERDÍVEL"
+      badge: "OFERTA ESPECIAL"
     }
   ]
 
-  // Auto-play functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % Math.ceil(planosMoveis.length / getSlidesPerView()))
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [planosMoveis.length])
-
-  const getSlidesPerView = () => {
-    if (typeof window === 'undefined') return 4
-    if (window.innerWidth >= 1024) return 4
-    if (window.innerWidth >= 768) return 3
-    if (window.innerWidth >= 640) return 2
-    return 1
-  }
 
   const nextSlide = () => {
-    const slidesPerView = getSlidesPerView()
-    const maxSlide = Math.ceil(planosMoveis.length / slidesPerView) - 1
-    setCurrentSlide((prev) => (prev + 1) % (maxSlide + 1))
+    setCurrentSlide((prevIndex) => {
+      const maxIndex = Math.max(0, planosMoveis.length - 4)
+      return prevIndex >= maxIndex ? maxIndex : prevIndex + 1
+    })
   }
 
   const prevSlide = () => {
-    const slidesPerView = getSlidesPerView()
-    const maxSlide = Math.ceil(planosMoveis.length / slidesPerView) - 1
-    setCurrentSlide((prev) => (prev - 1 + maxSlide + 1) % (maxSlide + 1))
-  }
-
-  const goToSlide = (slideIndex: number) => {
-    setCurrentSlide(slideIndex)
+    setCurrentSlide((prevIndex) => {
+      return prevIndex <= 0 ? 0 : prevIndex - 1
+    })
   }
 
   const renderPlanCard = (plano: any, isPopular: boolean = false) => {
     return (
-      <Card key={plano.id} className={`relative bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden h-full flex-shrink-0 ${
-        isPopular ? 'border-[#660099] ring-2 ring-[#660099]/20 shadow-xl' : ''
-      }`}>
-        <CardHeader className="pb-4 pt-6">
-          <div className="flex justify-between items-start mb-3">
-            <Badge className="bg-green-100 text-green-800 px-3 py-1 text-xs font-semibold border border-green-200">
-              {plano.badge}
-            </Badge>
-            {isPopular && (
-              <Badge className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] text-white px-3 py-1 text-xs font-semibold">
-                MAIS VENDIDO
-              </Badge>
-            )}
+      <Card
+        className={`relative transition-all duration-300 hover:shadow-2xl ${isPopular ? "ring-2 ring-purple-500 scale-105 shadow-xl" : "hover:scale-105"}`}
+      >
+        <CardHeader className="text-center pb-4">
+          <div
+            className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${isPopular ? "from-purple-500 to-pink-500" : "from-blue-500 to-blue-600"} flex items-center justify-center`}
+          >
+            <Smartphone className="w-8 h-8 text-white" />
           </div>
-          
-          <CardTitle className="text-3xl font-bold text-gray-800 mb-3">
-            {plano.gb}
-          </CardTitle>
-          
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-lg flex items-center justify-center">
-              <Smartphone className="w-4 h-4 text-white" />
+          <CardTitle className="text-xl font-bold">{plano.nome}</CardTitle>
+          <div className="text-sm text-gray-600 mb-4">{plano.descricao}</div>
+
+          <div className="space-y-2">
+            <div className="text-4xl font-bold text-purple-600">{plano.gb}</div>
+            <div className="text-3xl font-bold text-gray-900">
+              {plano.preco}
+              <span className="text-sm font-normal text-gray-600">/mês</span>
             </div>
-            <span className="text-sm text-gray-600">{plano.descricao}</span>
           </div>
         </CardHeader>
-        
-        <CardContent className="space-y-4">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-gray-800">{plano.preco}</div>
-            <div className="text-gray-600 text-sm">por mês</div>
-          </div>
-          
-          <div className="space-y-3">
+
+        <CardContent className="pt-0">
+          <ul className="space-y-3 mb-8">
             {plano.recursos.map((recurso: string, featureIndex: number) => (
-              <div key={`${plano.id}-feature-${featureIndex}`} className="flex items-start gap-3">
-                <Check className="w-4 h-4 text-[#660099] flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700 leading-relaxed">{recurso}</span>
-              </div>
+              <li key={featureIndex} className="flex items-start text-sm">
+                <Check className="h-4 w-4 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{recurso}</span>
+              </li>
             ))}
-          </div>
-          
-          <Button className="w-full bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold py-3 rounded-lg transition-all duration-300">
-            Assinar Plano
-          </Button>
-          
-          <div className="text-center">
-            <a href="#" className="text-sm text-[#660099] hover:underline">
-              Mais detalhes
-            </a>
+          </ul>
+
+          <div className="space-y-3">
+            <Button
+              className={`w-full ${isPopular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" : "bg-purple-600 hover:bg-purple-700"} text-white`}
+              asChild
+            >
+              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                Contratar Agora
+              </a>
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="w-full text-sm"
+              asChild
+            >
+              <a 
+                href="https://wa.me/551123629665" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Mais Detalhes
+              </a>
+            </Button>
           </div>
         </CardContent>
       </Card>
     )
   }
 
-  const slidesPerView = getSlidesPerView()
-  const totalSlides = Math.ceil(planosMoveis.length / slidesPerView)
 
   return (
     <section className="py-16 bg-gray-50">
@@ -180,60 +206,65 @@ export function ESimPlansSection(): React.JSX.Element {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative max-w-6xl mx-auto">
-          {/* Carousel Track */}
-          <div className="overflow-hidden">
+        <div className="relative">
+          {/* Carrossel Container */}
+          <div className="overflow-hidden px-8 py-8">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
-              style={{
-                transform: `translateX(-${currentSlide * 100}%)`,
-                width: `${totalSlides * 100}%`
-              }}
+              style={{ transform: `translateX(-${currentSlide * 25}%)` }}
             >
-              {Array.from({ length: totalSlides }, (_, slideIndex) => (
-                <div 
-                  key={`slide-${slideIndex}`}
-                  className="flex gap-6 px-4"
-                  style={{ width: `${100 / totalSlides}%` }}
-                >
-                  {planosMoveis
-                    .slice(slideIndex * slidesPerView, (slideIndex + 1) * slidesPerView)
-                    .map((plano) => renderPlanCard(plano, plano.popular))}
+              {planosMoveis.map((plano, index) => (
+                <div key={index} className="w-1/4 flex-shrink-0 px-4">
+                  <div className="relative">
+                    {plano.popular && (
+                      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
+                        <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 text-xs shadow-lg">
+                          <Star className="w-3 h-3 mr-1" />
+                          Mais Contratado
+                        </Badge>
+                      </div>
+                    )}
+                    {renderPlanCard(plano, plano.popular)}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Navigation Buttons */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full p-3 shadow-lg hover:bg-white transition-all duration-200 z-10"
-            disabled={currentSlide === 0}
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
-          </button>
-          
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full p-3 shadow-lg hover:bg-white transition-all duration-200 z-10"
-            disabled={currentSlide === totalSlides - 1}
-          >
-            <ChevronRight className="w-6 h-6 text-gray-600" />
-          </button>
+          <div className="flex justify-center items-center mt-8 space-x-4">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={prevSlide}
+              disabled={currentSlide === 0}
+              className="rounded-full p-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </Button>
+            
+            {/* Dots Indicator */}
+            <div className="flex space-x-2">
+              {Array.from({ length: Math.max(1, planosMoveis.length - 3) }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    index === currentSlide ? "bg-purple-600" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
 
-          {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 gap-2">
-            {Array.from({ length: totalSlides }, (_, index) => (
-              <button
-                key={`dot-${index}`}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                  index === currentSlide 
-                    ? 'bg-gradient-to-r from-[#660099] to-[#EB3C7D] scale-110' 
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
-            ))}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={nextSlide}
+              disabled={currentSlide >= Math.max(0, planosMoveis.length - 4)}
+              className="rounded-full p-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </Button>
           </div>
         </div>
 
@@ -242,10 +273,16 @@ export function ESimPlansSection(): React.JSX.Element {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
               <h3 className="text-2xl font-bold mb-2">Precisa de ajuda?</h3>
-              <p className="text-white/90">0800 771 0140</p>
+              <p className="text-white/90">(11) 2362-9665</p>
             </div>
-            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white">
-              Consultor online
+            <Button 
+              size="lg" 
+              className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white"
+              asChild
+            >
+              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                WhatsApp
+              </a>
             </Button>
           </div>
         </div>

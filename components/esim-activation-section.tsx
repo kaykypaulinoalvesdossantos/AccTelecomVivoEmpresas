@@ -230,7 +230,7 @@ export function ESimActivationSection(): React.JSX.Element {
             <h4 className="font-semibold text-gray-800">Em caso de dúvidas na ativação do eSIM</h4>
           </div>
           <p className="text-gray-600">
-            Entre em contato pelo <strong>0800 771 0140</strong> ou use o código <strong>10315</strong>
+            Entre em contato pelo <strong>(11) 2362-9665</strong> ou pelo WhatsApp
           </p>
         </div>
       </div>

@@ -62,8 +62,13 @@ export function RoamingSolutionsSection(): React.JSX.Element {
                 <p className="text-white/90 mb-6 leading-relaxed">
                   {solution.description}
                 </p>
-                <Button className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-lg">
-                  {solution.button}
+                <Button 
+                  className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-lg"
+                  asChild
+                >
+                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                    {solution.button}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -77,7 +82,7 @@ export function RoamingSolutionsSection(): React.JSX.Element {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">0800 771 0160</div>
+              <div className="text-2xl font-bold text-white">(11) 2362-9665</div>
               <p className="text-sm text-white/80">Central de Atendimento</p>
             </div>
             <div className="text-center">

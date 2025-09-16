@@ -42,9 +42,15 @@ export function MDMHeroSection(): React.JSX.Element {
               </p>
             </div>
 
-            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg">
-              Assinar plano
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button 
+              size="lg" 
+              className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg"
+              asChild
+            >
+              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                WhatsApp
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
           </div>
 

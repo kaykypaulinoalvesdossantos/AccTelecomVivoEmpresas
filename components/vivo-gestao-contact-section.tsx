@@ -8,7 +8,7 @@ export function VivoGestaoContactSection(): React.JSX.Element {
     {
       icon: Phone,
       title: "Telefone",
-      value: "(11) 3000-0000",
+      value: "(11) 2362-9665",
       description: "Fale com nossos especialistas"
     },
     {
@@ -20,7 +20,7 @@ export function VivoGestaoContactSection(): React.JSX.Element {
     {
       icon: MessageSquare,
       title: "WhatsApp",
-      value: "(11) 99999-9999",
+      value: "(11) 2362-9665",
       description: "Atendimento via WhatsApp"
     },
     {
@@ -148,7 +148,7 @@ export function VivoGestaoContactSection(): React.JSX.Element {
                   <input
                     type="tel"
                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-                    placeholder="(11) 99999-9999"
+                    placeholder="(11) 2362-9665"
                   />
                 </div>
               </div>
@@ -177,13 +177,15 @@ export function VivoGestaoContactSection(): React.JSX.Element {
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
+              <a
+                href="https://wa.me/551123629665"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-white text-[#660099] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center gap-2"
               >
                 Enviar Solicitação
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
             </form>
           </div>
         </div>
@@ -198,12 +200,22 @@ export function VivoGestaoContactSection(): React.JSX.Element {
               Nossa equipe está pronta para ajudar você a implementar a solução ideal para sua empresa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#660099] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+              <a 
+                href="https://wa.me/551123629665" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white text-[#660099] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+              >
                 Agendar Demonstração
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#660099] transition-colors duration-300">
+              </a>
+              <a 
+                href="https://wa.me/551123629665" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#660099] transition-colors duration-300"
+              >
                 Baixar Apresentação
-              </button>
+              </a>
             </div>
           </div>
         </div>

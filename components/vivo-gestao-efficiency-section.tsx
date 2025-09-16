@@ -51,9 +51,15 @@ export function VivoGestaoEfficiencySection(): React.JSX.Element {
               </div>
             </div>
 
-            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg">
-              <BarChart3 className="w-5 h-5 mr-2" />
-              Acessar Vivo Gestão
+            <Button 
+              size="lg" 
+              className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg"
+              asChild
+            >
+              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <BarChart3 className="w-5 h-5 mr-2" />
+                Acessar Vivo Gestão
+              </a>
             </Button>
           </div>
 

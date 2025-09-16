@@ -78,10 +78,12 @@ export function RoamingUSASection(): React.JSX.Element {
                     que suas ligações funcionem normalmente nos EUA.
                   </p>
                   <a 
-                    href="#" 
+                    href="https://wa.me/551123629665" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#660099] hover:underline font-medium inline-flex items-center gap-2"
                   >
-                    Veja Lista de Celulares Compatíveis
+                    Consultar Compatibilidade
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>

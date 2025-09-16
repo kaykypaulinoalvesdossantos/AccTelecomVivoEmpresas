@@ -54,49 +54,35 @@ export function Header() {
             { label: "M2M", href: "/planos/m2m" },
             { label: "Roaming Internacional", href: "/planos/roaming-internacional" },
             { label: "Gestão de Dispositivos - MDM", href: "/planos/mdm" },
-            { label: "Vivo Gestão", href: "/solucoes#gestao" },
+            { label: "Vivo Gestão", href: "/planos/vivo-gestao" },
           ],
         },
         {
           title: "INTERNET",
           items: [
             { label: "Vivo Fibra", href: "/internet/fibra" },
-            { label: "Internet Dedicada", href: "/planos/internet#dedicada" },
-            { label: "Internet Satélite", href: "/planos/internet#satelite" },
-            { label: "Redes Corporativas", href: "/solucoes#redes" },
-            { label: "Gestão de redes", href: "/solucoes#gestao-redes" },
+            { label: "Internet Dedicada", href: "/internet/dedicada" },
+            { label: "Internet Satélite", href: "/internet/satelite" },
+            { label: "Rede Corporativa", href: "/internet/rede-corporativa" },
           ],
         },
         {
           title: "PACOTES",
           items: [
-            { label: "Fibra + Pós", href: "/planos#combo-fibra-pos" },
-            { label: "Pacotes para sua empresa", href: "/planos#pacotes" },
-            { label: "Fibra + Repetidor", href: "/planos#fibra-repetidor" },
-            { label: "Móvel + Aparelho", href: "/planos#movel-aparelho" },
+            { label: "Pacote para sua empresa", href: "/pacotes/pacote-empresa" },
+            { label: "Fibra + Pós", href: "/pacotes/fibra-pos" },
+            { label: "Fibra + Repetidor", href: "/pacotes/fibra-repetidor" },
+            { label: "Móvel + Aparelho", href: "/pacotes/movel-aparelho" },
           ],
         },
         {
           title: "VOZ E COLABORAÇÃO",
           items: [
-            { label: "Vivo Voz Negócio", href: "/solucoes#voz-negocio" },
-            { label: "Sip Trunking", href: "/solucoes#sip-trunking" },
-            { label: "0800 e 0300", href: "/solucoes#0800-0300" },
-            { label: "Número único", href: "/solucoes#numero-unico" },
-            { label: "0303", href: "/solucoes#0303" },
-          ],
-        },
-        {
-          title: "SHOPPING",
-          items: [
-            { label: "Smartphones", href: "/dispositivos#smartphones" },
-            { label: "Informática", href: "/dispositivos#informatica" },
-            { label: "Acessórios", href: "/dispositivos#acessorios" },
-            { label: "Roteadores", href: "/dispositivos#roteadores" },
-            { label: "Mundo Apple", href: "/dispositivos#apple" },
-            { label: "Mundo Samsung", href: "/dispositivos#samsung" },
-            { label: "Locação de Equipamentos", href: "/dispositivos#locacao" },
-            { label: "Seguro Celular", href: "/dispositivos#seguro" },
+            { label: "Vivo Voz Negócio", href: "/voz-colaboracao/vivo-voz-negocio" },
+            { label: "Sip Trunking", href: "/voz-colaboracao/sip-trunking" },
+            { label: "0800 e 0300", href: "/voz-colaboracao/0800-0300" },
+            { label: "Número único", href: "/voz-colaboracao/numero-unico" },
+            { label: "0303", href: "/voz-colaboracao/0303" },
           ],
         },
       ],
@@ -107,56 +93,56 @@ export function Header() {
         {
           title: "CLOUD",
           items: [
-            { label: "AWS", href: "/solucoes#aws" },
-            { label: "IBM Cloud", href: "/solucoes#ibm-cloud" },
-            { label: "Cloud Azure", href: "/solucoes#azure" },
-            { label: "Huawei Cloud", href: "/solucoes#huawei" },
-            { label: "Cloud Plus", href: "/solucoes#cloud-plus" },
+            { label: "AWS", href: "/not-found" },
+            { label: "IBM Cloud", href: "/not-found" },
+            { label: "Cloud Azure", href: "/not-found" },
+            { label: "Huawei Cloud", href: "/not-found" },
+            { label: "Cloud Plus", href: "/not-found" },
           ],
         },
         {
           title: "FERRAMENTAS DE COLABORAÇÃO",
           items: [
-            { label: "Microsoft 365", href: "/solucoes#microsoft-365" },
-            { label: "Microsoft Teams", href: "/solucoes#teams" },
-            { label: "Gestão de Equipes", href: "/solucoes#gestao-equipes" },
-            { label: "Google Workspace", href: "/solucoes#google-workspace" },
-            { label: "Exchange Online", href: "/solucoes#exchange" },
-            { label: "Gestão de Vendas - ERP", href: "/solucoes#erp" },
-            { label: "Plataforma Digital", href: "/solucoes#plataforma-digital" },
+            { label: "Microsoft 365", href: "/not-found" },
+            { label: "Microsoft Teams", href: "/not-found" },
+            { label: "Gestão de Equipes", href: "/not-found" },
+            { label: "Google Workspace", href: "/not-found" },
+            { label: "Exchange Online", href: "/not-found" },
+            { label: "Gestão de Vendas - ERP", href: "/not-found" },
+            { label: "Plataforma Digital", href: "/not-found" },
           ],
         },
         {
           title: "IOT",
           items: [
-            { label: "Wi-Fi Pro", href: "/solucoes#wifi-pro" },
-            { label: "Frota Inteligente", href: "/solucoes#frota" },
-            { label: "Gestão de Maquinário", href: "/solucoes#maquinario" },
-            { label: "Clima Inteligente", href: "/solucoes#clima" },
-            { label: "Agro Cobertura", href: "/solucoes#agro" },
-            { label: "Open Gateway", href: "/solucoes#open-gateway" },
+            { label: "Wi-Fi Pro", href: "/not-found" },
+            { label: "Frota Inteligente", href: "/not-found" },
+            { label: "Gestão de Maquinário", href: "/not-found" },
+            { label: "Clima Inteligente", href: "/not-found" },
+            { label: "Agro Cobertura", href: "/not-found" },
+            { label: "Open Gateway", href: "/not-found" },
           ],
         },
         {
           title: "T.I.",
           items: [
-            { label: "Hosting Dedicado", href: "/solucoes#hosting" },
-            { label: "Colocation", href: "/solucoes#colocation" },
-            { label: "Registro de Domínio", href: "/solucoes#dominio" },
-            { label: "E-mail Profissional", href: "/solucoes#email" },
-            { label: "Hospedagem de Site", href: "/solucoes#hospedagem" },
-            { label: "Construtor de Sites", href: "/solucoes#construtor" },
-            { label: "SEO Tool", href: "/solucoes#seo" },
+            { label: "Hosting Dedicado", href: "/not-found" },
+            { label: "Colocation", href: "/not-found" },
+            { label: "Registro de Domínio", href: "/not-found" },
+            { label: "E-mail Profissional", href: "/not-found" },
+            { label: "Hospedagem de Site", href: "/not-found" },
+            { label: "Construtor de Sites", href: "/not-found" },
+            { label: "SEO Tool", href: "/not-found" },
           ],
         },
         {
           title: "SEGURANÇA",
           items: [
-            { label: "Rede e Aplicação", href: "/solucoes#rede-aplicacao" },
-            { label: "Segurança Gerenciada", href: "/solucoes#seguranca-gerenciada" },
-            { label: "Exposição Digital", href: "/solucoes#exposicao-digital" },
-            { label: "Consultoria em Cibersegurança", href: "/solucoes#consultoria-cyber" },
-            { label: "Infraestrutura e Segurança Patrimonial", href: "/solucoes#infra-seguranca" },
+            { label: "Rede e Aplicação", href: "/not-found" },
+            { label: "Segurança Gerenciada", href: "/not-found" },
+            { label: "Exposição Digital", href: "/not-found" },
+            { label: "Consultoria em Cibersegurança", href: "/not-found" },
+            { label: "Infraestrutura e Segurança Patrimonial", href: "/not-found" },
           ],
         },
       ],
@@ -179,7 +165,7 @@ export function Header() {
                 className="h-12 w-auto object-contain"
               />
               <div className="flex flex-col">
-                <div className="text-2xl font-bold bg-gradient-to-r from-[#660099] to-[#EB3C7D] bg-clip-text text-transparent">
+                <div className="text-2xl font-bold text-black">
                   Acc Telecom
                 </div>
                 <span className="text-sm font-medium text-gray-600 group-hover:text-[#660099] transition-colors">
@@ -213,26 +199,21 @@ export function Header() {
               href="/sobre"
               className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-[#660099] hover:bg-gray-50 rounded-lg transition-all duration-200"
             >
-              Por tipo de Empresa
+              Sobre a Empresa
             </Link>
             <Link
-              href="/sobre"
+              href="/not-found"
               className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-[#660099] hover:bg-gray-50 rounded-lg transition-all duration-200"
             >
               Ajuda e Benefícios
             </Link>
             <Link
-              href="/planos"
+              href="/melhores-ofertas"
               className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-[#660099] hover:bg-gray-50 rounded-lg transition-all duration-200"
             >
               Melhores Ofertas
             </Link>
-            <Link
-              href="/contato"
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-[#660099] hover:bg-gray-50 rounded-lg transition-all duration-200"
-            >
-              Autoatendimento
-            </Link>
+
           </nav>
 
           <div className="hidden lg:flex items-center space-x-4">
@@ -309,11 +290,39 @@ export function Header() {
                     Portabilidade
                   </Link>
                   <Link
-                    href="/planos/internet"
+                    href="/internet/fibra"
                     className="block text-sm text-muted-foreground hover:text-foreground"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Internet Fibra
+                  </Link>
+                  <Link
+                    href="/internet/dedicada"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Internet Dedicada
+                  </Link>
+                  <Link
+                    href="/pacotes/pacote-empresa"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Pacote para sua empresa
+                  </Link>
+                  <Link
+                    href="/pacotes/fibra-pos"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Fibra + Pós
+                  </Link>
+                  <Link
+                    href="/pacotes/fibra-repetidor"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Fibra + Repetidor
                   </Link>
                   <Link
                     href="/dispositivos"
@@ -328,11 +337,11 @@ export function Header() {
                 <div className="font-medium text-primary">Soluções Digitais</div>
                 <div className="pl-4 space-y-1">
                   <Link
-                    href="/solucoes"
+                    href="/not-found"
                     className="block text-sm text-muted-foreground hover:text-foreground"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Soluções Completas
+                    Em Desenvolvimento
                   </Link>
                 </div>
               </div>

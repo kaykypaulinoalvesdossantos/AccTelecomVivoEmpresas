@@ -33,9 +33,15 @@ export function M2MCTASection(): React.JSX.Element {
                 </div>
               </div>
               
-              <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-3">
-                Conheça
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button 
+                size="lg" 
+                className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-3"
+                asChild
+              >
+                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
               </Button>
             </div>
           </CardContent>
@@ -48,7 +54,7 @@ export function M2MCTASection(): React.JSX.Element {
           </p>
           <div className="mt-4 flex flex-col sm:flex-row gap-4 justify-center">
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">0800 777 0000</div>
+              <div className="text-2xl font-bold text-white">(11) 2362-9665</div>
               <p className="text-sm text-white/80">Central de Atendimento</p>
             </div>
             <div className="text-center">

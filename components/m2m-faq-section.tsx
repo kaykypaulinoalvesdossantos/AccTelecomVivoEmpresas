@@ -43,7 +43,7 @@ export function M2MFAQSection(): React.JSX.Element {
     },
     {
       question: "Como contratar a solução M2M da Vivo Empresas?",
-      answer: "Para contratar a solução M2M, entre em contato com nossa equipe comercial especializada através do telefone 0800 777 0000, visite uma loja Vivo ou solicite uma proposta personalizada através do nosso site."
+      answer: "Para contratar a solução M2M, entre em contato com nossa equipe comercial especializada através do telefone (11) 2362-9665 ou pelo WhatsApp."
     }
   ]
 

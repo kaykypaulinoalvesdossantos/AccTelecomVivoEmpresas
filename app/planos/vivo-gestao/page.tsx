@@ -3,11 +3,9 @@ import { Footer } from "@/components/footer"
 import { Breadcrumb } from "@/components/breadcrumb"
 import { VivoGestaoHeroSection } from "@/components/vivo-gestao-hero-section"
 import { VivoGestaoPlansSection } from "@/components/vivo-gestao-plans-section"
-import { VivoGestaoAwardsSection } from "@/components/vivo-gestao-awards-section"
 import { VivoGestaoBenefitsSection } from "@/components/vivo-gestao-benefits-section"
-import { VivoGestaoEfficiencySection } from "@/components/vivo-gestao-efficiency-section"
 import { VivoGestaoFAQSection } from "@/components/vivo-gestao-faq-section"
-import { VivoGestaoFeaturesSection } from "@/components/vivo-gestao-features-section"
+import { VivoGestaoCTASection } from "@/components/vivo-gestao-cta-section"
 
 export default function VivoGestaoPage() {
   return (
@@ -23,11 +21,9 @@ export default function VivoGestaoPage() {
         </div>
         <VivoGestaoHeroSection />
         <VivoGestaoPlansSection />
-        <VivoGestaoAwardsSection />
         <VivoGestaoBenefitsSection />
-        <VivoGestaoEfficiencySection />
         <VivoGestaoFAQSection />
-        <VivoGestaoFeaturesSection />
+        <VivoGestaoCTASection />
       </main>
       <Footer />
     </div>

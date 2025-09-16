@@ -2,51 +2,9 @@
 
 import React from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { vivoGestaoData } from "@/data/vivo-gestao-data"
 
 export function VivoGestaoFAQSection(): React.JSX.Element {
-  const faqs = [
-    {
-      question: "O que é a Vivo Gestão de Voz e Dados?",
-      answer: "A Vivo Gestão de Voz e Dados é uma solução que permite controlar o uso de internet e voz nos celulares corporativos com filtros, bloqueios e gestão em tempo real, online e segura."
-    },
-    {
-      question: "Como funciona o controle de dados móveis?",
-      answer: "O controle de dados móveis permite monitorar o consumo de internet de cada linha, definir limites de uso, bloquear aplicativos específicos e distribuir cotas de dados por grupo ou linha."
-    },
-    {
-      question: "É possível bloquear o envio e recebimento de SMS?",
-      answer: "Sim, é possível bloquear o envio e recebimento de SMS para controle de custos e segurança da empresa."
-    },
-    {
-      question: "Como controlar as chamadas de voz dos colaboradores?",
-      answer: "Você pode controlar as chamadas de voz através de relatórios detalhados, definição de horários permitidos, bloqueio de números específicos e monitoramento em tempo real."
-    },
-    {
-      question: "Consegue aplicar filtros de navegação nos aparelhos?",
-      answer: "Sim, é possível aplicar filtros de navegação para bloquear sites específicos, categorias de conteúdo ou aplicativos não autorizados."
-    },
-    {
-      question: "O Vivo Gestão permite rastrear os aparelhos?",
-      answer: "Sim, o Vivo Gestão oferece funcionalidades de rastreamento de aparelhos para localização em tempo real e segurança patrimonial."
-    },
-    {
-      question: "Como faço para configurar os bloqueios e permissões?",
-      answer: "A configuração é feita através do painel online do Vivo Gestão, onde você pode definir políticas de uso, bloqueios e permissões de forma intuitiva."
-    },
-    {
-      question: "Posso agendar horários de uso da internet?",
-      answer: "Sim, é possível agendar horários específicos para uso da internet, permitindo controle de produtividade e otimização de custos."
-    },
-    {
-      question: "O que acontece quando o limite de dados é atingido?",
-      answer: "Quando o limite de dados é atingido, você pode configurar diferentes ações: bloqueio automático, redução de velocidade ou notificação para o usuário."
-    },
-    {
-      question: "Quais são os benefícios do Vivo Gestão para empresas?",
-      answer: "Os principais benefícios incluem controle de custos, aumento da produtividade, segurança de dados, conformidade com políticas empresariais e gestão centralizada de dispositivos."
-    }
-  ]
-
   return (
     <section className="py-16 bg-gradient-to-br from-[#660099]/5 via-[#8B00FF]/5 to-[#EB3C7D]/5 relative overflow-hidden">
       {/* Animated background elements */}
@@ -68,7 +26,7 @@ export function VivoGestaoFAQSection(): React.JSX.Element {
 
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
+            {vivoGestaoData.faq.map((faq, index) => (
               <AccordionItem key={index} value={`faq-${index}`} className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-lg px-6 shadow-lg">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <div className="flex items-center gap-3">
