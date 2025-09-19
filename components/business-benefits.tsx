@@ -89,7 +89,7 @@ export function BusinessBenefits() {
             Benefícios Empresariais
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Por que escolher a<span className="block text-[#660099]">Vivo Empresas?</span>
+            Por que escolher a<span className="block text-[#660099]">ACC Telecom?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Mais de 20 anos de experiência oferecendo soluções tecnológicas que transformam negócios e impulsionam o
@@ -139,7 +139,7 @@ export function BusinessBenefits() {
         <div className="mt-20 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-3xl p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">Pronto para transformar sua empresa?</h3>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Junte-se a mais de 50.000 empresas que já confiam na Vivo para suas soluções de conectividade e tecnologia.
+            Junte-se a mais de 50.000 empresas que já confiam na ACC Telecom para suas soluções de conectividade e tecnologia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors">

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Facebook, Instagram, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   const footerSections = [
@@ -38,23 +38,6 @@ export function Footer() {
             <p className="text-sm opacity-80">
               Conectando empresas ao futuro digital com as melhores soluções em tecnologia e conectividade.
             </p>
-            <div className="flex space-x-4">
-              <Button size="sm" variant="ghost" className="text-white hover:bg-white/10">
-                <Facebook className="h-4 w-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-white hover:bg-white/10">
-                <Instagram className="h-4 w-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-white hover:bg-white/10">
-                <Twitter className="h-4 w-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-white hover:bg-white/10">
-                <Linkedin className="h-4 w-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-white hover:bg-white/10">
-                <Youtube className="h-4 w-4" />
-              </Button>
-            </div>
           </div>
 
           {/* Links Sections */}
@@ -81,11 +64,11 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm opacity-80">
                 <Phone className="h-4 w-4" />
-                <span>*8486 (Vivo) | 1058 (outros)</span>
+                <span>(11) 2362-9665</span>
               </div>
               <div className="flex items-center space-x-2 text-sm opacity-80">
                 <Mail className="h-4 w-4" />
-                <span>empresas@vivo.com.br</span>
+                <span>contato@acctelecom.com.br</span>
               </div>
               <div className="flex items-center space-x-2 text-sm opacity-80">
                 <MapPin className="h-4 w-4" />
@@ -110,7 +93,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-          <div className="text-sm opacity-80">© 2024 Vivo Empresas. Todos os direitos reservados.</div>
+          <div className="text-sm opacity-80">© 2025 ACC Telecom. Todos os direitos reservados.</div>
           <div className="flex space-x-6 text-sm opacity-80">
             <a href="#" className="hover:opacity-100 transition-opacity">
               Política de Privacidade

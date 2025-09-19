@@ -93,11 +93,11 @@ export function Header() {
         {
           title: "CLOUD",
           items: [
-            { label: "AWS", href: "/not-found" },
-            { label: "IBM Cloud", href: "/not-found" },
-            { label: "Cloud Azure", href: "/not-found" },
-            { label: "Huawei Cloud", href: "/not-found" },
-            { label: "Cloud Plus", href: "/not-found" },
+            { label: "AWS", href: "/solucoes/aws" },
+            { label: "IBM Cloud", href: "/solucoes/ibm-cloud" },
+            { label: "Cloud Azure", href: "/solucoes/azure-cloud" },
+            { label: "Huawei Cloud", href: "/solucoes/huawei-cloud" },
+            { label: "Cloud Plus", href: "/solucoes/cloud-plus" },
           ],
         },
         {
@@ -336,6 +336,41 @@ export function Header() {
               <div className="space-y-2">
                 <div className="font-medium text-primary">Soluções Digitais</div>
                 <div className="pl-4 space-y-1">
+                  <Link
+                    href="/solucoes/aws"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    AWS Cloud
+                  </Link>
+                  <Link
+                    href="/solucoes/ibm-cloud"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    IBM Cloud
+                  </Link>
+                  <Link
+                    href="/solucoes/azure-cloud"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Microsoft Azure Cloud
+                  </Link>
+                  <Link
+                    href="/solucoes/huawei-cloud"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Huawei Cloud
+                  </Link>
+                  <Link
+                    href="/solucoes/cloud-plus"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Cloud Plus
+                  </Link>
                   <Link
                     href="/not-found"
                     className="block text-sm text-muted-foreground hover:text-foreground"

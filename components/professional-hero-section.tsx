@@ -93,7 +93,7 @@ export function ProfessionalHeroSection() {
               <div className="w-full overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src="/modern-business-professional-in-purple-shirt-using.png"
-                  alt="Executivo Vivo Empresas"
+                  alt="Executivo ACC Telecom"
                   className="w-full h-auto object-cover object-center"
                 />
               </div>

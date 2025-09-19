@@ -81,7 +81,7 @@ export function CallToActionSection() {
 
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
               Não perca mais tempo com conectividade lenta ou instável. Solicite uma proposta personalizada e descubra
-              como a Vivo Empresas pode acelerar o crescimento do seu negócio.
+              como a ACC Telecom pode acelerar o crescimento do seu negócio.
             </p>
 
             {/* Features */}
@@ -166,7 +166,7 @@ export function CallToActionSection() {
 
         {/* Trust Indicators */}
         <div className="bg-gray-50 rounded-2xl p-12 text-center">
-          <h4 className="text-2xl font-bold text-gray-900 mb-8">Por que mais de 50.000 empresas confiam na Vivo?</h4>
+          <h4 className="text-2xl font-bold text-gray-900 mb-8">Por que mais de 50.000 empresas confiam na ACC Telecom?</h4>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>

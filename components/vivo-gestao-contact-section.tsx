@@ -14,7 +14,7 @@ export function VivoGestaoContactSection(): React.JSX.Element {
     {
       icon: Mail,
       title: "E-mail",
-      value: "vivo.gestao@vivo.com.br",
+      value: "contato@acctelecom.com.br",
       description: "Envie suas dúvidas por e-mail"
     },
     {

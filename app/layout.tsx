@@ -10,9 +10,9 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Vivo Empresas - Soluções Completas para sua Empresa",
+  title: "ACC Telecom - Soluções Completas para sua Empresa",
   description:
-    "Descubra os melhores planos móveis, internet fibra e soluções digitais para empresas. Vivo Empresas oferece conectividade e tecnologia de ponta.",
+    "Descubra os melhores planos móveis, internet fibra e soluções digitais para empresas. ACC Telecom oferece conectividade e tecnologia de ponta.",
   generator: "v0.app",
 }
 

@@ -70,7 +70,7 @@ export function SobreEmpresaCTASection() {
                     className="w-full border-purple-500 text-purple-600 hover:bg-purple-50"
                     asChild
                   >
-                    <a href="mailto:empresas@vivo.com.br">
+                    <a href="mailto:contato@acctelecom.com.br">
                       Enviar E-mail
                     </a>
                   </Button>
