@@ -103,8 +103,8 @@ export function Header() {
         {
           title: "FERRAMENTAS DE COLABORAÇÃO",
           items: [
-            { label: "Microsoft 365", href: "/not-found" },
-            { label: "Microsoft Teams", href: "/not-found" },
+            { label: "Microsoft 365", href: "/solucoes/microsoft-365" },
+            { label: "Microsoft Teams", href: "/solucoes/microsoft-teams" },
             { label: "Gestão de Equipes", href: "/not-found" },
             { label: "Google Workspace", href: "/not-found" },
             { label: "Exchange Online", href: "/not-found" },
@@ -115,24 +115,24 @@ export function Header() {
         {
           title: "IOT",
           items: [
-            { label: "Wi-Fi Pro", href: "/not-found" },
-            { label: "Frota Inteligente", href: "/not-found" },
-            { label: "Gestão de Maquinário", href: "/not-found" },
-            { label: "Clima Inteligente", href: "/not-found" },
-            { label: "Agro Cobertura", href: "/not-found" },
-            { label: "Open Gateway", href: "/not-found" },
+            { label: "Wi-Fi Pro", href: "/solucoes/iot/wi-fi-pro" },
+            { label: "Frota Inteligente", href: "/solucoes/iot/frota-inteligente" },
+            { label: "Gestão de Maquinário", href: "/solucoes/iot/gestao-maquinario" },
+            { label: "Clima Inteligente", href: "/solucoes/iot/clima-inteligente" },
+            { label: "Agro Cobertura", href: "/solucoes/iot/agro-cobertura" },
+            { label: "Open Gateway", href: "/solucoes/iot/open-gateway" },
           ],
         },
         {
           title: "T.I.",
           items: [
-            { label: "Hosting Dedicado", href: "/not-found" },
-            { label: "Colocation", href: "/not-found" },
-            { label: "Registro de Domínio", href: "/not-found" },
-            { label: "E-mail Profissional", href: "/not-found" },
-            { label: "Hospedagem de Site", href: "/not-found" },
-            { label: "Construtor de Sites", href: "/not-found" },
-            { label: "SEO Tool", href: "/not-found" },
+            { label: "Hosting Dedicado", href: "/solucoes/ti/hosting-dedicado" },
+            { label: "Colocation", href: "/solucoes/ti/colocation" },
+            { label: "Registro de Domínio", href: "/solucoes/ti/registro-dominio" },
+            { label: "E-mail Profissional", href: "/solucoes/ti/email-profissional" },
+            { label: "Hospedagem de Site", href: "/solucoes/ti/hospedagem-site" },
+            { label: "Construtor de Sites", href: "/solucoes/ti/construcao-site" },
+            { label: "SEO Tool", href: "/solucoes/ti/seo-tool" },
           ],
         },
         {
@@ -200,12 +200,6 @@ export function Header() {
               className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-[#660099] hover:bg-gray-50 rounded-lg transition-all duration-200"
             >
               Sobre a Empresa
-            </Link>
-            <Link
-              href="/not-found"
-              className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-[#660099] hover:bg-gray-50 rounded-lg transition-all duration-200"
-            >
-              Ajuda e Benefícios
             </Link>
             <Link
               href="/melhores-ofertas"
@@ -370,6 +364,13 @@ export function Header() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Cloud Plus
+                  </Link>
+                  <Link
+                    href="/solucoes/microsoft-365"
+                    className="block text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Microsoft 365
                   </Link>
                   <Link
                     href="/not-found"

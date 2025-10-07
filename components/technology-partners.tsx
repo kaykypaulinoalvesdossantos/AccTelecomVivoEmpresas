@@ -1,55 +1,72 @@
 "use client"
 
+import React from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Building2, Award, CheckCircle } from "lucide-react"
+import { Award, CheckCircle, Database, Building } from "lucide-react"
+import { 
+  SiGoogle,
+  SiCisco,
+  SiVmware,
+  SiFortinet,
+  SiHuawei
+} from "react-icons/si"
+import { FaMicrosoft, FaAws } from "react-icons/fa"
 
 const partners = [
   {
     name: "Microsoft",
-    logo: "/placeholder.svg?height=60&width=120&text=Microsoft",
+    icon: FaMicrosoft,
+    color: "#0078D4",
     description: "Parceria oficial Microsoft 365 e Azure",
     category: "Cloud & Produtividade",
   },
   {
     name: "Google",
-    logo: "/placeholder.svg?height=60&width=120&text=Google",
+    icon: SiGoogle,
+    color: "#4285F4",
     description: "Google Workspace e Google Cloud Platform",
     category: "Cloud & Colaboração",
   },
   {
     name: "AWS",
-    logo: "/placeholder.svg?height=60&width=120&text=AWS",
+    icon: FaAws,
+    color: "#FF9900",
     description: "Amazon Web Services - Infraestrutura Cloud",
     category: "Cloud Computing",
   },
   {
     name: "Cisco",
-    logo: "/placeholder.svg?height=60&width=120&text=Cisco",
+    icon: SiCisco,
+    color: "#1BA0D7",
     description: "Soluções de rede e segurança empresarial",
     category: "Networking & Security",
   },
   {
     name: "VMware",
-    logo: "/placeholder.svg?height=60&width=120&text=VMware",
+    icon: SiVmware,
+    color: "#607078",
     description: "Virtualização e infraestrutura digital",
     category: "Virtualização",
   },
   {
     name: "Fortinet",
-    logo: "/placeholder.svg?height=60&width=120&text=Fortinet",
+    icon: SiFortinet,
+    color: "#EE3124",
     description: "Cibersegurança e proteção avançada",
     category: "Cybersecurity",
   },
   {
     name: "Huawei",
-    logo: "/placeholder.svg?height=60&width=120&text=Huawei",
+    icon: SiHuawei,
+    color: "#FF6900",
     description: "Equipamentos de rede e 5G",
     category: "Telecomunicações",
   },
   {
     name: "IBM",
-    logo: "/placeholder.svg?height=60&width=120&text=IBM",
+    icon: Database,
+    color: "#052FAD",
     description: "Soluções empresariais e IA",
     category: "Enterprise Solutions",
   },
@@ -69,7 +86,7 @@ const certifications = [
   {
     title: "ANATEL",
     description: "Licenciado pela Agência Nacional de Telecomunicações",
-    icon: Building2,
+    icon: Building,
   },
 ]
 
@@ -80,7 +97,7 @@ export function TechnologyPartners() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-[#660099]/10 text-[#660099] border-[#660099]/20">
-            <Building2 className="w-4 h-4 mr-2" />
+            <Building className="w-4 h-4 mr-2" />
             Parceiros Tecnológicos
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -99,11 +116,9 @@ export function TechnologyPartners() {
             <Card key={index} className="professional-card border-0 bg-gray-50 hover:bg-white">
               <CardContent className="p-6 text-center">
                 <div className="mb-4">
-                  <img
-                    src={partner.logo || "/placeholder.svg"}
-                    alt={`${partner.name} logo`}
-                    className="h-12 mx-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                  />
+                  <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-xl" style={{ backgroundColor: partner.color }}>
+                    {React.createElement(partner.icon, { className: "w-8 h-8 text-white" })}
+                  </div>
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{partner.name}</h3>
                 <p className="text-sm text-gray-600 mb-2">{partner.description}</p>

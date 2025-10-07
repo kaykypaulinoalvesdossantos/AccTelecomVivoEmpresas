@@ -105,7 +105,7 @@ export function AWSCTASection() {
               </a>
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent" asChild>
-              <a href="mailto:contato@acctelecom.com.br?subject=Consulta sobre AWS Cloud">
+              <a href="mailto:sac@acctelecom.com.br?subject=Consulta sobre AWS Cloud">
                 Email
               </a>
             </Button>

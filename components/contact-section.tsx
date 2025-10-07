@@ -32,7 +32,7 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "E-mail Comercial",
-      description: "contato@acctelecom.com.br",
+      description: "sac@acctelecom.com.br",
       subtitle: "Resposta em até 24h",
     },
     {

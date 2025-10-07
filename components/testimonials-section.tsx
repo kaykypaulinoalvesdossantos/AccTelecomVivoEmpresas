@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Quote, Building, Users } from "lucide-react"
@@ -13,7 +14,8 @@ const testimonials = [
     content:
       "A Vivo Empresas transformou nossa infraestrutura de TI. A velocidade da fibra óptica e o suporte técnico especializado nos permitiram escalar nossos serviços digitais com total confiança.",
     rating: 5,
-    logo: "/placeholder.svg?height=40&width=40&text=TC",
+    icon: Building,
+    color: "#3B82F6",
     employees: "500+ funcionários",
   },
   {
@@ -24,7 +26,8 @@ const testimonials = [
     content:
       "O 5G da Vivo revolucionou nossa operação logística. Conseguimos rastrear nossa frota em tempo real e otimizar rotas, resultando em 30% de economia em combustível.",
     rating: 5,
-    logo: "/placeholder.svg?height=40&width=40&text=LM",
+    icon: Building,
+    color: "#10B981",
     employees: "200+ funcionários",
   },
   {
@@ -35,41 +38,9 @@ const testimonials = [
     content:
       "A segurança e confiabilidade dos serviços da Vivo são fundamentais para nossa operação. Lidamos com dados sensíveis e nunca tivemos problemas de conectividade ou segurança.",
     rating: 5,
-    logo: "/placeholder.svg?height=40&width=40&text=MC",
+    icon: Building,
+    color: "#EF4444",
     employees: "150+ funcionários",
-  },
-  {
-    name: "Mariana Costa",
-    position: "Gerente de TI",
-    company: "EduTech Solutions",
-    industry: "Educação",
-    content:
-      "Durante a pandemia, a Vivo nos ajudou a migrar rapidamente para o ensino online. A estabilidade da conexão foi crucial para manter a qualidade das aulas virtuais.",
-    rating: 5,
-    logo: "/placeholder.svg?height=40&width=40&text=ET",
-    employees: "80+ funcionários",
-  },
-  {
-    name: "Fernando Lima",
-    position: "Diretor Financeiro",
-    company: "FinanceMax",
-    industry: "Serviços Financeiros",
-    content:
-      "A gestão centralizada de todas as nossas linhas móveis através da plataforma da Vivo nos trouxe uma economia de 25% nos custos de telecomunicações.",
-    rating: 5,
-    logo: "/placeholder.svg?height=40&width=40&text=FM",
-    employees: "300+ funcionários",
-  },
-  {
-    name: "Juliana Oliveira",
-    position: "Head de Marketing",
-    company: "Creative Agency",
-    industry: "Marketing Digital",
-    content:
-      "A velocidade de upload simétrica da fibra da Vivo é essencial para nosso trabalho com vídeos em 4K. Conseguimos entregar projetos mais rapidamente aos nossos clientes.",
-    rating: 5,
-    logo: "/placeholder.svg?height=40&width=40&text=CA",
-    employees: "50+ funcionários",
   },
 ]
 
@@ -148,11 +119,9 @@ export function TestimonialsSection() {
                 {/* Author Info */}
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <img
-                      src={testimonial.logo || "/placeholder.svg"}
-                      alt={`${testimonial.company} logo`}
-                      className="w-12 h-12 rounded-full bg-gray-100 object-cover"
-                    />
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: testimonial.color }}>
+                      {React.createElement(testimonial.icon, { className: "w-6 h-6 text-white" })}
+                    </div>
                   </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900">{testimonial.name}</div>

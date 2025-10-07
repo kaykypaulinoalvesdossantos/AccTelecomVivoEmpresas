@@ -21,7 +21,7 @@ export function SobreEmpresaAboutSection() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Quem Somos</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 A Acc Telecom é uma empresa especializada em soluções de telecomunicações empresariais, 
-                atuando como <strong>Parceiro Autorizado Vivo Empresas</strong> desde 2008. Com sede em São Paulo, 
+                atuando como <strong>Parceiro Autorizado Vivo Empresas</strong> desde 2025. Com sede em São Paulo, 
                 oferecemos serviços completos de conectividade, voz e colaboração para empresas de todos os portes.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">

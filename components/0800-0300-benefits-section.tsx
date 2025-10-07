@@ -145,7 +145,7 @@ export function OitoZeroZeroBenefitsSection(): React.JSX.Element {
                 </p>
                 <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-4 text-white">
                   <div className="text-sm font-medium mb-1">Ligue agora</div>
-                  <div className="text-xl font-bold">0800 123 4567</div>
+                  <div className="text-xl font-bold">(11) 2362-9665</div>
                 </div>
               </div>
             </div>

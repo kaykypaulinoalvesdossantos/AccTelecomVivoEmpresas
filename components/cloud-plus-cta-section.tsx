@@ -94,7 +94,7 @@ export function CloudPlusCTASection() {
               <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('tel:+551123629665')}>
                 Telefone
               </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('mailto:contato@acctelecom.com.br?subject=Consulta sobre Cloud Plus')}>
+              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('mailto:sac@acctelecom.com.br?subject=Consulta sobre Cloud Plus')}>
                 Email
               </button>
             </div>

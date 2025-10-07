@@ -26,7 +26,7 @@ const contactOptions = [
   {
     icon: Phone,
     title: "Ligue Agora",
-    description: "0800 123 4567",
+    description: "(11) 2362-9665",
     subtitle: "Atendimento gratuito",
     action: "Ligar",
     primary: true,

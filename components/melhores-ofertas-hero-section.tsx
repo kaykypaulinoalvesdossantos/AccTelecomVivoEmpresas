@@ -73,7 +73,7 @@ export function MelhoresOfertasHeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
+                className="border-white text-white hover:bg-white/10 bg-transparent"
                 asChild
               >
                 <a href="#planos-moveis">Ver Planos</a>

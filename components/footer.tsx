@@ -68,7 +68,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm opacity-80">
                 <Mail className="h-4 w-4" />
-                <span>contato@acctelecom.com.br</span>
+                <span>sac@acctelecom.com.br</span>
               </div>
               <div className="flex items-center space-x-2 text-sm opacity-80">
                 <MapPin className="h-4 w-4" />
