@@ -82,7 +82,6 @@ export function FibraPosHeroSection() {
           </div>
         </div>
       </div>
-    </div>
-    </section >
+    </section>
   )
 }
