@@ -48,7 +48,7 @@ export function RoamingUSASection(): React.JSX.Element {
                         <span className="font-medium text-gray-800">iOS</span>
                       </div>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Vá em Configurações > Celular > Opções de Dados Celular >
+                        Vá em Configurações &gt; Celular &gt; Opções de Dados Celular &gt;
                         Ativar LTE e selecione "Voz e Dados".
                       </p>
                     </div>
@@ -59,7 +59,7 @@ export function RoamingUSASection(): React.JSX.Element {
                         <span className="font-medium text-gray-800">Android</span>
                       </div>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Acesse Configurações > Conexões > Redes móveis >
+                        Acesse Configurações &gt; Conexões &gt; Redes móveis &gt;
                         Modo de rede e selecione "4G/3G/2G (automático)".
                       </p>
                     </div>

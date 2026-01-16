@@ -30,7 +30,7 @@ export function RoamingVoiceWiFiSection(): React.JSX.Element {
                       Como usar o Voz Wi-Fi
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      O Voz Wi-Fi permite fazer ligações usando uma conexão Wi-Fi quando a rede móvel 
+                      O Voz Wi-Fi permite fazer ligações usando uma conexão Wi-Fi quando a rede móvel
                       não estiver disponível ou for instável.
                     </p>
                   </div>
@@ -43,7 +43,7 @@ export function RoamingVoiceWiFiSection(): React.JSX.Element {
                       <h4 className="font-semibold text-gray-800">iOS</h4>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      Vá em Configurações > Telefone > Ligar via Wi-Fi e ative a opção. 
+                      Vá em Configurações &gt; Telefone &gt; Ligar via Wi-Fi e ative a opção.
                       Para desativar, siga o mesmo caminho e desative.
                     </p>
                   </div>
@@ -54,7 +54,7 @@ export function RoamingVoiceWiFiSection(): React.JSX.Element {
                       <h4 className="font-semibold text-gray-800">Android</h4>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      Acesse Configurações > Conexões > Wi-Fi > Wi-Fi Calling e ative. 
+                      Acesse Configurações &gt; Conexões &gt; Wi-Fi &gt; Wi-Fi Calling e ative.
                       Para desativar, desative a opção Wi-Fi Calling.
                     </p>
                   </div>
@@ -66,7 +66,7 @@ export function RoamingVoiceWiFiSection(): React.JSX.Element {
                     <h4 className="font-semibold text-gray-800">Guia de Bolsa de Viagem</h4>
                   </div>
                   <p className="text-gray-600 leading-relaxed">
-                    Para mais informações sobre como configurar e usar o Voz Wi-Fi durante suas viagens, 
+                    Para mais informações sobre como configurar e usar o Voz Wi-Fi durante suas viagens,
                     consulte nosso Guia de Bolsa de Viagem completo com dicas e instruções detalhadas.
                   </p>
                 </div>
