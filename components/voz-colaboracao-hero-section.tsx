@@ -44,22 +44,33 @@ export function VozColaboracaoHeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href={contact.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors"
+              <Button
+                asChild
+                className="bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-8 text-base md:text-lg font-semibold rounded-lg transition-colors h-auto"
               >
-                {hero.primaryButton}
-              </a>
-              <a
-                href={contact.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent"
+                <a
+                  href={contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  {hero.primaryButton}
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-8 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent h-auto"
               >
-                {hero.secondaryButton}
-              </a>
+                <a
+                  href={contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  {hero.secondaryButton}
+                </a>
+              </Button>
             </div>
           </div>
 

@@ -28,19 +28,21 @@ export function FibraPosCTASection() {
           <p className="text-base sm:text-lg lg:text-xl text-purple-100 mb-8 lg:mb-12 max-w-3xl mx-auto">
             {finalCta.subtitle}
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={contact.whatsapp}
+              href={`https://wa.me/5511989150001?text=Olá! Quero finalizar meu pedido de Fibra + Pós`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors"
+              className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors cursor-pointer"
             >
               {finalCta.primaryButton}
             </a>
             <a
-              href={`tel:${contact.phone}`}
-              className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent"
+              href={`https://wa.me/5511989150001?text=Olá! Preciso de ajuda de um especialista sobre Fibra + Pós`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent cursor-pointer"
             >
               {finalCta.secondaryButton}
             </a>

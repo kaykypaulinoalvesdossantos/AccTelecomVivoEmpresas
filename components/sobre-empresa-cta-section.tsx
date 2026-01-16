@@ -36,12 +36,12 @@ export function SobreEmpresaCTASection() {
                     className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white"
                     asChild
                   >
-                    <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com o atendimento Acc Telecom" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                       Conversar
                     </a>
                   </Button>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
                     <Mail className="w-8 h-8 text-white" />
@@ -53,7 +53,7 @@ export function SobreEmpresaCTASection() {
                     className="w-full border-purple-500 text-purple-600 hover:bg-purple-50"
                     asChild
                   >
-                    <a href="mailto:sac@acctelecom.com.br">
+                    <a href="mailto:sac@acctelecom.com.br" className="cursor-pointer">
                       Enviar E-mail
                     </a>
                   </Button>

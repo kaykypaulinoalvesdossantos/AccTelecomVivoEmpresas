@@ -21,10 +21,10 @@ export function MovelAparelhoCTASection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-12">
           <a
-            href={contact.whatsapp}
+            href={`https://wa.me/5511989150001?text=Olá! Preciso de atendimento sobre Móvel + Aparelho`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20"
+            className="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 cursor-pointer"
           >
             <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-white/20 rounded-2xl mb-4 sm:mb-6 mx-auto group-hover:bg-white/30 transition-colors">
               <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
@@ -37,10 +37,10 @@ export function MovelAparelhoCTASection() {
           </a>
 
           <a
-            href={contact.whatsapp}
+            href={`https://wa.me/5511989150001?text=Olá! Quero comprar um combo de Aparelho`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20"
+            className="group bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 text-center hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 cursor-pointer"
           >
             <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-white/20 rounded-2xl mb-4 sm:mb-6 mx-auto group-hover:bg-white/30 transition-colors">
               <ShoppingCart className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
@@ -59,15 +59,15 @@ export function MovelAparelhoCTASection() {
             <h3 className="text-base sm:text-lg lg:text-xl font-semibold">Informações Importantes</h3>
             <div className="text-xs sm:text-sm lg:text-base text-purple-100 space-y-2 max-w-4xl mx-auto">
               <p>
-                <strong>Validade das ofertas:</strong> Até 31/12/2025. Período de fidelidade de 24 meses. 
+                <strong>Validade das ofertas:</strong> Até 31/12/2025. Período de fidelidade de 24 meses.
                 Inclusão obrigatória de Serviços Adicionais Digitais (SVAs) nos planos Smart Business.
               </p>
               <p>
-                <strong>Aplicação:</strong> Para novas contratações e portabilidade de linha. 
+                <strong>Aplicação:</strong> Para novas contratações e portabilidade de linha.
                 Condições especiais para empresas com múltiplas linhas.
               </p>
               <p>
-                <strong>Garantia:</strong> Todos os aparelhos possuem garantia oficial do fabricante. 
+                <strong>Garantia:</strong> Todos os aparelhos possuem garantia oficial do fabricante.
                 Oferecemos também seguro para celular com cobertura completa.
               </p>
             </div>
@@ -81,7 +81,7 @@ export function MovelAparelhoCTASection() {
             size="lg"
             className="bg-white text-purple-900 hover:bg-purple-50 font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
           >
-            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/5511989150001?text=Olá! Quero comprar pelo WhatsApp`} target="_blank" rel="noopener noreferrer">
               Compre pelo WhatsApp
             </a>
           </Button>

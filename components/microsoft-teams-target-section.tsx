@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Network, Clock, Settings, Users, ArrowRight } from "lucide-react"
@@ -68,13 +69,17 @@ export function MicrosoftTeamsTargetSection() {
               Nossa equipe pode ajudar você a implementar o Microsoft Teams de forma eficiente
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Minha empresa se encaixa no perfil ideal para Microsoft Teams', '_blank')}>
-                Falar com Especialista
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre Microsoft Teams', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Minha empresa se encaixa no perfil ideal para Microsoft Teams" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre Microsoft Teams" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

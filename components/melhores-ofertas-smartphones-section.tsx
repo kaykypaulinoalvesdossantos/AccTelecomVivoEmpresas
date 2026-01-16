@@ -88,7 +88,7 @@ export function MelhoresOfertasSmartphonesSection(): React.JSX.Element {
               className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre o combo com ${smartphone.name}`} target="_blank" rel="noopener noreferrer">
                 Ver Combo Completo
               </a>
             </Button>
@@ -114,7 +114,7 @@ export function MelhoresOfertasSmartphonesSection(): React.JSX.Element {
         <div className="relative">
           {/* Carrossel Container */}
           <div className="overflow-hidden px-8 py-8">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
@@ -127,37 +127,34 @@ export function MelhoresOfertasSmartphonesSection(): React.JSX.Element {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className={`p-3 rounded-full transition-all duration-200 ${
-                currentIndex === 0 
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-              }`}
+              className={`p-3 rounded-full transition-all duration-200 ${currentIndex === 0
+                ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                }`}
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            
+
             <div className="flex space-x-2">
               {Array.from({ length: Math.max(1, smartphones.length - 2) }, (_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    index === currentIndex 
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110' 
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentIndex
+                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110'
+                    : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
                 />
               ))}
             </div>
-            
+
             <button
               onClick={nextSlide}
               disabled={currentIndex >= Math.max(0, smartphones.length - 3)}
-              className={`p-3 rounded-full transition-all duration-200 ${
-                currentIndex >= Math.max(0, smartphones.length - 3)
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-              }`}
+              className={`p-3 rounded-full transition-all duration-200 ${currentIndex >= Math.max(0, smartphones.length - 3)
+                ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                }`}
             >
               <ChevronRight className="w-6 h-6" />
             </button>

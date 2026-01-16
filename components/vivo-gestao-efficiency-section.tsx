@@ -21,11 +21,11 @@ export function VivoGestaoEfficiencySection(): React.JSX.Element {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               EFICIÊNCIA DIGITAL
             </h2>
-            
+
             <h3 className="text-2xl font-bold mb-4">
               Mais controle, mais produtividade
             </h3>
-            
+
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
               Gestão ágil e segura com dados em tempo real
             </p>
@@ -51,12 +51,12 @@ export function VivoGestaoEfficiencySection(): React.JSX.Element {
               </div>
             </div>
 
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
                 <BarChart3 className="w-5 h-5 mr-2" />
                 Acessar Vivo Gestão
               </a>
@@ -75,14 +75,14 @@ export function VivoGestaoEfficiencySection(): React.JSX.Element {
                   <div className="absolute top-1/2 right-4 w-1 h-1 bg-white rounded-full"></div>
                   <div className="absolute bottom-8 right-1/4 w-2 h-2 bg-white rounded-full"></div>
                 </div>
-                
+
                 <div className="text-center text-white relative z-10">
                   <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <BarChart3 className="w-12 h-12" />
                   </div>
                   <p className="text-lg font-semibold mb-2">Executiva com Tablet</p>
                   <p className="text-sm opacity-80">Gestão digital</p>
-                  
+
                   {/* Efficiency Icons */}
                   <div className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                     <Zap className="w-4 h-4" />
@@ -93,7 +93,7 @@ export function VivoGestaoEfficiencySection(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            
+
             {/* Background Elements */}
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-white/10 to-white/5 rounded-full blur-2xl animate-pulse"></div>
             <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-gradient-to-r from-white/5 to-white/10 rounded-full blur-2xl animate-pulse delay-1000"></div>

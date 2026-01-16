@@ -10,7 +10,7 @@ export default function ManutencaoPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Header />
-      
+
       <div className="container mx-auto px-4 py-6">
         <Breadcrumb
           items={[
@@ -26,17 +26,17 @@ export default function ManutencaoPage() {
             <Badge className="mb-6 bg-orange-100 text-orange-800 hover:bg-orange-200 text-sm sm:text-base">
               Em Manutenção
             </Badge>
-            
+
             <div className="w-24 h-24 mx-auto mb-8 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center">
               <Wrench className="w-12 h-12 text-white" />
             </div>
-            
+
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 lg:mb-8">
               Soluções Digitais
             </h1>
-            
+
             <p className="text-lg sm:text-xl text-gray-600 mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
-              Esta seção está temporariamente em manutenção para melhorias e atualizações. 
+              Esta seção está temporariamente em manutenção para melhorias e atualizações.
               Em breve, você terá acesso a todas as nossas soluções digitais.
             </p>
 
@@ -54,7 +54,7 @@ export default function ManutencaoPage() {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
@@ -68,7 +68,7 @@ export default function ManutencaoPage() {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
@@ -89,7 +89,7 @@ export default function ManutencaoPage() {
                 className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de mais informações sobre Soluções Digitais" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Fale Conosco
                 </a>
               </Button>
@@ -98,7 +98,7 @@ export default function ManutencaoPage() {
                 className="border-purple-500 text-purple-600 hover:bg-purple-50 px-8 py-4 text-lg font-semibold"
                 asChild
               >
-                <a href="/">Voltar ao Início</a>
+                <a href="/" className="cursor-pointer">Voltar ao Início</a>
               </Button>
             </div>
           </div>

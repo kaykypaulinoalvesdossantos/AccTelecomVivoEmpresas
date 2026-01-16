@@ -68,7 +68,7 @@ export function OitoZeroZeroPlatformSection(): React.JSX.Element {
                     asChild
                     className="w-full cursor-pointer bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold border-0"
                   >
-                    <a href={oitoZeroZeroConfig.contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                    <a href={oitoZeroZeroConfig.contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                       {item.buttonText}
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </a>
@@ -89,7 +89,7 @@ export function OitoZeroZeroPlatformSection(): React.JSX.Element {
               <p className="text-gray-600 mb-6 text-sm sm:text-base lg:text-lg">
                 Nossa plataforma oferece uma experiência de usuário moderna e intuitiva, permitindo que você gerencie todos os aspectos do seu serviço 0800 de forma eficiente.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
@@ -117,7 +117,7 @@ export function OitoZeroZeroPlatformSection(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 lg:p-8 text-white">
               <div className="text-center mb-6">
                 <BarChart className="w-16 h-16 mx-auto mb-4" />
@@ -128,7 +128,7 @@ export function OitoZeroZeroPlatformSection(): React.JSX.Element {
                   Visualize todas as informações importantes
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/20 rounded-xl p-4 text-center">
                   <div className="text-2xl font-bold">1,247</div>

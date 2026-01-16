@@ -12,7 +12,7 @@ export const movelAparelhoConfig = {
       { number: "24h", label: "Suporte", icon: "Headphones" }
     ]
   },
-  
+
   combos: [
     {
       id: "moto-g05",
@@ -239,8 +239,8 @@ export const movelAparelhoConfig = {
   ],
 
   contact: {
-    whatsapp: "https://wa.me/551123629665",
-    phone: "1123629665",
+    whatsapp: "https://wa.me/5511989150001",
+    phone: "11989150001",
     email: "empresas@vivo.com.br"
   }
 }

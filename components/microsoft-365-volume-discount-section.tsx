@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { AlertTriangle, Users, ArrowRight } from "lucide-react"
@@ -54,7 +55,7 @@ export function Microsoft365VolumeDiscountSection() {
                     Política de desconto por volume
                   </p>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center bg-yellow-400">
@@ -130,12 +131,16 @@ export function Microsoft365VolumeDiscountSection() {
               Nossa equipe pode explicar todos os detalhes da política de desconto por volume
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre desconto por volume Microsoft 365', '_blank')}>
-                Falar com Especialista
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre desconto volume Microsoft 365', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre desconto por volume Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre desconto volume Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

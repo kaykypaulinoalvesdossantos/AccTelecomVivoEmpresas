@@ -45,41 +45,44 @@ export function FibraPosHeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href={contact.whatsapp}
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre ofertas Fibra + Pós`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors"
+                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors cursor-pointer"
               >
                 {hero.primaryButton}
               </a>
               <a
-                href={`tel:${contact.phone}`}
-                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent"
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de falar com um atendente sobre Fibra + Pós`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent cursor-pointer"
               >
                 {hero.secondaryButton}
               </a>
             </div>
           </div>
+        </div>
 
-          {/* Stats Section */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20">
-              <div className="grid grid-cols-2 gap-6 md:gap-8">
-                {hero.stats.map((stat, index) => {
-                  const Icon = IconComponent(stat.icon)
-                  return (
-                    <div key={index} className="text-center">
-                      <div className="text-2xl md:text-3xl font-bold mb-1">{stat.number}</div>
-                      <div className="text-xs md:text-sm text-white/80">{stat.label}</div>
-                    </div>
-                  )
-                })}
-              </div>
+        {/* Stats Section */}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-3xl blur-3xl"></div>
+          <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20">
+            <div className="grid grid-cols-2 gap-6 md:gap-8">
+              {hero.stats.map((stat, index) => {
+                const Icon = IconComponent(stat.icon)
+                return (
+                  <div key={index} className="text-center">
+                    <div className="text-2xl md:text-3xl font-bold mb-1">{stat.number}</div>
+                    <div className="text-xs md:text-sm text-white/80">{stat.label}</div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    </section >
   )
 }

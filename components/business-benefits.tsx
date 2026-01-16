@@ -142,10 +142,10 @@ export function BusinessBenefits() {
             Junte-se a mais de 50.000 empresas que já confiam na ACC Telecom para suas soluções de conectividade e tecnologia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors">
+            <button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors cursor-pointer" onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de solicitar uma proposta gratuita da Vivo Empresas', '_blank')}>
               Solicitar Proposta Gratuita
             </button>
-            <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors">
+            <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors cursor-pointer" onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista da Vivo Empresas', '_blank')}>
               Falar com Especialista
             </button>
           </div>

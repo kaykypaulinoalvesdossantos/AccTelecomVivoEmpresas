@@ -33,8 +33,8 @@ export function MicrosoftTeamsHeroSection() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
-                Microsoft Teams é a plataforma ideal de comunicação e colaboração online para trabalho 
-                remoto e híbrido, suportando até 300 pessoas em videoconferências e permitindo 
+                Microsoft Teams é a plataforma ideal de comunicação e colaboração online para trabalho
+                remoto e híbrido, suportando até 300 pessoas em videoconferências e permitindo
                 compartilhamento de arquivos em diversos formatos.
               </p>
             </div>
@@ -74,21 +74,25 @@ export function MicrosoftTeamsHeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-[#660099] hover:bg-white/90 font-semibold"
-                onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de contratar Microsoft Teams', '_blank')}
+                asChild
               >
-                Contratar
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar Microsoft Teams" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Contratar
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 bg-transparent"
-                onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Microsoft Teams', '_blank')}
+                asChild
               >
-                Mais Detalhes
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Microsoft Teams" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Mais Detalhes
+                </a>
               </Button>
             </div>
           </div>

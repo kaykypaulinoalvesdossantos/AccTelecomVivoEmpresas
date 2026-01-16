@@ -31,8 +31,8 @@ export function VivoVozNegocioCTASection() {
             </div>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">WhatsApp</h3>
             <p className="text-purple-100 mb-4 sm:mb-6 text-sm sm:text-base">Atendimento rápido e personalizado via WhatsApp</p>
-            <Button className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base">
-              Falar no WhatsApp
+            <Button asChild className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base">
+              <span>Falar no WhatsApp</span>
             </Button>
           </a>
 
@@ -47,8 +47,8 @@ export function VivoVozNegocioCTASection() {
             </div>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">Comprar no Chat</h3>
             <p className="text-purple-100 mb-4 sm:mb-6 text-sm sm:text-base">Contrate diretamente pelo chat online</p>
-            <Button className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base">
-              Comprar Agora
+            <Button asChild className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base">
+              <span>Comprar Agora</span>
             </Button>
           </a>
         </div>
@@ -61,7 +61,7 @@ export function VivoVozNegocioCTASection() {
               Implementação rápida e sem complicações em apenas 3 passos
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="text-center">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -70,7 +70,7 @@ export function VivoVozNegocioCTASection() {
               <h4 className="text-sm sm:text-base font-semibold mb-2">Configuração</h4>
               <p className="text-xs sm:text-sm text-purple-100">Configuração inicial e personalização do sistema</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-white font-bold">2</span>
@@ -78,7 +78,7 @@ export function VivoVozNegocioCTASection() {
               <h4 className="text-sm sm:text-base font-semibold mb-2">Treinamento</h4>
               <p className="text-xs sm:text-sm text-purple-100">Treinamento completo da sua equipe</p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-white font-bold">3</span>
@@ -114,7 +114,7 @@ export function VivoVozNegocioCTASection() {
             size="lg"
             className="bg-white text-purple-900 hover:bg-purple-50 font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
           >
-            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               Compre pelo WhatsApp
             </a>
           </Button>

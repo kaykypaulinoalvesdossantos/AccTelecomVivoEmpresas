@@ -78,14 +78,14 @@ export function DetailedDevicesSection() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section id="dispositivos" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Dispositivos para Todos os Tipos de Empresa
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Desde smartphones premium até tablets profissionais, temos a solução ideal 
+            Desde smartphones premium até tablets profissionais, temos a solução ideal
             para impulsionar a produtividade da sua equipe.
           </p>
         </div>
@@ -128,8 +128,10 @@ export function DetailedDevicesSection() {
                           </li>
                         ))}
                       </ul>
-                      <Button className="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                        Solicitar Orçamento
+                      <Button className="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700" asChild>
+                        <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de um orçamento para o smartphone ${device.name}`} target="_blank" rel="noopener noreferrer">
+                          Solicitar Orçamento
+                        </a>
                       </Button>
                     </div>
                   </CardContent>
@@ -169,8 +171,10 @@ export function DetailedDevicesSection() {
                           </li>
                         ))}
                       </ul>
-                      <Button className="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                        Solicitar Orçamento
+                      <Button className="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700" asChild>
+                        <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de um orçamento para o tablet ${device.name}`} target="_blank" rel="noopener noreferrer">
+                          Solicitar Orçamento
+                        </a>
                       </Button>
                     </div>
                   </CardContent>
@@ -210,8 +214,10 @@ export function DetailedDevicesSection() {
                           </li>
                         ))}
                       </ul>
-                      <Button className="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                        Solicitar Orçamento
+                      <Button className="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700" asChild>
+                        <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de um orçamento para o acessório ${device.name}`} target="_blank" rel="noopener noreferrer">
+                          Solicitar Orçamento
+                        </a>
                       </Button>
                     </div>
                   </CardContent>

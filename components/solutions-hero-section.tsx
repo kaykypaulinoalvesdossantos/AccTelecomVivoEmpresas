@@ -25,16 +25,21 @@ export function SolutionsHeroSection() {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-50 font-semibold px-8">
-                Conhecer Soluções
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-50 font-semibold px-8" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer as soluções digitais da Vivo Empresas" target="_blank" rel="noopener noreferrer">
+                  Conhecer Soluções
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-purple-900 font-semibold px-8 bg-transparent"
+                asChild
               >
-                Falar com Especialista
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista em soluções digitais" target="_blank" rel="noopener noreferrer">
+                  Falar com Especialista
+                </a>
               </Button>
             </div>
 

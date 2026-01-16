@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Globe, Cpu, Database, Link, ArrowRight } from "lucide-react"
@@ -89,10 +90,12 @@ export function AzureSolutionsSection() {
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {solution.description}
                 </p>
-                <button className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" style={{ backgroundColor: solution.color }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre ' + solution.title, '_blank')}>
-                  <span>Saiba Mais</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                <Button className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" style={{ backgroundColor: solution.color }} asChild>
+                  <a href={'https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre ' + solution.title} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    <span>Saiba Mais</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}
@@ -104,7 +107,7 @@ export function AzureSolutionsSection() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {additionalSolutions.map((solution, index) => (
-              <Card key={index} className="border-2 border-gray-100 hover:border-purple-200 transition-all duration-300 group cursor-pointer" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre ' + solution.title, '_blank')}>
+              <Card key={index} className="border-2 border-gray-100 hover:border-purple-200 transition-all duration-300 group cursor-pointer" onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre ' + solution.title, '_blank')}>
                 <CardContent className="p-4 text-center">
                   <h4 className="font-semibold text-gray-900 mb-2 text-sm">
                     {solution.title}
@@ -130,9 +133,11 @@ export function AzureSolutionsSection() {
               <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }}>
                 <Database className="w-6 h-6 text-white" />
               </div>
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de conhecer todas as soluções Azure da Vivo Empresas', '_blank')}>
-                Explorar Todas as Soluções
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer todas as soluções Azure da Vivo Empresas" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Explorar Todas as Soluções
+                </a>
+              </Button>
             </div>
           </div>
         </div>

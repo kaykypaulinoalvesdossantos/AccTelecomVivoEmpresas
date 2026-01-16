@@ -81,11 +81,11 @@ export function CloudPlusBenefitsSection() {
               Nossa equipe de especialistas está pronta para ajudar sua empresa a aproveitar todo o potencial do Cloud Plus
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Cloud Plus', '_blank')}>
+              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Cloud Plus', '_blank')}>
                 Falar com Especialista
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre Cloud Plus', '_blank')}>
+              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre Cloud Plus', '_blank')}>
                 Agendar Consultoria
               </button>
             </div>

@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -104,6 +105,8 @@ const mobilePlans = [
 ]
 
 export function PlansShowcase() {
+  const [activeTab, setActiveTab] = useState<"fiber" | "mobile">("fiber")
+
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -122,7 +125,7 @@ export function PlansShowcase() {
           </p>
         </div>
 
-        <Tabs defaultValue="fiber" className="w-full">
+        <Tabs defaultValue="fiber" className="w-full" onValueChange={(value) => setActiveTab(value as "fiber" | "mobile")}>
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
             <TabsTrigger value="fiber" className="flex items-center gap-2">
               <Wifi className="w-4 h-4" />
@@ -188,9 +191,12 @@ export function PlansShowcase() {
 
                     <Button
                       className={`w-full ${plan.popular ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"}`}
+                      asChild
                     >
-                      Contratar Agora
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plan.name} de Internet Fibra`} target="_blank" rel="noopener noreferrer">
+                        Contratar Agora
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -252,9 +258,12 @@ export function PlansShowcase() {
 
                     <Button
                       className={`w-full ${plan.popular ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"}`}
+                      asChild
                     >
-                      Contratar Agora
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plan.name} de telefonia móvel`} target="_blank" rel="noopener noreferrer">
+                        Contratar Agora
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -263,7 +272,7 @@ export function PlansShowcase() {
           </TabsContent>
         </Tabs>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA - Dynamic based on active tab */}
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-6">Precisa de mais informações ou um plano personalizado?</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -276,9 +285,9 @@ export function PlansShowcase() {
                 Falar com Consultor
               </Button>
             </Link>
-            <Link href="/planos">
+            <Link href={activeTab === "fiber" ? "/internet/fibra" : "/planos/moveis"}>
               <Button size="lg" className="bg-[#660099] hover:bg-[#660099]/90">
-                Ver Todos os Planos
+                {activeTab === "fiber" ? "Ver Todos os Planos de Fibra" : "Ver Todos os Planos Móveis"}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>

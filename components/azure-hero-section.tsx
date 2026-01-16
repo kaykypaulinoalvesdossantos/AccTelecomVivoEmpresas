@@ -11,7 +11,7 @@ export function AzureHeroSection() {
       <div className="absolute inset-0 bg-black/30" />
       <div className="absolute top-20 left-20 w-72 h-72 rounded-full blur-3xl animate-pulse" style={{ background: 'radial-gradient(circle, rgba(255, 153, 0, 0.2) 0%, rgba(255, 184, 76, 0.1) 100%)' }} />
       <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl animate-pulse delay-1000" style={{ background: 'radial-gradient(circle, rgba(235, 60, 125, 0.2) 0%, rgba(102, 0, 153, 0.1) 100%)' }} />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -27,7 +27,7 @@ export function AzureHeroSection() {
                 </span>
               </h1>
               <p className="text-xl leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                Transforme sua empresa com a plataforma de nuvem mais completa e segura do mercado. 
+                Transforme sua empresa com a plataforma de nuvem mais completa e segura do mercado.
                 Microsoft Azure oferece soluções híbridas, inteligência artificial e integração total com Microsoft 365.
               </p>
             </div>
@@ -64,13 +64,13 @@ export function AzureHeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-white font-semibold px-8" style={{ backgroundColor: '#FF9900' }} asChild>
-                <a href="https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Microsoft Azure Cloud na Vivo Empresas" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Microsoft Azure Cloud na Vivo Empresas" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Solicitar Contato
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent" asChild>
-                <a href="https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria gratuita sobre Azure Cloud" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria gratuita sobre Azure Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Consultoria Gratuita
                 </a>
               </Button>

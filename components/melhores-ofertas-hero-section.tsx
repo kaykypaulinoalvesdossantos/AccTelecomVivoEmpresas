@@ -66,7 +66,7 @@ export function MelhoresOfertasHeroSection() {
                 className="bg-white text-purple-600 hover:bg-gray-100 font-semibold"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre as melhores ofertas para minha empresa" target="_blank" rel="noopener noreferrer">
                   Fale Conosco
                 </a>
               </Button>

@@ -68,8 +68,11 @@ export function FiberHeroSection() {
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-transparent"
+                asChild
               >
-                {hero.secondaryButton}
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre Vivo Fibra" target="_blank" rel="noopener noreferrer">
+                  {hero.secondaryButton}
+                </a>
               </Button>
             </div>
           </div>
@@ -98,7 +101,7 @@ export function FiberHeroSection() {
                 </div>
               </div>
             </div>
-            
+
             {/* Background decorative elements */}
             <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-pink-400/30 to-purple-500/30 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-tl from-purple-400/30 to-pink-500/30 rounded-full blur-2xl"></div>

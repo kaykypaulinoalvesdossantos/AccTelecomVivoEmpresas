@@ -40,7 +40,7 @@ export function MovelAparelhoPlansSection() {
         <div className="relative">
           {/* Carrossel Container */}
           <div className="overflow-hidden px-8 py-8">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 25}%)` }}
             >
@@ -127,17 +127,17 @@ export function MovelAparelhoPlansSection() {
                             className={`w-full ${combo.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" : "bg-purple-600 hover:bg-purple-700"} text-white`}
                             asChild
                           >
-                            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                            <a href={`https://wa.me/5511989150001?text=Olá! Quero comprar o combo ${combo.device} com plano ${combo.plan}`} target="_blank" rel="noopener noreferrer">
                               Comprar
                               <ArrowRight className="ml-2 h-4 w-4" />
                             </a>
                           </Button>
-                          <Button 
-                            variant="ghost" 
+                          <Button
+                            variant="ghost"
                             className="w-full text-sm"
                             asChild
                           >
-                            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                            <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o ${combo.device}`} target="_blank" rel="noopener noreferrer">
                               Mais Detalhes
                             </a>
                           </Button>
@@ -161,16 +161,15 @@ export function MovelAparelhoPlansSection() {
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
-            
+
             {/* Dots Indicator */}
             <div className="flex space-x-2">
               {Array.from({ length: Math.max(1, combos.length - 3) }).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentIndex ? "bg-purple-600" : "bg-gray-300"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-purple-600" : "bg-gray-300"
+                    }`}
                 />
               ))}
             </div>

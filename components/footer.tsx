@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Mail, Phone, MapPin } from "lucide-react"
@@ -47,7 +49,7 @@ export function Footer() {
               <ul className="space-y-2">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href="#" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+                    <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre produtos e serviços da Vivo Empresas" target="_blank" rel="noopener noreferrer" className="text-sm opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
                       {link}
                     </a>
                   </li>
@@ -84,7 +86,7 @@ export function Footer() {
                 placeholder="Seu e-mail empresarial"
                 className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
               />
-              <Button variant="secondary" className="bg-secondary hover:bg-secondary/90">
+              <Button variant="secondary" className="bg-secondary hover:bg-secondary/90" onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de receber novidades e ofertas da Vivo Empresas', '_blank')}>
                 Inscrever
               </Button>
             </div>
@@ -95,13 +97,13 @@ export function Footer() {
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <div className="text-sm opacity-80">© 2025 ACC Telecom. Todos os direitos reservados.</div>
           <div className="flex space-x-6 text-sm opacity-80">
-            <a href="#" className="hover:opacity-100 transition-opacity">
+            <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber sobre a Política de Privacidade" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity cursor-pointer">
               Política de Privacidade
             </a>
-            <a href="#" className="hover:opacity-100 transition-opacity">
+            <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber sobre os Termos de Uso" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity cursor-pointer">
               Termos de Uso
             </a>
-            <a href="#" className="hover:opacity-100 transition-opacity">
+            <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber sobre a Política de Cookies" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity cursor-pointer">
               Cookies
             </a>
           </div>

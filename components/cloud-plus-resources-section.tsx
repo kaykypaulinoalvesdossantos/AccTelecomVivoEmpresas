@@ -167,7 +167,7 @@ export function CloudPlusResourcesSection() {
               <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }}>
                 <Server className="w-6 h-6 text-white" />
               </div>
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de conhecer todos os recursos do Cloud Plus', '_blank')}>
+              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de conhecer todos os recursos do Cloud Plus', '_blank')}>
                 Explorar Todos os Recursos
               </button>
             </div>

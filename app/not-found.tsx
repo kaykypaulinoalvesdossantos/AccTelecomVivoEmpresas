@@ -9,28 +9,28 @@ export default function NotFoundPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Header />
-      
+
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-purple-100 text-purple-800 hover:bg-purple-200 text-sm sm:text-base">
               Página em Desenvolvimento
             </Badge>
-            
+
             <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
               <Search className="w-16 h-16 text-white" />
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 lg:mb-8">
               404
             </h1>
-            
+
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700 mb-4">
               Página em Desenvolvimento
             </h2>
-            
+
             <p className="text-lg sm:text-xl text-gray-600 mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
-              Esta página está temporariamente em desenvolvimento. Nossa equipe está trabalhando para 
+              Esta página está temporariamente em desenvolvimento. Nossa equipe está trabalhando para
               disponibilizar este conteúdo em breve. Enquanto isso, explore nossas outras soluções disponíveis.
             </p>
 
@@ -54,7 +54,7 @@ export default function NotFoundPage() {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
@@ -75,7 +75,7 @@ export default function NotFoundPage() {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="text-center pb-4">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
@@ -92,7 +92,7 @@ export default function NotFoundPage() {
                     className="w-full border-purple-500 text-purple-600 hover:bg-purple-50"
                     asChild
                   >
-                    <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
                       WhatsApp
                     </a>
                   </Button>

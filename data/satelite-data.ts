@@ -4,8 +4,8 @@
 export const sateliteConfig = {
   // Configurações gerais
   contact: {
-    phone: "11 2362-9665",
-    whatsapp: "https://wa.me/551123629665",
+    phone: "11 98915-0001",
+    whatsapp: "https://wa.me/5511989150001",
     supportHours: "24 horas por dia, 7 dias por semana"
   },
 
@@ -268,7 +268,7 @@ export const sateliteConfig = {
       "Disponibilidade: Serviço disponível mediante análise técnica e cobertura.",
       "Velocidade mínima instantânea: 1 Mbps.",
       "Estados disponíveis: São Paulo, Rio de Janeiro, Minas Gerais, Espírito Santo, Paraná, Santa Catarina, Rio Grande do Sul, Bahia, Sergipe, Alagoas, Pernambuco, Paraíba, Rio Grande do Norte, Ceará, Piauí, Maranhão, Goiás, Mato Grosso, Mato Grosso do Sul, Distrito Federal, Tocantins, Pará, Amapá, Rondônia, Acre, Roraima e Amazonas.",
-      "Valores e taxa de instalação para clientes Pessoa Jurídica com fidelidade de 36 meses. Para outras opções, ligue 11 2362-9665."
+      "Valores e taxa de instalação para clientes Pessoa Jurídica com fidelidade de 36 meses. Para outras opções, ligue 11 98915-0001."
     ]
   },
 

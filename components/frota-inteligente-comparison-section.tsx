@@ -2,6 +2,7 @@
 
 import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, X } from "lucide-react"
 
@@ -39,7 +40,7 @@ export function FrotaInteligenteComparisonSection() {
             <span className="block text-[#660099]">gestão de frotas</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja todas as funcionalidades incluídas em cada plano e escolha a solução 
+            Veja todas as funcionalidades incluídas em cada plano e escolha a solução
             ideal para as necessidades da sua empresa.
           </p>
         </div>
@@ -128,12 +129,16 @@ export function FrotaInteligenteComparisonSection() {
               Escolha o plano ideal e comece a transformar a gestão da sua frota hoje mesmo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors cursor-pointer">
-                Contratar Agora
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors cursor-pointer">
-                Falar com Especialista
-              </button>
+              <Button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors cursor-pointer" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar a solução de Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Contratar Agora
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors cursor-pointer bg-transparent" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
             </div>
           </div>
         </div>

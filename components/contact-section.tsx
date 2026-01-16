@@ -24,8 +24,48 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+
+    // Traduzir assunto para português
+    const subjectLabels: { [key: string]: string } = {
+      "planos-moveis": "Planos Móveis",
+      "internet-fibra": "Internet Fibra",
+      "solucoes-digitais": "Soluções Digitais",
+      "dispositivos": "Dispositivos",
+      "suporte": "Suporte Técnico",
+      "outros": "Outros"
+    }
+
+    // Criar mensagem formatada para WhatsApp
+    let whatsappMessage = `*Nova Solicitação de Contato*%0A%0A`
+    whatsappMessage += `👤 *Nome:* ${formData.name}%0A`
+    whatsappMessage += `📧 *E-mail:* ${formData.email}%0A`
+    whatsappMessage += `🏢 *Empresa:* ${formData.company}%0A`
+
+    if (formData.employees) {
+      whatsappMessage += `👥 *Funcionários:* ${formData.employees}%0A`
+    }
+
+    if (formData.subject) {
+      const subjectLabel = subjectLabels[formData.subject] || formData.subject
+      whatsappMessage += `📋 *Assunto:* ${subjectLabel}%0A`
+    }
+
+    if (formData.message) {
+      whatsappMessage += `%0A💬 *Mensagem:*%0A${formData.message}`
+    }
+
+    // Abrir WhatsApp com a mensagem formatada
+    window.open(`https://wa.me/5511989150001?text=${whatsappMessage}`, '_blank')
+
+    // Limpar formulário após envio
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      employees: "",
+      subject: "",
+      message: "",
+    })
   }
 
   const contactInfo = [
@@ -57,22 +97,33 @@ export function ContactSection() {
 
   return (
     <div className="space-y-16">
-      {/* Header */}
-      <div className="text-center">
-        <Badge className="mb-4">Fale Conosco</Badge>
-        <h1 className="text-4xl font-bold text-foreground mb-6">Vamos Conversar Sobre Sua Empresa</h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Nossa equipe de especialistas está pronta para encontrar a melhor solução de conectividade e tecnologia para o
-          seu negócio.
-        </p>
+      {/* Header with Gradient Background */}
+      <div className="relative overflow-hidden rounded-3xl mb-12">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#660099] to-[#EB3C7D]" />
+        <div className="absolute inset-0 bg-black/10" />
+
+        <div className="relative px-8 py-16 text-center text-white">
+          <Badge className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30">
+            <MessageSquare className="w-4 h-4 mr-2" />
+            Fale Conosco
+          </Badge>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            Vamos Conversar Sobre Sua Empresa
+          </h1>
+          <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
+            Nossa equipe de especialistas está pronta para encontrar a melhor solução de conectividade e tecnologia para o seu negócio.
+          </p>
+        </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Contact Form */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Solicite um Contato</CardTitle>
-            <CardDescription>Preencha o formulário e nossa equipe entrará em contato em até 24 horas</CardDescription>
+        <Card className="shadow-xl border-0">
+          <CardHeader className="space-y-2 pb-6">
+            <CardTitle className="text-2xl">Solicite um Contato</CardTitle>
+            <CardDescription className="text-base">
+              Preencha o formulário e nossa equipe entrará em contato em até 24 horas
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -84,6 +135,7 @@ export function ContactSection() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
+                    placeholder="Seu nome completo"
                   />
                 </div>
                 <div className="space-y-2">
@@ -94,6 +146,7 @@ export function ContactSection() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
+                    placeholder="seuemail@empresa.com"
                   />
                 </div>
               </div>
@@ -106,6 +159,7 @@ export function ContactSection() {
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     required
+                    placeholder="Nome da sua empresa"
                   />
                 </div>
                 <div className="space-y-2">
@@ -149,12 +203,17 @@ export function ContactSection() {
                   placeholder="Conte-nos mais sobre suas necessidades..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={4}
+                  rows={5}
+                  className="resize-none"
                 />
               </div>
 
-              <Button type="submit" className="w-full">
+              <Button
+                type="submit"
+                className="w-full bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold py-6 text-lg"
+              >
                 Enviar Solicitação
+                <MessageSquare className="ml-2 h-5 w-5" />
               </Button>
             </form>
           </CardContent>
@@ -164,18 +223,18 @@ export function ContactSection() {
         <div className="space-y-6">
           <div>
             <h2 className="text-2xl font-bold text-foreground mb-6">Outras Formas de Contato</h2>
-            <div className="grid gap-6">
+            <div className="grid gap-4">
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon
                 return (
-                  <Card key={index}>
+                  <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-[#660099]">
                     <CardContent className="flex items-start space-x-4 p-6">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        <IconComponent className="h-6 w-6 text-primary" />
+                      <div className="p-3 bg-gradient-to-br from-[#660099] to-[#EB3C7D] rounded-xl">
+                        <IconComponent className="h-6 w-6 text-white" />
                       </div>
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-1">{info.title}</h3>
-                        <p className="text-foreground mb-1">{info.description}</p>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-foreground mb-1 text-lg">{info.title}</h3>
+                        <p className="text-foreground mb-1 font-medium">{info.description}</p>
                         <p className="text-sm text-muted-foreground">{info.subtitle}</p>
                       </div>
                     </CardContent>
@@ -186,26 +245,32 @@ export function ContactSection() {
           </div>
 
           {/* FAQ Preview */}
-          <Card>
+          <Card className="shadow-lg border-0 bg-gradient-to-br from-gray-50 to-white">
             <CardHeader>
-              <CardTitle>Dúvidas Frequentes</CardTitle>
+              <CardTitle className="text-xl">Dúvidas Frequentes</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Qual o prazo para instalação da internet fibra?</h4>
-                <p className="text-sm text-muted-foreground">
+            <CardContent className="space-y-6">
+              <div className="pb-4 border-b border-gray-200 last:border-0 last:pb-0">
+                <h4 className="font-semibold text-foreground mb-2 text-base">
+                  Qual o prazo para instalação da internet fibra?
+                </h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   A instalação é realizada em até 7 dias úteis após a aprovação do pedido.
                 </p>
               </div>
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Posso migrar meus números atuais?</h4>
-                <p className="text-sm text-muted-foreground">
+              <div className="pb-4 border-b border-gray-200 last:border-0 last:pb-0">
+                <h4 className="font-semibold text-foreground mb-2 text-base">
+                  Posso migrar meus números atuais?
+                </h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Sim, oferecemos portabilidade gratuita para todos os números da sua empresa.
                 </p>
               </div>
-              <div>
-                <h4 className="font-medium text-foreground mb-2">Há taxa de cancelamento?</h4>
-                <p className="text-sm text-muted-foreground">
+              <div className="pb-4 border-b border-gray-200 last:border-0 last:pb-0">
+                <h4 className="font-semibold text-foreground mb-2 text-base">
+                  Há taxa de cancelamento?
+                </h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Nossos planos não possuem fidelidade, você pode cancelar quando quiser.
                 </p>
               </div>

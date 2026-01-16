@@ -141,7 +141,7 @@ export const sipTrunkingConfig = {
     sipOptions: ["10 Canais", "15 Canais", "30 Canais"],
     internetSpeeds: [
       "50 Mega",
-      "100 Mega", 
+      "100 Mega",
       "200 Mega",
       "300 Mega¹",
       "400 Mega¹",
@@ -314,8 +314,8 @@ export const sipTrunkingConfig = {
   ],
 
   contact: {
-    whatsapp: "https://wa.me/551123629665",
-    phone: "1123629665",
+    whatsapp: "https://wa.me/5511989150001",
+    phone: "11989150001",
     email: "empresas@vivo.com.br"
   }
 }

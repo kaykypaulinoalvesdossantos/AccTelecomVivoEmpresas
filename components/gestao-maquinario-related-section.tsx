@@ -39,7 +39,7 @@ export function GestaoMaquinarioRelatedSection() {
             Veja também
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubra outras soluções IoT que podem complementar sua operação agrícola 
+            Descubra outras soluções IoT que podem complementar sua operação agrícola
             e maximizar a eficiência do seu agronegócio.
           </p>
         </div>
@@ -51,38 +51,41 @@ export function GestaoMaquinarioRelatedSection() {
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
                   {/* Icon */}
-                  <div 
+                  <div
                     className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
                     style={{ backgroundColor: solution.color }}
                   >
                     <solution.icon className="w-8 h-8 text-white" />
                   </div>
-                  
+
                   {/* Content */}
                   <div className="flex-1">
                     <div className="mb-2">
-                      <Badge 
+                      <Badge
                         className="text-xs mb-2"
                         style={{ backgroundColor: `${solution.color}20`, color: solution.color }}
                       >
                         {solution.title.toUpperCase()}
                       </Badge>
                     </div>
-                    
+
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       {solution.subtitle}
                     </h3>
-                    
+
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       {solution.description}
                     </p>
-                    
-                    <Button 
+
+                    <Button
                       variant="outline"
                       className="group-hover:bg-[#660099] group-hover:text-white group-hover:border-[#660099] transition-all duration-300 cursor-pointer"
+                      asChild
                     >
-                      Conheça
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      <a href={solution.href} className="cursor-pointer">
+                        Conheça
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -97,22 +100,28 @@ export function GestaoMaquinarioRelatedSection() {
             <div className="text-center">
               <h3 className="text-3xl font-bold mb-4">Soluções IoT Completas</h3>
               <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-                Explore nosso portfólio completo de soluções IoT para o agronegócio 
+                Explore nosso portfólio completo de soluções IoT para o agronegócio
                 e transforme sua operação agrícola.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
+                <Button
                   size="lg"
                   className="bg-white text-[#660099] hover:bg-white/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  asChild
                 >
-                  Ver Todas as Soluções
+                  <a href="/solucoes/iot" className="cursor-pointer">
+                    Ver Todas as Soluções
+                  </a>
                 </Button>
-                <Button 
+                <Button
                   variant="outline"
                   size="lg"
                   className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 cursor-pointer bg-transparent"
+                  asChild
                 >
-                  Falar com Consultor
+                  <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um consultor sobre IoT" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    Falar com Consultor
+                  </a>
                 </Button>
               </div>
             </div>

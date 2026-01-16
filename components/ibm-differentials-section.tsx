@@ -1,6 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, DollarSign, Shield, Network, Lock } from "lucide-react"
 
@@ -75,13 +76,17 @@ export function IBMDifferentialsSection() {
               Nossa equipe de especialistas está pronta para apresentar como a IBM Cloud pode transformar sua empresa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre os diferenciais da IBM Cloud', '_blank')}>
-                Falar com Especialista
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre IBM Cloud', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="text-white px-8 py-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center cursor-pointer hover:opacity-90" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre os diferenciais da IBM Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer hover:bg-gray-50 bg-transparent" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre IBM Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

@@ -15,10 +15,10 @@ export function Router5GEquipmentSection(): React.JSX.Element {
               Saiba mais sobre o equipamento
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              O CPE 5G é um roteador portátil, com espaço para chip 5G. Por isso, é tão fácil de usar: 
+              O CPE 5G é um roteador portátil, com espaço para chip 5G. Por isso, é tão fácil de usar:
               insira o Vivo Chip no equipamento e conecte-se ao Wi-Fi no seu smartphone, computador ou tablet.
             </p>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-lg flex items-center justify-center">
@@ -49,8 +49,10 @@ export function Router5GEquipmentSection(): React.JSX.Element {
               </div>
             </div>
 
-            <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3">
-              Mais informações
+            <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de mais informações sobre o equipamento Roteador 5G" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Mais informações
+              </a>
             </Button>
           </div>
 
@@ -60,13 +62,13 @@ export function Router5GEquipmentSection(): React.JSX.Element {
               <div className="relative">
                 {/* Real router image */}
                 <div className="w-full h-80 bg-white rounded-2xl flex items-center justify-center p-8">
-                  <img 
-                    src="/router-5g/vivo-empresas-roteador-5g-2405-943x832.png" 
+                  <img
+                    src="/router-5g/vivo-empresas-roteador-5g-2405-943x832.png"
                     alt="CPE 5G Vivo - Roteador portátil empresarial"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full animate-bounce"></div>
                 <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full animate-bounce delay-500"></div>

@@ -27,21 +27,26 @@ export function ESimHeroSection(): React.JSX.Element {
           </h1>
 
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Chip digital integrado ao seu dispositivo. Ativação instantânea, sem chip físico, 
+            Chip digital integrado ao seu dispositivo. Ativação instantânea, sem chip físico,
             com toda a qualidade da rede Vivo.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-3">
-              Ativar agora
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-3" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de ativar meu eSIM agora" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Ativar agora
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-6 py-3"
+              asChild
             >
-              Como funciona
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber como funciona o eSIM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Como funciona
+              </a>
             </Button>
           </div>
         </div>

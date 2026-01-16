@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Shield, Headphones, ArrowRight, CheckCircle } from "lucide-react"
@@ -87,7 +88,7 @@ export function AzureWhyVivoSection() {
                     A combinação perfeita de tecnologia e suporte especializado
                   </p>
                 </div>
-                
+
                 <div className="space-y-3">
                   {advantages.map((advantage, index) => (
                     <div key={index} className="flex items-center space-x-3">
@@ -110,13 +111,17 @@ export function AzureWhyVivoSection() {
               Nossa equipe de especialistas Microsoft está pronta para ajudar sua empresa a aproveitar todo o potencial do Azure Cloud
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de falar com um especialista sobre Microsoft Azure', '_blank')}>
-                Falar com Especialista
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre Azure Cloud', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre Microsoft Azure" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre Azure Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

@@ -11,14 +11,14 @@ export function MelhoresOfertasOtherServicesSection() {
       title: "MAIS PRODUTIVIDADE",
       description: "Office 365 com 1TB de armazenamento",
       icon: "Laptop",
-      link: "/not-found"
+      link: "https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Office 365 com 1TB"
     },
     {
       id: 2,
       title: "EQUIPAMENTOS",
       description: "Aluguel de notebooks, desktops, tablets e impressoras",
       icon: "Monitor",
-      link: "/not-found"
+      link: "https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre aluguel de equipamentos"
     },
     {
       id: 3,

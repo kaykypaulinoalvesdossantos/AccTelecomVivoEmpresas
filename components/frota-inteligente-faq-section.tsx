@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react"
 
@@ -9,8 +10,8 @@ export function FrotaInteligenteFaqSection() {
   const [openItems, setOpenItems] = useState<number[]>([])
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(item => item !== index)
         : [...prev, index]
     )
@@ -65,7 +66,7 @@ export function FrotaInteligenteFaqSection() {
             <span className="block text-[#660099]">principais dúvidas</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Encontre respostas para as principais perguntas sobre a Frota Inteligente 
+            Encontre respostas para as principais perguntas sobre a Frota Inteligente
             e descubra como nossa solução pode transformar a gestão da sua frota.
           </p>
         </div>
@@ -73,13 +74,12 @@ export function FrotaInteligenteFaqSection() {
         {/* FAQ Accordion */}
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <Card 
-              key={index} 
-              className={`border-2 transition-all duration-300 ${
-                openItems.includes(index) 
-                  ? 'border-[#660099] shadow-lg' 
-                  : 'border-gray-100 hover:border-gray-200'
-              }`}
+            <Card
+              key={index}
+              className={`border-2 transition-all duration-300 ${openItems.includes(index)
+                ? 'border-[#660099] shadow-lg'
+                : 'border-gray-100 hover:border-gray-200'
+                }`}
             >
               <CardContent className="p-0">
                 <button
@@ -97,7 +97,7 @@ export function FrotaInteligenteFaqSection() {
                     )}
                   </div>
                 </button>
-                
+
                 {openItems.includes(index) && (
                   <div className="px-6 pb-6">
                     <div className="border-t border-gray-100 pt-4">
@@ -117,16 +117,20 @@ export function FrotaInteligenteFaqSection() {
           <div className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Ainda tem dúvidas?</h3>
             <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-              Nossa equipe especializada está pronta para esclarecer todas as suas questões 
+              Nossa equipe especializada está pronta para esclarecer todas as suas questões
               e ajudar você a implementar a melhor solução para sua frota.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors cursor-pointer">
-                Falar com Especialista
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors cursor-pointer">
-                Solicitar Demonstração
-              </button>
+              <Button className="bg-white text-[#660099] px-8 py-4 rounded-xl font-semibold hover:bg-white/90 transition-colors cursor-pointer" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors cursor-pointer bg-transparent" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de uma demonstração da Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Solicitar Demonstração
+                </a>
+              </Button>
             </div>
           </div>
         </div>

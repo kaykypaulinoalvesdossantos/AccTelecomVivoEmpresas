@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Cloud, Network, BarChart3, ArrowRight, Wifi, Database, Cpu } from "lucide-react"
@@ -66,7 +67,7 @@ export function AWSSolutionsSection() {
                     <p className="text-gray-600 leading-relaxed mb-6">{solution.description}</p>
                   </div>
                 </div>
-                
+
                 <div className="p-8">
                   <div className="space-y-3 mb-8">
                     {solution.features.map((feature, featureIndex) => (
@@ -76,19 +77,16 @@ export function AWSSolutionsSection() {
                       </div>
                     ))}
                   </div>
-                  
-                  <button className={`w-full bg-gradient-to-r ${solution.color} hover:opacity-90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2`} onClick={() => {
-                    if (solution.title === "IoT") {
-                      window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre IoT', '_blank')
-                    } else if (solution.title === "Redes Corporativas") {
-                      window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Redes Corporativas', '_blank')
-                    } else if (solution.title === "Big Data") {
-                      window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Big Data', '_blank')
-                    }
-                  }}>
-                    <span>Saiba Mais</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+
+                  <Button
+                    className={`w-full bg-gradient-to-r ${solution.color} hover:opacity-90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2`}
+                    asChild
+                  >
+                    <a href={solution.title === "IoT" ? 'https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre IoT' : solution.title === "Redes Corporativas" ? 'https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Redes Corporativas' : 'https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Big Data'} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                      <span>Saiba Mais</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -107,9 +105,11 @@ export function AWSSolutionsSection() {
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
                 <Database className="w-6 h-6 text-white" />
               </div>
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Serviços Digitais', '_blank')}>
-                Confira
-              </button>
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Serviços Digitais" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Confira
+                </a>
+              </Button>
             </div>
           </div>
         </div>

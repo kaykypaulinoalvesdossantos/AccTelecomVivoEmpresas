@@ -139,8 +139,8 @@ export const zero303Config = {
   ],
 
   contact: {
-    whatsapp: "https://wa.me/551123629665",
-    phone: "1123629665",
+    whatsapp: "https://wa.me/5511989150001",
+    phone: "11989150001",
     email: "empresas@vivo.com.br"
   }
 }

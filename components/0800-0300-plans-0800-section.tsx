@@ -36,14 +36,14 @@ export function OitoZeroZeroPlans0800Section() {
               </Badge>
             </div>
           )}
-          
+
           <Card className={`relative transition-all duration-300 hover:shadow-2xl ${plan.popular ? "ring-2 ring-purple-500 scale-105 shadow-xl" : "hover:scale-105"} bg-white border border-gray-200`}>
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
                 <Phone className="w-8 h-8 text-white" />
               </div>
               <CardTitle className="text-lg font-bold text-gray-900 mb-2">{plan.name}</CardTitle>
-              
+
               <div className="space-y-2 mt-4">
                 <div className="text-xl sm:text-2xl font-bold text-gray-900">
                   {plan.price}
@@ -67,7 +67,7 @@ export function OitoZeroZeroPlans0800Section() {
                   className={`w-full ${plan.popular ? "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700" : "bg-green-600 hover:bg-green-700"} text-white`}
                   asChild
                 >
-                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Contratar Plano
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
@@ -77,7 +77,7 @@ export function OitoZeroZeroPlans0800Section() {
                   className="w-full text-sm"
                   asChild
                 >
-                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Mais Detalhes
                   </a>
                 </Button>
@@ -107,7 +107,7 @@ export function OitoZeroZeroPlans0800Section() {
         <div className="relative">
           {/* Carrossel Container */}
           <div className="overflow-hidden px-8 py-8">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
@@ -120,37 +120,34 @@ export function OitoZeroZeroPlans0800Section() {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className={`p-3 rounded-full transition-all duration-200 ${
-                currentIndex === 0 
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+              className={`p-3 rounded-full transition-all duration-200 ${currentIndex === 0
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                   : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-              }`}
+                }`}
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            
+
             <div className="flex space-x-2">
               {Array.from({ length: Math.max(1, plans0800.plans.length - 2) }, (_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    index === currentIndex 
-                      ? 'bg-gradient-to-r from-green-500 to-green-600 scale-110' 
+                  className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentIndex
+                      ? 'bg-gradient-to-r from-green-500 to-green-600 scale-110'
                       : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
+                    }`}
                 />
               ))}
             </div>
-            
+
             <button
               onClick={nextSlide}
               disabled={currentIndex >= Math.max(0, plans0800.plans.length - 3)}
-              className={`p-3 rounded-full transition-all duration-200 ${
-                currentIndex >= Math.max(0, plans0800.plans.length - 3)
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+              className={`p-3 rounded-full transition-all duration-200 ${currentIndex >= Math.max(0, plans0800.plans.length - 3)
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                   : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-              }`}
+                }`}
             >
               <ChevronRight className="w-6 h-6" />
             </button>

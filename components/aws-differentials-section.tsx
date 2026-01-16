@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { MessageCircle, Users, CheckCircle, Star } from "lucide-react"
@@ -30,7 +31,7 @@ export function AWSDifferentialsSection() {
                     Parceria global de sucesso entre Telefônica e AWS
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Aproveite a força de uma parceria estratégica global que combina a expertise em telecomunicações 
+                    Aproveite a força de uma parceria estratégica global que combina a expertise em telecomunicações
                     da Telefônica com a liderança em cloud computing da AWS.
                   </p>
                 </div>
@@ -45,7 +46,7 @@ export function AWSDifferentialsSection() {
                     Time de especialistas certificados para apoio no desenho de soluções e suporte técnico
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Nossa equipe de especialistas AWS certificados está pronta para ajudar no desenho de soluções 
+                    Nossa equipe de especialistas AWS certificados está pronta para ajudar no desenho de soluções
                     personalizadas e oferecer suporte técnico especializado durante toda a jornada na nuvem.
                   </p>
                 </div>
@@ -58,7 +59,7 @@ export function AWSDifferentialsSection() {
                 <h4 className="text-lg font-semibold text-gray-900">Suporte Especializado</h4>
               </div>
               <p className="text-gray-600">
-                Atendimento prioritário com consultores dedicados que entendem as necessidades específicas 
+                Atendimento prioritário com consultores dedicados que entendem as necessidades específicas
                 da sua empresa e podem ajudar na migração e otimização dos serviços AWS.
               </p>
             </div>
@@ -77,7 +78,7 @@ export function AWSDifferentialsSection() {
                       <p className="text-gray-600">Equipe dedicada e certificada AWS</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
                       <MessageCircle className="w-8 h-8 text-white" />
@@ -112,12 +113,16 @@ export function AWSDifferentialsSection() {
               Nossa equipe de especialistas está pronta para ajudar sua empresa a migrar e otimizar seus serviços na nuvem AWS
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de falar com um especialista AWS', '_blank')}>
-                Falar com Especialista
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre AWS', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista AWS" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre AWS" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

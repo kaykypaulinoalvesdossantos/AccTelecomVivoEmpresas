@@ -41,8 +41,8 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
             </div>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">WhatsApp</h3>
             <p className="text-purple-100 mb-4 sm:mb-6 text-sm sm:text-base">Atendimento rápido e personalizado via WhatsApp</p>
-            <Button className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base border-0">
-              Falar no WhatsApp
+            <Button asChild className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base border-0">
+              <span>Falar no WhatsApp</span>
             </Button>
           </a>
 
@@ -57,8 +57,8 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
             </div>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">Comprar no Chat</h3>
             <p className="text-purple-100 mb-4 sm:mb-6 text-sm sm:text-base">Contrate diretamente pelo chat online</p>
-            <Button className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base border-0">
-              Comprar Agora
+            <Button asChild className="w-full cursor-pointer bg-white text-purple-900 hover:bg-purple-50 font-semibold text-sm sm:text-base border-0">
+              <span>Comprar Agora</span>
             </Button>
           </a>
         </div>
@@ -69,7 +69,7 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-8">
               Vamos Conversar?
             </h3>
-            
+
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
@@ -93,7 +93,7 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-white font-medium mb-2 text-sm sm:text-base">
                   Telefone
@@ -104,7 +104,7 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
                   placeholder="(11) 2362-9665"
                 />
               </div>
-              
+
               <div className="text-center">
                 <Button
                   type="submit"
@@ -128,7 +128,7 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
             <h4 className="font-bold text-white mb-2">Telefone</h4>
             <p className="text-purple-100 text-sm sm:text-base">{contact.phone}</p>
           </div>
-          
+
           <div className="text-center">
             <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-2xl mb-4 mx-auto">
               <Mail className="w-6 h-6 text-white" />
@@ -136,13 +136,13 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
             <h4 className="font-bold text-white mb-2">E-mail</h4>
             <p className="text-purple-100 text-sm sm:text-base">{contact.email}</p>
           </div>
-          
+
           <div className="text-center">
             <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-2xl mb-4 mx-auto">
               <MessageCircle className="w-6 h-6 text-white" />
             </div>
             <h4 className="font-bold text-white mb-2">WhatsApp</h4>
-            <p className="text-purple-100 text-sm sm:text-base">+55 11 2362-9665</p>
+            <p className="text-purple-100 text-sm sm:text-base">+55 11 98915-0001</p>
           </div>
         </div>
 
@@ -153,7 +153,7 @@ export function OitoZeroZeroCtaSection(): React.JSX.Element {
             size="lg"
             className="bg-white text-purple-900 hover:bg-purple-50 font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer border-0"
           >
-            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               Solicitar Proposta Personalizada
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>

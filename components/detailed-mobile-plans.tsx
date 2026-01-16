@@ -9,7 +9,7 @@ import { Check, Star, Smartphone, Wifi, Shield, Cloud, Headphones, Users, Chevro
 
 export function DetailedMobilePlans() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  
+
   const plans = [
     {
       name: "Empresarial 6GB",
@@ -207,7 +207,7 @@ export function DetailedMobilePlans() {
             <div className="relative">
               {/* Carrossel Container */}
               <div className="overflow-hidden px-8 py-8">
-                <div 
+                <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${currentIndex * 25}%)` }}
                 >
@@ -226,68 +226,72 @@ export function DetailedMobilePlans() {
                           className={`relative transition-all duration-300 hover:shadow-2xl ${plan.popular ? "ring-2 ring-purple-500 scale-105 shadow-xl" : "hover:scale-105"}`}
                         >
 
-                        <CardHeader className="text-center pb-4">
-                          <div
-                            className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${plan.color} flex items-center justify-center`}
-                          >
-                            <Smartphone className="w-8 h-8 text-white" />
-                          </div>
-                          <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
-                          <CardDescription className="text-sm text-gray-600 mb-4">{plan.description}</CardDescription>
-
-                          <div className="space-y-2">
-                            <div className="text-4xl font-bold text-purple-600">{plan.data}</div>
-                            <div className="text-3xl font-bold text-gray-900">
-                              {plan.price}
-                              <span className="text-sm font-normal text-gray-600">{plan.period}</span>
+                          <CardHeader className="text-center pb-4">
+                            <div
+                              className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${plan.color} flex items-center justify-center`}
+                            >
+                              <Smartphone className="w-8 h-8 text-white" />
                             </div>
-                          </div>
-                        </CardHeader>
+                            <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
+                            <CardDescription className="text-sm text-gray-600 mb-4">{plan.description}</CardDescription>
 
-                        <CardContent className="pt-0">
-                          <ul className="space-y-3 mb-8">
-                            {plan.features.map((feature, featureIndex) => (
-                              <li key={featureIndex} className="flex items-start text-sm">
-                                <Check className="h-4 w-4 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
-                                <span className="text-gray-700">{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
+                            <div className="space-y-2">
+                              <div className="text-4xl font-bold text-purple-600">{plan.data}</div>
+                              <div className="text-3xl font-bold text-gray-900">
+                                {plan.price}
+                                <span className="text-sm font-normal text-gray-600">{plan.period}</span>
+                              </div>
+                            </div>
+                          </CardHeader>
 
-                          <div className="border-t pt-6 mb-8">
-                            <h4 className="font-semibold text-gray-900 mb-3">Benefícios inclusos:</h4>
-                            <ul className="space-y-2">
-                              {plan.extras.map((extra, idx) => (
-                                <li key={idx} className="flex items-center text-sm text-gray-600">
-                                  <Check className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0" />
-                                  {extra}
+                          <CardContent className="pt-0">
+                            <ul className="space-y-3 mb-8">
+                              {plan.features.map((feature, featureIndex) => (
+                                <li key={featureIndex} className="flex items-start text-sm">
+                                  <Check className="h-4 w-4 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                                  <span className="text-gray-700">{feature}</span>
                                 </li>
                               ))}
                             </ul>
-                          </div>
 
-                          <div className="space-y-3">
-                            <Button
-                              className={`w-full ${plan.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" : "bg-purple-600 hover:bg-purple-700"} text-white`}
-                            >
-                              Contratar Agora
-                              <ArrowRight className="ml-2 h-4 w-4" />
-                            </Button>
-                            <Button 
-                              variant="ghost" 
-                              className="w-full text-sm"
-                              asChild
-                            >
-                              <a 
-                                href="https://wa.me/551123629665" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
+                            <div className="border-t pt-6 mb-8">
+                              <h4 className="font-semibold text-gray-900 mb-3">Benefícios inclusos:</h4>
+                              <ul className="space-y-2">
+                                {plan.extras.map((extra, idx) => (
+                                  <li key={idx} className="flex items-center text-sm text-gray-600">
+                                    <Check className="w-4 h-4 text-purple-600 mr-2 flex-shrink-0" />
+                                    {extra}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+
+                            <div className="space-y-3">
+                              <Button
+                                className={`w-full ${plan.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" : "bg-purple-600 hover:bg-purple-700"} text-white`}
+                                asChild
                               >
-                                Mais Detalhes
-                              </a>
-                            </Button>
-                          </div>
-                        </CardContent>
+                                <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plan.name} (${plan.data})`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                                  Contratar Agora
+                                  <ArrowRight className="ml-2 h-4 w-4" />
+                                </a>
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                className="w-full text-sm"
+                                asChild
+                              >
+                                <a
+                                  href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o plano ${plan.name}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="cursor-pointer"
+                                >
+                                  Mais Detalhes
+                                </a>
+                              </Button>
+                            </div>
+                          </CardContent>
                         </Card>
                       </div>
                     </div>
@@ -306,16 +310,15 @@ export function DetailedMobilePlans() {
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
-                
+
                 {/* Dots Indicator */}
                 <div className="flex space-x-2">
                   {Array.from({ length: Math.max(1, plans.length - 3) }).map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentIndex(index)}
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        index === currentIndex ? "bg-purple-600" : "bg-gray-300"
-                      }`}
+                      className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-purple-600" : "bg-gray-300"
+                        }`}
                     />
                   ))}
                 </div>
@@ -351,10 +354,12 @@ export function DetailedMobilePlans() {
         <div className="text-center">
           <p className="text-gray-600 mb-6">Precisa de um plano personalizado para sua empresa?</p>
           <Button
-            size="lg"
             className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+            asChild
           >
-            Falar com Especialista
+            <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre planos móveis" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              Falar com Especialista
+            </a>
           </Button>
         </div>
       </div>

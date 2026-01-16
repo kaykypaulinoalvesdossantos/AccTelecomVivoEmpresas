@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Wifi, CheckCircle, ArrowRight, FileText, BarChart3, Presentation, Mail } from "lucide-react"
@@ -116,14 +117,14 @@ export function Microsoft365PackagesSection() {
                     <CheckCircle className="w-4 h-4 text-green-500" />
                     <span className="text-sm text-gray-600">Plano Business Basic</span>
                   </div>
-                  
+
                   {/* Apps */}
                   <div className="mb-4">
                     <p className="text-sm text-gray-600 mb-2">Versões Web e Móvel dos apps</p>
                     <div className="flex space-x-2">
                       {pkg.apps.map((app, appIndex) => (
-                        <div 
-                          key={appIndex} 
+                        <div
+                          key={appIndex}
                           className="w-8 h-8 rounded flex items-center justify-center"
                           style={{ backgroundColor: app.color }}
                         >
@@ -150,21 +151,25 @@ export function Microsoft365PackagesSection() {
                 </div>
 
                 {/* CTA Button */}
-                <button 
-                  className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" 
+                <Button
+                  className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
                   style={{ backgroundColor: '#EB3C7D' }}
-                  onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de contratar o pacote ' + pkg.speed + ' com Microsoft 365', '_blank')}
+                  asChild
                 >
-                  <span>Assine Já</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                  <a href={'https://wa.me/5511989150001?text=Olá! Gostaria de contratar o pacote ' + pkg.speed + ' com Microsoft 365'} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    <span>Assine Já</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </Button>
 
                 {/* More Details */}
                 <div className="text-center mt-4">
-                  <button className="text-sm text-gray-500 hover:text-gray-700 flex items-center justify-center space-x-1 mx-auto">
-                    <span>Mais detalhes</span>
-                    <ArrowRight className="w-3 h-3 rotate-90" />
-                  </button>
+                  <Button variant="ghost" className="text-sm text-gray-500 hover:text-gray-700 flex items-center justify-center space-x-1 mx-auto" asChild>
+                    <a href={'https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o pacote ' + pkg.speed + ' com Microsoft 365'} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                      <span>Mais detalhes</span>
+                      <ArrowRight className="w-3 h-3 rotate-90" />
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -190,12 +195,16 @@ export function Microsoft365PackagesSection() {
               Nossa equipe pode ajudar você a escolher o plano ideal para sua empresa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Preciso de ajuda para escolher o melhor pacote Microsoft 365', '_blank')}>
-                Falar com Especialista
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre pacotes Microsoft 365', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Preciso de ajuda para escolher o melhor pacote Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre pacotes Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

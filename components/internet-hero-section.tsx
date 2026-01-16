@@ -18,15 +18,20 @@ export function InternetHeroSection() {
             para crescer.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-50 px-8 py-4 text-lg font-semibold">
-              Ver Planos
+            <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-50 px-8 py-4 text-lg font-semibold" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer os planos de Internet Fibra para empresas" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Ver Planos
+              </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg bg-transparent"
+              asChild
             >
-              Teste de Velocidade
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de fazer um teste de velocidade e saber sobre Internet Fibra" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Teste de Velocidade
+              </a>
             </Button>
           </div>
 

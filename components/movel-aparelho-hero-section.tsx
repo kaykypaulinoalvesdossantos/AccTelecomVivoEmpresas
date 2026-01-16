@@ -45,18 +45,18 @@ export function MovelAparelhoHeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href={contact.whatsapp}
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre planos Móvel com Aparelho`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors"
+                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors cursor-pointer"
               >
                 {hero.primaryButton}
               </a>
               <a
-                href={contact.whatsapp}
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent"
+                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent cursor-pointer"
               >
                 {hero.secondaryButton}
               </a>

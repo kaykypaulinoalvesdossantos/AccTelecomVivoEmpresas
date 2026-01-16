@@ -1,6 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Shield, Server, Wifi, Database } from "lucide-react"
 
@@ -61,18 +62,16 @@ export function IBMSolutionsSection() {
                 <p className="text-gray-600 mb-6">
                   {solution.description}
                 </p>
-                <button className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" style={{ backgroundColor: solution.color === 'purple' ? '#660099' : solution.color === 'blue' ? '#82D400' : '#EB3C7D' }} onClick={() => {
-                  if (solution.title === "SEGURANÇA GERENCIADA") {
-                    window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Segurança Gerenciada', '_blank')
-                  } else if (solution.title === "DATA CENTERS") {
-                    window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Data Centers', '_blank')
-                  } else if (solution.title === "INTERNET DEDICADA") {
-                    window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Internet Dedicada', '_blank')
-                  }
-                }}>
-                  <span>Saiba Mais</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                <Button
+                  className="w-full text-white px-6 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer hover:opacity-90"
+                  style={{ backgroundColor: solution.color === 'purple' ? '#660099' : solution.color === 'blue' ? '#82D400' : '#EB3C7D' }}
+                  asChild
+                >
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre ${solution.title.toLowerCase()}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    <span>Saiba Mais</span>
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}
@@ -90,9 +89,11 @@ export function IBMSolutionsSection() {
               <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }}>
                 <Database className="w-6 h-6 text-white" />
               </div>
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de conhecer todas as soluções da Vivo Empresas', '_blank')}>
-                Explorar Todas as Soluções
-              </button>
+              <Button className="text-white px-8 py-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer hover:opacity-90" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer todas as soluções da Vivo Empresas" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Explorar Todas as Soluções
+                </a>
+              </Button>
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ export function NumeroUnicoFacilidadesSection() {
               className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-xl"
               asChild
             >
-              <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+              <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Contratar Facilidades
               </a>
             </Button>

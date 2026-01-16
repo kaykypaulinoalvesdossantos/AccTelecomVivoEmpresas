@@ -33,8 +33,8 @@ export function FiberWiFi6Section() {
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Vantagens do Wi-Fi 6</h3>
               <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-                O Wi-Fi 6 representa a próxima geração de conectividade sem fio, oferecendo velocidades até 4x superiores 
-                ao Wi-Fi 5, suporte a mais dispositivos conectados simultaneamente e menor latência para uma experiência 
+                O Wi-Fi 6 representa a próxima geração de conectividade sem fio, oferecendo velocidades até 4x superiores
+                ao Wi-Fi 5, suporte a mais dispositivos conectados simultaneamente e menor latência para uma experiência
                 de conectividade empresarial incomparável.
               </p>
             </div>
@@ -87,7 +87,7 @@ export function FiberWiFi6Section() {
 
                 <div className="mt-6 sm:mt-8 p-3 sm:p-4 bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg sm:rounded-xl">
                   <p className="text-xs sm:text-sm text-gray-600 text-center">
-                    <strong>Disponibilidade:</strong> Wi-Fi 6 disponível em áreas selecionadas. 
+                    <strong>Disponibilidade:</strong> Wi-Fi 6 disponível em áreas selecionadas.
                     Consulte a cobertura em sua região.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export function FiberWiFi6Section() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
-              href={contact.whatsapp}
+              href="https://wa.me/5511989150001?text=Olá! Gostaria de assinar o combo Fibra + Pós"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-purple-600 hover:bg-purple-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl transition-colors"
@@ -120,7 +120,7 @@ export function FiberWiFi6Section() {
               {cta.primaryButton}
             </a>
             <a
-              href={contact.whatsapp}
+              href="https://wa.me/5511989150001?text=Olá! Gostaria de verificar a cobertura da Vivo Fibra no meu endereço"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl transition-colors"

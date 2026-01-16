@@ -1,6 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Shield, Server, Wifi, ArrowRight, Phone, Mail } from "lucide-react"
 
@@ -55,18 +56,16 @@ export function HuaweiCTASection() {
                 <p className="text-gray-600 mb-6">
                   {solution.description}
                 </p>
-                <button className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" style={{ backgroundColor: solution.color }} onClick={() => {
-                  if (solution.title === "SEGURANÇA GERENCIADA") {
-                    window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Segurança Gerenciada', '_blank')
-                  } else if (solution.title === "DATA CENTERS") {
-                    window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Data Centers', '_blank')
-                  } else if (solution.title === "INTERNET DEDICADA") {
-                    window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Internet Dedicada', '_blank')
-                  }
-                }}>
-                  <span>Confira</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                <Button
+                  className="w-full text-white px-6 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer hover:opacity-90"
+                  style={{ backgroundColor: solution.color }}
+                  asChild
+                >
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre ${solution.title.toLowerCase()}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    <span>Confira</span>
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}
@@ -80,10 +79,12 @@ export function HuaweiCTASection() {
             <p className="mb-6" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
               Nossa equipe de especialistas Huawei está pronta para oferecer suporte completo para suas soluções Huawei Cloud
             </p>
-            <button className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center mx-auto" style={{ color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Preciso de atendimento e suporte para Huawei Cloud', '_blank')}>
-              Ligue Agora
-              <Phone className="ml-2 h-5 w-5" />
-            </button>
+            <Button className="bg-white hover:bg-gray-100 px-8 py-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center mx-auto cursor-pointer" style={{ color: '#660099' }} asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Preciso de atendimento e suporte para Huawei Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Ligue Agora
+                <Phone className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
           </div>
         </div>
 
@@ -96,15 +97,21 @@ export function HuaweiCTASection() {
               Fale com nossos especialistas Huawei Cloud
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de falar via WhatsApp sobre Huawei Cloud', '_blank')}>
-                WhatsApp
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('tel:+551123629665')}>
-                Telefone
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('mailto:sac@acctelecom.com.br?subject=Consulta sobre Huawei Cloud')}>
-                Email
-              </button>
+              <Button className="text-white px-8 py-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center cursor-pointer hover:opacity-90" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar via WhatsApp sobre Huawei Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  WhatsApp
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer hover:bg-gray-50 bg-transparent" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="tel:+5511989150001" className="cursor-pointer">
+                  Telefone
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer hover:bg-gray-50 bg-transparent" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="mailto:sac@acctelecom.com.br?subject=Consulta sobre Huawei Cloud" className="cursor-pointer">
+                  Email
+                </a>
+              </Button>
             </div>
           </div>
         </div>

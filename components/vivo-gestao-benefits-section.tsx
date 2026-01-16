@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Phone, BarChart3, MapPin } from "lucide-react"
 import { vivoGestaoData } from "@/data/vivo-gestao-data"
@@ -43,16 +44,16 @@ export function VivoGestaoBenefitsSection(): React.JSX.Element {
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-[1px]">
                   <div className="bg-gradient-to-r from-[#660099] via-[#8B00FF] to-[#EB3C7D] rounded-xl h-full w-full"></div>
                 </div>
-                
+
                 <CardContent className="relative bg-white rounded-xl p-6 h-full">
                   <div className="w-12 h-12 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  
+
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
                     {benefit.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 leading-relaxed">
                     {benefit.description}
                   </p>
@@ -71,14 +72,19 @@ export function VivoGestaoBenefitsSection(): React.JSX.Element {
             <p className="text-lg mb-6 opacity-90">
               Entre em contato conosco e descubra como o Vivo Gestão pode beneficiar sua empresa
             </p>
-            <a 
-              href="https://wa.me/551123629665" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-[#660099] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            <Button
+              className="bg-white text-[#660099] hover:bg-gray-100 font-semibold px-8 py-6 text-lg rounded-lg transition-colors duration-300"
+              asChild
             >
-              Solicitar Proposta
-            </a>
+              <a
+                href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar proposta para Vivo Gestão"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                Solicitar Proposta
+              </a>
+            </Button>
           </div>
         </div>
       </div>

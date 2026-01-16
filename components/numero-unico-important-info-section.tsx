@@ -44,7 +44,7 @@ export function NumeroUnicoImportantInfoSection() {
               className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
-              <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+              <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Falar com Consultor
               </a>
             </Button>

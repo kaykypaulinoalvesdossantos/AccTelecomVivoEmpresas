@@ -33,7 +33,7 @@ export function Microsoft365HeroSection() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
-                Microsoft 365 Business Basic oferece as ferramentas essenciais para comunicação, 
+                Microsoft 365 Business Basic oferece as ferramentas essenciais para comunicação,
                 colaboração e produtividade da sua equipe, com segurança avançada e gerenciamento simplificado.
               </p>
             </div>
@@ -80,21 +80,25 @@ export function Microsoft365HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-[#660099] hover:bg-white/90 font-semibold"
-                onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre Microsoft 365', '_blank')}
+                asChild
               >
-                Falar com Especialista
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 bg-transparent"
-                onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre Microsoft 365', '_blank')}
+                asChild
               >
-                Agendar Consultoria
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
               </Button>
             </div>
           </div>

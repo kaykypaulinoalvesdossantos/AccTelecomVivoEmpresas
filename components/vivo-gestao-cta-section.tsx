@@ -33,7 +33,7 @@ export function VivoGestaoCTASection(): React.JSX.Element {
               <h3 className="text-2xl font-semibold text-white mb-6">
                 Informações de Contato
               </h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -136,7 +136,7 @@ export function VivoGestaoCTASection(): React.JSX.Element {
               <h3 className="text-2xl font-semibold text-white mb-6">
                 Solicite uma Proposta
               </h3>
-              
+
               <div className="text-center">
                 <h4 className="text-lg font-semibold text-white mb-4">
                   Pronto para começar?
@@ -144,26 +144,26 @@ export function VivoGestaoCTASection(): React.JSX.Element {
                 <p className="text-white/90 mb-6">
                   Nossa equipe está pronta para ajudar você a implementar a solução ideal para sua empresa
                 </p>
-                
+
                 <div className="space-y-4">
-                  <Button 
+                  <Button
                     size="lg"
                     className="w-full bg-white text-[#660099] hover:bg-gray-100 font-semibold px-8 py-4 text-lg"
                     asChild
                   >
-                    <a href={vivoGestaoData.contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                    <a href={vivoGestaoData.contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                       <MessageSquare className="w-5 h-5 mr-2" />
                       Agendar Demonstração
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </a>
                   </Button>
-                  
-                  <Button 
+
+                  <Button
                     size="lg"
                     className="w-full bg-white text-[#660099] hover:bg-gray-100 font-semibold px-8 py-4 text-lg"
                     asChild
                   >
-                    <a href={vivoGestaoData.contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                    <a href={vivoGestaoData.contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                       <Phone className="w-5 h-5 mr-2" />
                       Falar com Consultor
                       <ArrowRight className="w-5 h-5 ml-2" />

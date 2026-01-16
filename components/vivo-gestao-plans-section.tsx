@@ -42,7 +42,7 @@ export function VivoGestaoPlansSection(): React.JSX.Element {
                 </Badge>
               </div>
               <CardTitle className="text-xl font-bold">{plan.data}</CardTitle>
-              
+
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-purple-600">{plan.price}</div>
                 <div className="text-sm text-gray-600">{plan.period}</div>
@@ -69,11 +69,11 @@ export function VivoGestaoPlansSection(): React.JSX.Element {
               </div>
 
               <div className="space-y-3">
-                <Button 
+                <Button
                   className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 rounded-lg"
                   asChild
                 >
-                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de assinar o plano ${plan.data} com Gestão`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Assinar Plano
                   </a>
                 </Button>
@@ -100,11 +100,11 @@ export function VivoGestaoPlansSection(): React.JSX.Element {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-8">
             <h3 className="text-xl font-semibold text-gray-800">Planos disponíveis</h3>
-            <Button 
+            <Button
               className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de assinar Vivo Gestão" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Assine já
               </a>
             </Button>
@@ -113,7 +113,7 @@ export function VivoGestaoPlansSection(): React.JSX.Element {
           <div className="relative">
             {/* Carrossel Container */}
             <div className="overflow-hidden px-8 py-8">
-              <div 
+              <div
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 25}%)` }}
               >
@@ -126,37 +126,34 @@ export function VivoGestaoPlansSection(): React.JSX.Element {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className={`p-3 rounded-full transition-all duration-200 ${
-                  currentIndex === 0 
-                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                    : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-                }`}
+                className={`p-3 rounded-full transition-all duration-200 ${currentIndex === 0
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                  }`}
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
-              
+
               <div className="flex space-x-2">
                 {Array.from({ length: Math.max(1, plans.length - 3) }, (_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentIndex(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                      index === currentIndex 
-                        ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110' 
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentIndex
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                      }`}
                   />
                 ))}
               </div>
-              
+
               <button
                 onClick={nextSlide}
                 disabled={currentIndex >= Math.max(0, plans.length - 4)}
-                className={`p-3 rounded-full transition-all duration-200 ${
-                  currentIndex >= Math.max(0, plans.length - 4)
-                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                    : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-                }`}
+                className={`p-3 rounded-full transition-all duration-200 ${currentIndex >= Math.max(0, plans.length - 4)
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                  }`}
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
@@ -174,19 +171,19 @@ export function VivoGestaoPlansSection(): React.JSX.Element {
               Entre em contato conosco e descubra como o Vivo Gestão pode beneficiar sua empresa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 className="bg-white text-[#660099] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar proposta para Vivo Gestão" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Solicitar Proposta
                 </a>
               </Button>
-              <Button 
+              <Button
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#660099] transition-colors duration-300"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com consultor sobre Vivo Gestão" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Falar com Consultor
                 </a>
               </Button>

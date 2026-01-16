@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Package, ArrowRight } from "lucide-react"
@@ -28,12 +29,12 @@ export function CloudPlusPackagesSection() {
                 6 pacotes pré-configurados
               </h3>
               <p className="text-lg text-gray-600">
-                Oferecemos 6 pacotes pré-configurados do Cloud Server, cada um otimizado para diferentes 
-                necessidades empresariais. Todos os pacotes incluem recursos dedicados, gerenciamento 
+                Oferecemos 6 pacotes pré-configurados do Cloud Server, cada um otimizado para diferentes
+                necessidades empresariais. Todos os pacotes incluem recursos dedicados, gerenciamento
                 simplificado e suporte técnico especializado.
               </p>
               <p className="text-lg text-gray-600">
-                Se nenhum dos pacotes pré-configurados atender às suas necessidades específicas, 
+                Se nenhum dos pacotes pré-configurados atender às suas necessidades específicas,
                 nossa equipe pode criar uma configuração personalizada sob medida para sua empresa.
               </p>
             </div>
@@ -80,7 +81,7 @@ export function CloudPlusPackagesSection() {
                     Soluções testadas e otimizadas
                   </p>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#660099' }}>
@@ -121,13 +122,17 @@ export function CloudPlusPackagesSection() {
               Nossa equipe pode apresentar todos os pacotes pré-configurados e ajudar você a escolher o ideal
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de conhecer todos os pacotes pré-configurados do Cloud Plus', '_blank')}>
-                Ver Todos os Pacotes
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de uma configuração personalizada do Cloud Plus', '_blank')}>
-                Configuração Personalizada
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer todos os pacotes pré-configurados do Cloud Plus" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Ver Todos os Pacotes
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de uma configuração personalizada do Cloud Plus" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Configuração Personalizada
+                </a>
+              </Button>
             </div>
           </div>
         </div>

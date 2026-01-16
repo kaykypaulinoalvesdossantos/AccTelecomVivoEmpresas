@@ -31,20 +31,23 @@ export function GestaoMaquinarioHeroSection() {
                 Seu aliado no
                 <span className="block text-white/90">agronegócio</span>
               </h1>
-              
+
               <p className="text-xl lg:text-2xl text-white/90 max-w-2xl leading-relaxed">
-                Gerencie aspectos importantes da frota, economizando em combustível e manutenção 
+                Gerencie aspectos importantes da frota, economizando em combustível e manutenção
                 com tecnologia de ponta para o campo.
               </p>
             </div>
 
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-[#660099] hover:bg-white/90 px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                asChild
               >
-                Contrate
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar a gestão de maquinário" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Contrate
+                </a>
               </Button>
             </div>
 

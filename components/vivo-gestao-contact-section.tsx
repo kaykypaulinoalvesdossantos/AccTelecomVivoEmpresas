@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import { Button } from "@/components/ui/button"
 import { Phone, Mail, MapPin, Clock, MessageSquare, ArrowRight } from "lucide-react"
 
 export function VivoGestaoContactSection(): React.JSX.Element {
@@ -63,7 +64,7 @@ export function VivoGestaoContactSection(): React.JSX.Element {
             <h3 className="text-2xl font-semibold text-white mb-6">
               Informações de Contato
             </h3>
-            
+
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start gap-4">
@@ -105,7 +106,7 @@ export function VivoGestaoContactSection(): React.JSX.Element {
             <h3 className="text-2xl font-semibold text-white mb-6">
               Solicite uma Proposta
             </h3>
-            
+
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -177,15 +178,20 @@ export function VivoGestaoContactSection(): React.JSX.Element {
                 ></textarea>
               </div>
 
-              <a
-                href="https://wa.me/551123629665"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-white text-[#660099] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center gap-2"
+              <Button
+                className="w-full bg-white text-[#660099] hover:bg-gray-100 font-semibold px-8 py-6 text-lg rounded-lg transition-colors duration-300 flex items-center justify-center gap-2"
+                asChild
               >
-                Enviar Solicitação
-                <ArrowRight className="w-5 h-5" />
-              </a>
+                <a
+                  href="https://wa.me/5511989150001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  Enviar Solicitação
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </Button>
             </form>
           </div>
         </div>
@@ -200,17 +206,17 @@ export function VivoGestaoContactSection(): React.JSX.Element {
               Nossa equipe está pronta para ajudar você a implementar a solução ideal para sua empresa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://wa.me/551123629665" 
-                target="_blank" 
+              <a
+                href="https://wa.me/5511989150001"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-[#660099] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
               >
                 Agendar Demonstração
               </a>
-              <a 
-                href="https://wa.me/551123629665" 
-                target="_blank" 
+              <a
+                href="https://wa.me/5511989150001"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#660099] transition-colors duration-300"
               >

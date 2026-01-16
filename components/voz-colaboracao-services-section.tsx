@@ -53,10 +53,10 @@ export function VozColaboracaoServicesSection() {
                   <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-4 mx-auto">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  
+
                   <CardTitle className="text-lg sm:text-xl font-bold mb-3">{service.name}</CardTitle>
                   <p className="text-sm text-gray-600 mb-4">{service.description}</p>
-                  
+
                   <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
                     {service.price}
                   </div>
@@ -73,13 +73,19 @@ export function VozColaboracaoServicesSection() {
                   </ul>
 
                   <div className="space-y-2 sm:space-y-3">
-                    <Link
-                      href={service.href}
-                      className={`w-full inline-block text-center py-2 px-3 sm:px-4 rounded-md font-medium transition-colors text-sm sm:text-base ${service.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white" : "border border-gray-300 text-gray-700 hover:bg-gray-50"}`}
+                    <Button
+                      asChild
+                      className={`w-full font-medium transition-colors text-sm sm:text-base ${service.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white" : "border border-gray-300 text-gray-700 hover:bg-gray-50 bg-transparent hover:text-gray-900"}`}
+                      variant={service.popular ? "default" : "outline"}
                     >
-                      <ArrowRight className="w-4 h-4 inline mr-2" />
-                      Saiba mais
-                    </Link>
+                      <Link
+                        href={service.href}
+                        className="cursor-pointer flex items-center justify-center"
+                      >
+                        <ArrowRight className="w-4 h-4 inline mr-2" />
+                        Saiba mais
+                      </Link>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>

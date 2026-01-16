@@ -25,11 +25,11 @@ export function Zero303HeroSection(): React.JSX.Element {
             <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 text-sm px-4 py-2">
               {hero.badge}
             </Badge>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               {hero.title}
             </h1>
-            
+
             <p className="text-xl text-purple-100 leading-relaxed max-w-2xl">
               {hero.description}
             </p>
@@ -41,18 +41,18 @@ export function Zero303HeroSection(): React.JSX.Element {
                 size="lg"
                 className="bg-white text-purple-900 hover:bg-purple-50 font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   {hero.primaryButton}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
-              
+
               <Button
                 asChild
                 size="lg"
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-900 font-bold px-8 py-4 text-lg transition-all duration-300 cursor-pointer"
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   {hero.secondaryButton}
                 </a>
               </Button>
@@ -66,7 +66,7 @@ export function Zero303HeroSection(): React.JSX.Element {
               <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 bg-white/20 rounded-3xl mb-6 lg:mb-8 mx-auto">
                 <div className="text-white font-bold text-2xl lg:text-4xl">0303</div>
               </div>
-              
+
               {/* Central Text */}
               <div className="text-center">
                 <h3 className="text-xl lg:text-2xl font-bold text-white mb-3 lg:mb-4">

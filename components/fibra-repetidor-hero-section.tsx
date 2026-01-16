@@ -38,16 +38,18 @@ export function FibraRepetidorHeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href={contact.whatsapp}
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre ofertas de Fibra com Repetidor`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors"
+                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors cursor-pointer"
               >
                 {hero.primaryButton}
               </a>
               <a
-                href={`tel:${contact.phone}`}
-                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent"
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre Wi-Fi Mesh`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-white text-white hover:bg-white/10 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-colors bg-transparent cursor-pointer"
               >
                 {hero.secondaryButton}
               </a>
@@ -58,11 +60,10 @@ export function FibraRepetidorHeroSection() {
               {hero.badges.map((badge, index) => (
                 <Badge
                   key={index}
-                  className={`px-3 py-1 text-xs sm:text-sm ${
-                    badge.color === "green"
-                      ? "bg-green-500 text-white hover:bg-green-600"
-                      : "bg-purple-500 text-white hover:bg-purple-600"
-                  }`}
+                  className={`px-3 py-1 text-xs sm:text-sm ${badge.color === "green"
+                    ? "bg-green-500 text-white hover:bg-green-600"
+                    : "bg-purple-500 text-white hover:bg-purple-600"
+                    }`}
                 >
                   {badge.text}
                 </Badge>

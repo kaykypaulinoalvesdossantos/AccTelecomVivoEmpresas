@@ -32,11 +32,11 @@ export function OitoZeroZeroHeroSection(): React.JSX.Element {
             <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 text-sm px-4 py-2">
               {hero.badge}
             </Badge>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               {hero.title}
             </h1>
-            
+
             <p className="text-xl text-purple-100 leading-relaxed max-w-2xl">
               {hero.description}
             </p>
@@ -68,18 +68,18 @@ export function OitoZeroZeroHeroSection(): React.JSX.Element {
                 size="lg"
                 className="bg-white text-purple-900 hover:bg-purple-50 font-bold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
               >
-                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   {hero.primaryButton}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
-              
+
               <Button
                 asChild
                 size="lg"
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-900 font-bold px-8 py-4 text-lg transition-all duration-300 cursor-pointer"
               >
-                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   {hero.secondaryButton}
                 </a>
               </Button>
@@ -93,19 +93,19 @@ export function OitoZeroZeroHeroSection(): React.JSX.Element {
               <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 bg-white/20 rounded-3xl mb-6 lg:mb-8 mx-auto">
                 <Phone className="w-12 h-12 lg:w-16 lg:h-16 text-white" />
               </div>
-              
+
               {/* 0800 Bubble */}
               <div className="absolute top-6 right-6 lg:top-8 lg:right-8 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl px-4 py-3 lg:px-6 lg:py-4 shadow-2xl z-10">
                 <div className="text-white font-bold text-lg lg:text-2xl">0800</div>
                 <div className="text-pink-100 text-xs lg:text-sm">Gratuito</div>
               </div>
-              
+
               {/* 0300 Bubble */}
               <div className="absolute bottom-6 left-6 lg:bottom-8 lg:left-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl px-4 py-3 lg:px-6 lg:py-4 shadow-2xl z-10">
                 <div className="text-white font-bold text-lg lg:text-2xl">0300</div>
                 <div className="text-purple-100 text-xs lg:text-sm">Regional</div>
               </div>
-              
+
               {/* Central Text */}
               <div className="text-center pt-8 lg:pt-12">
                 <h3 className="text-xl lg:text-2xl font-bold text-white mb-3 lg:mb-4">

@@ -31,20 +31,23 @@ export function ClimaInteligenteHeroSection() {
                 Previsão climática em
                 <span className="block text-white/90">tempo real</span>
               </h1>
-              
+
               <p className="text-xl lg:text-2xl text-white/90 max-w-2xl leading-relaxed">
-                Planejamento e controle do processo produtivo do plantio à colheita 
+                Planejamento e controle do processo produtivo do plantio à colheita
                 com dados climáticos precisos e atualizados.
               </p>
             </div>
 
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-[#660099] hover:bg-white/90 px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                asChild
               >
-                Contrate
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar a solução Clima Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Contrate
+                </a>
               </Button>
             </div>
 

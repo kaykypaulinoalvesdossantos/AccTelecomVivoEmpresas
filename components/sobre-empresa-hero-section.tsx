@@ -12,13 +12,13 @@ export function SobreEmpresaHeroSection() {
           <Badge className="mb-6 bg-purple-100 text-purple-800 hover:bg-purple-200 text-sm sm:text-base">
             Conheça mais sobre a nossa empresa
           </Badge>
-          
+
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 lg:mb-8">
             Acc Telecom
           </h1>
-          
+
           <p className="text-lg sm:text-xl text-gray-600 mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Parceiro Autorizado Vivo Empresas com mais de 15 anos de experiência no mercado de telecomunicações. 
+            Parceiro Autorizado Vivo Empresas com mais de 15 anos de experiência no mercado de telecomunicações.
             Oferecemos soluções completas e personalizadas para empresas que buscam excelência em conectividade e comunicação.
           </p>
 
@@ -48,7 +48,7 @@ export function SobreEmpresaHeroSection() {
               <div className="text-2xl font-bold text-gray-900 mb-2">15+</div>
               <div className="text-sm text-gray-600">Anos de Experiência</div>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
                 <Users className="w-8 h-8 text-white" />
@@ -56,7 +56,7 @@ export function SobreEmpresaHeroSection() {
               <div className="text-2xl font-bold text-gray-900 mb-2">500+</div>
               <div className="text-sm text-gray-600">Empresas Atendidas</div>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
                 <Award className="w-8 h-8 text-white" />
@@ -64,7 +64,7 @@ export function SobreEmpresaHeroSection() {
               <div className="text-2xl font-bold text-gray-900 mb-2">98%</div>
               <div className="text-sm text-gray-600">Satisfação</div>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center">
                 <Target className="w-8 h-8 text-white" />
@@ -79,7 +79,7 @@ export function SobreEmpresaHeroSection() {
               className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com a Acc Telecom" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Fale Conosco
               </a>
             </Button>
@@ -88,7 +88,7 @@ export function SobreEmpresaHeroSection() {
               className="border-purple-500 text-purple-600 hover:bg-purple-50 px-8 py-4 text-lg font-semibold"
               asChild
             >
-              <a href="#sobre">Saiba Mais</a>
+              <a href="#sobre" className="cursor-pointer">Saiba Mais</a>
             </Button>
           </div>
         </div>

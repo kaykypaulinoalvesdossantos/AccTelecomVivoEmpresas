@@ -60,8 +60,10 @@ export function ESimCompatibleDevicesSection(): React.JSX.Element {
                 <p className="text-gray-600">
                   {device.description}
                 </p>
-                <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg">
-                  {device.link}
+                <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg" asChild>
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de ver modelos da ${device.name} compatíveis com eSIM`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    {device.link}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -76,8 +78,10 @@ export function ESimCompatibleDevicesSection(): React.JSX.Element {
             <p className="text-gray-600 mb-4">
               Entre em contato conosco para verificar a compatibilidade do seu dispositivo
             </p>
-            <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3">
-              Verificar Compatibilidade
+            <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de verificar compatibilidade do meu aparelho com eSIM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Verificar Compatibilidade
+              </a>
             </Button>
           </div>
         </div>

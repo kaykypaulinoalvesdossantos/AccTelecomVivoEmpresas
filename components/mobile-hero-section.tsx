@@ -59,11 +59,15 @@ export function MobileHeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-50 font-semibold px-8">
-                Ver Planos Disponíveis
+              <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-50 font-semibold px-8" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer os planos móveis empresariais" target="_blank" rel="noopener noreferrer">
+                  Ver Planos Disponíveis
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
-                Falar com Consultor
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um consultor sobre planos móveis" target="_blank" rel="noopener noreferrer">
+                  Falar com Consultor
+                </a>
               </Button>
             </div>
           </div>

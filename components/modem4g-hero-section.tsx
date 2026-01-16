@@ -30,7 +30,7 @@ export function Modem4GHeroSection(): React.JSX.Element {
               </h1>
 
               <p className="text-lg md:text-xl text-white max-w-2xl leading-relaxed">
-                Conectividade móvel empresarial com máxima flexibilidade. 
+                Conectividade móvel empresarial com máxima flexibilidade.
                 Maior mobilidade e facilidade para seu escritório itinerante.
               </p>
             </div>
@@ -62,12 +62,12 @@ export function Modem4GHeroSection(): React.JSX.Element {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-purple-600 hover:bg-white/95 font-semibold px-6 py-3 shadow-lg border-2 border-white"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar Modem 4G" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Contratar pelo WhatsApp
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
@@ -78,7 +78,7 @@ export function Modem4GHeroSection(): React.JSX.Element {
                 className="border-2 border-white text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-6 py-3 shadow-lg"
                 asChild
               >
-                <a href="#planos">
+                <a href="#planos" className="cursor-pointer">
                   Ver Planos
                 </a>
               </Button>
@@ -91,13 +91,13 @@ export function Modem4GHeroSection(): React.JSX.Element {
               <div className="relative">
                 {/* Real Pen/Box image */}
                 <div className="w-full h-64 bg-white rounded-2xl flex items-center justify-center p-8 shadow-inner">
-                  <img 
-                    src="/195624372-removebg-preview.png" 
+                  <img
+                    src="/195624372-removebg-preview.png"
                     alt="Pen/Box Vivo - Dispositivo móvel empresarial"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -left-4 w-8 h-8 bg-white rounded-full animate-bounce shadow-lg border-2 border-white/50"></div>
                 <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-white rounded-full animate-bounce delay-500 shadow-lg border-2 border-white/50"></div>

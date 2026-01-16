@@ -23,14 +23,14 @@ export function RoamingPlansSection(): React.JSX.Element {
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="cliente" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8 bg-gray-100 p-1 rounded-lg">
-              <TabsTrigger 
-                value="cliente" 
+              <TabsTrigger
+                value="cliente"
                 className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600"
               >
                 Já sou cliente
               </TabsTrigger>
-              <TabsTrigger 
-                value="novo" 
+              <TabsTrigger
+                value="novo"
                 className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#660099] data-[state=active]:to-[#EB3C7D] data-[state=active]:text-white data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600"
               >
                 Quero ser cliente
@@ -49,14 +49,14 @@ export function RoamingPlansSection(): React.JSX.Element {
                         Consulte seu país de destino
                       </h3>
                       <p className="text-gray-600 mb-6 leading-relaxed">
-                        Verifique operadoras parceiras, serviços disponíveis e mais informações 
+                        Verifique operadoras parceiras, serviços disponíveis e mais informações
                         que podem ajudar na viagem.
                       </p>
-                      <Button 
+                      <Button
                         className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300"
                         asChild
                       >
-                        <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
                           <Search className="w-4 h-4 mr-2" />
                           Consultar país
                         </a>
@@ -79,14 +79,14 @@ export function RoamingPlansSection(): React.JSX.Element {
                         Seja cliente Vivo e aproveite o Vivo Travel
                       </h3>
                       <p className="text-gray-600 mb-6 leading-relaxed">
-                        Contrate um plano Vivo e tenha acesso ao Vivo Travel para suas viagens internacionais. 
+                        Contrate um plano Vivo e tenha acesso ao Vivo Travel para suas viagens internacionais.
                         Conectividade global com a qualidade Vivo.
                       </p>
-                      <Button 
+                      <Button
                         className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300"
                         asChild
                       >
-                        <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
                           Contratar Plano
                         </a>
                       </Button>

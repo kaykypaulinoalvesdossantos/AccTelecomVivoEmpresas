@@ -78,11 +78,10 @@ export function Modem4GComboSection(): React.JSX.Element {
     }
   ]
 
-  const renderPlanCard = (plano: any, isPopular: boolean = false) => {
+  const renderPlanCard = (plano: any, isPopular: boolean = false, type: string = "Modem 4G") => {
     return (
-      <Card key={plano.gb} className={`relative bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg overflow-hidden ${
-        isPopular ? 'ring-2 ring-purple-500' : ''
-      }`}>
+      <Card key={plano.gb} className={`relative bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-lg overflow-hidden ${isPopular ? 'ring-2 ring-purple-500' : ''
+        }`}>
         <CardHeader className="pb-4 pt-6">
           {isPopular && (
             <div className="absolute -top-3 left-4">
@@ -91,12 +90,12 @@ export function Modem4GComboSection(): React.JSX.Element {
               </Badge>
             </div>
           )}
-          
+
           <CardTitle className="text-2xl font-bold text-gray-800 mb-4">
             {plano.gb}
           </CardTitle>
         </CardHeader>
-        
+
         <CardContent className="space-y-4">
           <div className="space-y-2">
             {plano.features.map((feature: string, featureIndex: number) => (
@@ -105,23 +104,23 @@ export function Modem4GComboSection(): React.JSX.Element {
               </div>
             ))}
           </div>
-          
+
           <div className="text-center">
             <div className="text-2xl font-bold text-gray-800">{plano.preco}</div>
             <div className="text-gray-600 text-sm">{plano.periodo}</div>
           </div>
-          
-          <Button 
+
+          <Button
             className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white font-semibold py-3 rounded-lg transition-all duration-300"
             asChild
           >
-            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plano.gb} de ${type}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               Contratar
             </a>
           </Button>
-          
+
           <div className="text-center">
-            <a href="https://wa.me/551123629665" className="text-sm text-gray-500 hover:text-gray-700 flex items-center justify-center gap-1">
+            <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o plano ${plano.gb} de ${type}`} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-gray-700 flex items-center justify-center gap-1 cursor-pointer">
               Mais detalhes
               <ChevronDown className="w-4 h-4" />
             </a>
@@ -150,18 +149,18 @@ export function Modem4GComboSection(): React.JSX.Element {
           <TabsContent value="modem4g">
             <div className="mb-8">
               <p className="text-lg text-gray-600 max-w-4xl mx-auto text-center">
-                A Vivo oferece cobertura 4G amplamente disponível em todo o território nacional. 
-                Isso significa que, mesmo em áreas rurais e remotas, você pode desfrutar de conexão com qualidade. 
+                A Vivo oferece cobertura 4G amplamente disponível em todo o território nacional.
+                Isso significa que, mesmo em áreas rurais e remotas, você pode desfrutar de conexão com qualidade.
                 Aproveite a velocidade e a confiabilidade da nossa rede móvel para manter sua empresa funcionando sem interrupções.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {planosModem4G.map((plano) => (
                 <div key={plano.gb}>
                   {renderPlanCard(plano, plano.popular)}
                   <div className="text-center mt-4">
-                    <a href="https://wa.me/551123629665" className="text-sm text-gray-500 hover:text-gray-700">
+                    <a href="https://wa.me/5511989150001" className="text-sm text-gray-500 hover:text-gray-700">
                       Mais informações
                     </a>
                   </div>
@@ -173,18 +172,18 @@ export function Modem4GComboSection(): React.JSX.Element {
           <TabsContent value="vivobox">
             <div className="mb-8">
               <p className="text-lg text-gray-600 max-w-4xl mx-auto text-center">
-                Com o Vivo Box, sua empresa desfruta de uma conexão 4G estável, mesmo em áreas remotas, 
-                graças à abrangente cobertura nacional Vivo. Conecte-se simultaneamente em até 32 dispositivos na mesma rede. 
+                Com o Vivo Box, sua empresa desfruta de uma conexão 4G estável, mesmo em áreas remotas,
+                graças à abrangente cobertura nacional Vivo. Conecte-se simultaneamente em até 32 dispositivos na mesma rede.
                 Oferecemos para sua empresa uma solução de conectividade sólida que abrange todo o território brasileiro para atender às suas necessidades.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {planosVivoBox.map((plano) => (
                 <div key={plano.gb}>
                   {renderPlanCard(plano, plano.popular)}
                   <div className="text-center mt-4">
-                    <a href="https://wa.me/551123629665" className="text-sm text-gray-500 hover:text-gray-700">
+                    <a href="https://wa.me/5511989150001" className="text-sm text-gray-500 hover:text-gray-700">
                       Mais informações
                     </a>
                   </div>
@@ -196,13 +195,13 @@ export function Modem4GComboSection(): React.JSX.Element {
           <TabsContent value="satelite">
             <div className="mb-8">
               <p className="text-lg text-gray-600 max-w-4xl mx-auto text-center">
-                Nossa internet via satélite oferece uma conexão confiável em áreas remotas, 
-                permitindo que sua empresa esteja online em qualquer lugar do país. 
-                Realize videoconferências, gerencie seus negócios e mantenha-se atualizado, 
+                Nossa internet via satélite oferece uma conexão confiável em áreas remotas,
+                permitindo que sua empresa esteja online em qualquer lugar do país.
+                Realize videoconferências, gerencie seus negócios e mantenha-se atualizado,
                 mesmo nas regiões mais distantes.
               </p>
             </div>
-            
+
             <div className="max-w-md mx-auto">
               <Card className="bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden">
                 <CardHeader className="pb-4 pt-6">
@@ -210,14 +209,14 @@ export function Modem4GComboSection(): React.JSX.Element {
                     Internet Satélite
                   </CardTitle>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-4 text-center">
                   <div className="text-purple-600 font-semibold text-lg">
                     Esgotado
                   </div>
-                  
+
                   <div className="w-full h-px bg-gray-200"></div>
-                  
+
                   <div className="text-gray-500 text-sm uppercase">
                     SERVIÇO INDISPONÍVEL
                   </div>

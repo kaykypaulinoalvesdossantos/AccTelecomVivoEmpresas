@@ -65,59 +65,6 @@ export function CallToActionSection() {
             <div className="absolute bottom-20 left-20 w-24 h-24 border border-white/20 rounded-lg rotate-45" />
             <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full" />
           </div>
-
-          <div className="relative px-12 py-20 text-center text-white">
-            <Badge className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30">
-              <CheckCircle className="w-4 h-4 mr-2" />
-              Proposta Gratuita e Sem Compromisso
-            </Badge>
-
-            <h2 className="text-4xl lg:text-6xl font-bold mb-6">
-              Transforme sua empresa
-                              <span className="block bg-gradient-to-r from-[#660099] to-[#EB3C7D] bg-clip-text text-transparent">
-                hoje mesmo!
-              </span>
-            </h2>
-
-            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
-              Não perca mais tempo com conectividade lenta ou instável. Solicite uma proposta personalizada e descubra
-              como a ACC Telecom pode acelerar o crescimento do seu negócio.
-            </p>
-
-            {/* Features */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center justify-center space-x-3">
-                  <div className="p-2 bg-white/20 rounded-lg">
-                    <feature.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="text-left">
-                    <div className="font-semibold">{feature.title}</div>
-                    <div className="text-sm text-white/80">{feature.description}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Primary CTA */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold text-lg px-8 py-4">
-                Solicitar Proposta Gratuita
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 font-semibold text-lg px-8 py-4 bg-transparent"
-              >
-                Ver Demonstração
-              </Button>
-            </div>
-
-            <p className="text-sm text-white/70 mt-6">
-              ✓ Sem taxas de instalação • ✓ Sem fidelidade • ✓ Suporte especializado incluso
-            </p>
-          </div>
         </div>
 
         {/* Contact Options */}
@@ -131,17 +78,15 @@ export function CallToActionSection() {
             {contactOptions.map((option, index) => (
               <div
                 key={index}
-                className={`professional-card p-8 rounded-2xl border-2 ${
-                  option.primary
-                    ? "border-[#EB3C7D] bg-gradient-to-br from-[#EB3C7D]/5 to-[#660099]/5"
-                    : "border-gray-200 bg-white"
-                }`}
+                className={`professional-card p-8 rounded-2xl border-2 ${option.primary
+                  ? "border-[#EB3C7D] bg-gradient-to-br from-[#EB3C7D]/5 to-[#660099]/5"
+                  : "border-gray-200 bg-white"
+                  }`}
               >
                 <div className="flex items-center justify-center mb-6">
                   <div
-                    className={`p-4 rounded-2xl ${
-                      option.primary ? "bg-gradient-to-br from-[#660099] to-[#EB3C7D]" : "bg-gray-100"
-                    }`}
+                    className={`p-4 rounded-2xl ${option.primary ? "bg-gradient-to-br from-[#660099] to-[#EB3C7D]" : "bg-gray-100"
+                      }`}
                   >
                     <option.icon className={`w-8 h-8 ${option.primary ? "text-white" : "text-gray-600"}`} />
                   </div>
@@ -152,12 +97,14 @@ export function CallToActionSection() {
                 <p className="text-sm text-gray-500 mb-6">{option.subtitle}</p>
 
                 <Button
-                  className={`w-full ${
-                    option.primary ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"
-                  }`}
+                  className={`w-full ${option.primary ? "bg-[#EB3C7D] hover:bg-[#EB3C7D]/90" : "bg-[#660099] hover:bg-[#660099]/90"
+                    }`}
+                  asChild
                 >
-                  {option.action}
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <a href={option.title === "Ligue Agora" ? "tel:+5511989150001" : option.title === "WhatsApp Business" ? "https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista da Vivo Empresas" : "https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma reunião com a Vivo Empresas"} target="_blank" rel="noopener noreferrer">
+                    {option.action}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             ))}

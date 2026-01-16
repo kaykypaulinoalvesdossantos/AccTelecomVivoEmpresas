@@ -27,35 +27,35 @@ export function VivoGestaoHeroSection(): React.JSX.Element {
           <Badge className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] text-white px-4 py-2 mb-6">
             {vivoGestaoData.hero.badge}
           </Badge>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             {vivoGestaoData.hero.title}
           </h1>
-          
+
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
             {vivoGestaoData.hero.subtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-8 py-4 text-lg"
               asChild
             >
-              <a href={vivoGestaoData.hero.cta.primary.href} target="_blank" rel="noopener noreferrer">
+              <a href={vivoGestaoData.hero.cta.primary.href} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 <BarChart3 className="w-5 h-5 mr-2" />
                 {vivoGestaoData.hero.cta.primary.text}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
             </Button>
-            
-            <Button 
-              variant="outline" 
+
+            <Button
+              variant="outline"
               size="lg"
               className="border-2 border-[#660099] text-[#660099] hover:bg-[#660099] hover:text-white font-semibold px-8 py-4 text-lg"
               asChild
             >
-              <a href={vivoGestaoData.hero.cta.secondary.href}>
+              <a href={vivoGestaoData.hero.cta.secondary.href} className="cursor-pointer">
                 {vivoGestaoData.hero.cta.secondary.text}
               </a>
             </Button>

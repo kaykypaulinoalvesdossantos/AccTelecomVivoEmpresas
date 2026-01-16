@@ -31,9 +31,9 @@ export function FrotaInteligenteHeroSection() {
                 Gerenciamento de frota
                 <span className="block text-white/90">inteligente</span>
               </h1>
-              
+
               <p className="text-xl lg:text-2xl text-white/90 max-w-2xl leading-relaxed">
-                Rastreamento veicular em tempo real com tecnologia GPS avançada. 
+                Rastreamento veicular em tempo real com tecnologia GPS avançada.
                 Controle total da sua frota, reduza custos e aumente a eficiência operacional.
               </p>
             </div>
@@ -50,23 +50,29 @@ export function FrotaInteligenteHeroSection() {
               <div className="text-4xl font-bold text-white">
                 R$ 60<span className="text-2xl text-white/80">/mês</span>
               </div>
-          
+
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-[#660099] hover:bg-white/90 px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                asChild
               >
-                Contratar Serviço
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar o serviço de Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Contratar Serviço
+                </a>
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-xl transition-all duration-300 cursor-pointer bg-transparent"
+                asChild
               >
-                Solicitar Contato
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar contato sobre Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Solicitar Contato
+                </a>
               </Button>
             </div>
 
@@ -139,7 +145,7 @@ export function FrotaInteligenteHeroSection() {
                         <div className="absolute top-1/3 left-0 right-0 h-1 bg-gray-400 transform rotate-6"></div>
                         <div className="absolute bottom-1/3 left-0 right-0 h-1 bg-gray-400 transform -rotate-3"></div>
                       </div>
-                      
+
                       {/* Vehicle Dots - Exact positions from image */}
                       <div className="absolute top-4 left-8 w-4 h-4 bg-[#660099] rounded-full border-2 border-white shadow-lg"></div>
                       <div className="absolute top-8 right-12 w-4 h-4 bg-[#EB3C7D] rounded-full border-2 border-white shadow-lg"></div>

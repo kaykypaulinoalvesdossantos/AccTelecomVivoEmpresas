@@ -141,7 +141,7 @@ export function FiberFAQSection() {
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-3 sm:mb-4">{forma.description}</p>
                   {forma.link && (
                     <a
-                      href={forma.link}
+                      href={`${forma.link}?text=Olá! Gostaria de contratação via WhatsApp`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-colors text-sm sm:text-base"
@@ -163,6 +163,6 @@ export function FiberFAQSection() {
           </p>
         </div>
       </div>
-    </section>
+    </section >
   )
 }

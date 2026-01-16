@@ -82,13 +82,13 @@ export function M2MPlansSection(): React.JSX.Element {
                 <Database className="w-8 h-8 text-white" />
               </div>
               <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
-              
+
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-purple-600">{plan.price}</div>
                 <div className="text-sm text-gray-600">{plan.period}</div>
               </div>
             </CardHeader>
-            
+
             <CardContent className="pt-0">
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature: string, featureIndex: number) => (
@@ -98,26 +98,27 @@ export function M2MPlansSection(): React.JSX.Element {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="space-y-3">
                 <Button
                   className={`w-full ${plan.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" : "bg-purple-600 hover:bg-purple-700"} text-white`}
                   asChild
                 >
-                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de solicitar o plano M2M ${plan.name}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Solicite
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
-                <Button 
-                  variant="ghost" 
+                <Button
+                  variant="ghost"
                   className="w-full text-sm"
                   asChild
                 >
-                  <a 
-                    href="https://wa.me/551123629665" 
-                    target="_blank" 
+                  <a
+                    href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o plano M2M ${plan.name}`}
+                    target="_blank"
                     rel="noopener noreferrer"
+                    className="cursor-pointer"
                   >
                     Mais Detalhes
                   </a>
@@ -137,7 +138,7 @@ export function M2MPlansSection(): React.JSX.Element {
           <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-200">Planos M2M</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Chip M2M (Machine to machine) com gestão inteligente</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Solução completa de conectividade M2M com a Kite Platform para telemetria, 
+            Solução completa de conectividade M2M com a Kite Platform para telemetria,
             rastreamento e automação. Gerencie seus dispositivos em tempo real.
           </p>
         </div>
@@ -145,7 +146,7 @@ export function M2MPlansSection(): React.JSX.Element {
         <div className="relative">
           {/* Carrossel Container */}
           <div className="overflow-hidden px-8 py-8">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
@@ -158,37 +159,34 @@ export function M2MPlansSection(): React.JSX.Element {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className={`p-3 rounded-full transition-all duration-200 ${
-                currentIndex === 0 
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-              }`}
+              className={`p-3 rounded-full transition-all duration-200 ${currentIndex === 0
+                ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                }`}
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            
+
             <div className="flex space-x-2">
               {Array.from({ length: Math.max(1, plans.length - 2) }, (_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    index === currentIndex 
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110' 
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentIndex
+                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110'
+                    : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
                 />
               ))}
             </div>
-            
+
             <button
               onClick={nextSlide}
               disabled={currentIndex >= Math.max(0, plans.length - 3)}
-              className={`p-3 rounded-full transition-all duration-200 ${
-                currentIndex >= Math.max(0, plans.length - 3)
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                  : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-              }`}
+              className={`p-3 rounded-full transition-all duration-200 ${currentIndex >= Math.max(0, plans.length - 3)
+                ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                }`}
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -202,12 +200,12 @@ export function M2MPlansSection(): React.JSX.Element {
               <h3 className="text-2xl font-bold mb-2">Precisa de ajuda?</h3>
               <p className="text-white/90">(11) 2362-9665</p>
             </div>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001?text=Olá! Preciso de ajuda com planos M2M" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 WhatsApp
               </a>
             </Button>

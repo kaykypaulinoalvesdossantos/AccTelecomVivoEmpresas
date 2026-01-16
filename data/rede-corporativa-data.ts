@@ -4,8 +4,8 @@
 export const redeCorporativaConfig = {
   // Configurações gerais
   contact: {
-    phone: "11 2362-9665",
-    whatsapp: "https://wa.me/551123629665",
+    phone: "11 98915-0001",
+    whatsapp: "https://wa.me/5511989150001",
     supportHours: "24 horas por dia, 7 dias por semana"
   },
 
@@ -168,7 +168,7 @@ export const redeCorporativaConfig = {
       },
       {
         question: "Quais são os contatos da Central de Relacionamento para serviços de Dados?",
-        answer: "Para serviços de dados, entre em contato pelo telefone 11 2362-9665 ou através do WhatsApp. Nossa equipe está disponível 24/7."
+        answer: "Para serviços de dados, entre em contato pelo telefone 11 98915-0001 ou através do WhatsApp. Nossa equipe está disponível 24/7."
       },
       {
         question: "Onde consultar as informações detalhadas dos serviços?",
@@ -176,7 +176,7 @@ export const redeCorporativaConfig = {
       },
       {
         question: "Como solicitar o cancelamento dos serviços?",
-        answer: "Para solicitar o cancelamento dos serviços, entre em contato com nossa equipe comercial pelo telefone 11 2362-9665 ou através do WhatsApp."
+        answer: "Para solicitar o cancelamento dos serviços, entre em contato com nossa equipe comercial pelo telefone 11 98915-0001 ou através do WhatsApp."
       },
       {
         question: "O que é MPLS?",

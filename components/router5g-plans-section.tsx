@@ -62,9 +62,8 @@ export function Router5GPlansSection(): React.JSX.Element {
 
   const renderRouter5GCard = (plano: any) => {
     return (
-      <Card key={plano.gb} className={`relative bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden ${
-        plano.popular ? 'border-purple-500 ring-2 ring-purple-500/20 shadow-xl' : ''
-      }`}>
+      <Card key={plano.gb} className={`relative bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden ${plano.popular ? 'border-purple-500 ring-2 ring-purple-500/20 shadow-xl' : ''
+        }`}>
         <CardHeader className="pb-4 pt-6">
           <div className="flex justify-between items-start mb-3">
             <Badge className="bg-green-100 text-green-800 px-3 py-1 text-xs font-semibold border border-green-200">
@@ -77,21 +76,21 @@ export function Router5GPlansSection(): React.JSX.Element {
               </Badge>
             )}
           </div>
-          
-          
+
+
           <CardTitle className="text-2xl font-bold text-gray-800 mb-2">
             Plano de Celular 5G
           </CardTitle>
-          
+
           <div className="text-center mb-3">
             <div className="text-4xl font-bold text-gray-800">{plano.gb}</div>
           </div>
-          
+
           <p className="text-sm text-gray-600 mb-3 text-center">
             {plano.descricao}
           </p>
         </CardHeader>
-        
+
         <CardContent className="space-y-4">
           <div className="space-y-3">
             {plano.features.map((feature: string, featureIndex: number) => (
@@ -101,23 +100,23 @@ export function Router5GPlansSection(): React.JSX.Element {
               </div>
             ))}
           </div>
-          
+
           <div className="text-center pt-4 border-t">
             <div className="text-3xl font-bold text-gray-800">{plano.preco}</div>
             <div className="text-gray-600 text-sm">{plano.period}</div>
           </div>
-          
-          <Button 
+
+          <Button
             className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 rounded-lg transition-all duration-300"
             asChild
           >
-            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de assinar o plano ${plano.gb} de Roteador 5G`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               Assine já
             </a>
           </Button>
-          
+
           <div className="text-center">
-            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer" className="text-sm text-purple-600 hover:underline flex items-center justify-center gap-1">
+            <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o plano ${plano.gb} de Roteador 5G`} target="_blank" rel="noopener noreferrer" className="text-sm text-purple-600 hover:underline flex items-center justify-center gap-1 cursor-pointer">
               Mais detalhes
               <ArrowRight className="w-3 h-3" />
             </a>
@@ -135,7 +134,7 @@ export function Router5GPlansSection(): React.JSX.Element {
             Escolha o plano ideal para sua empresa
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Todas as ofertas contam com menor preço por giga de dados. Aproveite a tecnologia 5G 
+            Todas as ofertas contam com menor preço por giga de dados. Aproveite a tecnologia 5G
             para impulsionar sua conectividade empresarial.
           </p>
         </div>
@@ -143,10 +142,12 @@ export function Router5GPlansSection(): React.JSX.Element {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {planosRoteador5G.map((plano) => renderRouter5GCard(plano))}
         </div>
-        
+
         <div className="text-center mt-8">
-          <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-3">
-            Mais informações
+          <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-3" asChild>
+            <a href="https://wa.me/5511989150001?text=Olá! Gostaria de mais informações sobre Roteador 5G" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              Mais informações
+            </a>
           </Button>
         </div>
       </div>

@@ -96,13 +96,13 @@ export function MDMPlansSection(): React.JSX.Element {
                 ))}
               </div>
               <CardTitle className="text-xl font-bold">{plan.data}</CardTitle>
-              
+
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-purple-600">{plan.price}</div>
                 <div className="text-sm text-gray-600">{plan.period}</div>
               </div>
             </CardHeader>
-            
+
             <CardContent className="pt-0">
               <div className="space-y-2 mb-6">
                 <p className="text-sm font-semibold text-gray-800 mb-2">Benefícios:</p>
@@ -113,12 +113,12 @@ export function MDMPlansSection(): React.JSX.Element {
                   </div>
                 ))}
               </div>
-              
-              <Button 
+
+              <Button
                 className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-2 rounded-lg"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de assinar o ${plan.planType} de ${plan.data}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Assinar Plano
                 </a>
               </Button>
@@ -165,11 +165,11 @@ export function MDMPlansSection(): React.JSX.Element {
             <TabsContent value="nao-cliente">
               <div className="flex justify-between items-center mb-8">
                 <h3 className="text-xl font-semibold text-gray-800">Planos disponíveis</h3>
-                <Button 
+                <Button
                   className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg"
                   asChild
                 >
-                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5511989150001?text=Olá! Gostaria de assinar um plano MDM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Assine já
                   </a>
                 </Button>
@@ -178,7 +178,7 @@ export function MDMPlansSection(): React.JSX.Element {
               <div className="relative">
                 {/* Carrossel Container */}
                 <div className="overflow-hidden px-8 py-8">
-                  <div 
+                  <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentIndex * 25}%)` }}
                   >
@@ -191,37 +191,34 @@ export function MDMPlansSection(): React.JSX.Element {
                   <button
                     onClick={prevSlide}
                     disabled={currentIndex === 0}
-                    className={`p-3 rounded-full transition-all duration-200 ${
-                      currentIndex === 0 
-                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                        : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-                    }`}
+                    className={`p-3 rounded-full transition-all duration-200 ${currentIndex === 0
+                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                      }`}
                   >
                     <ChevronLeft className="w-6 h-6" />
                   </button>
-                  
+
                   <div className="flex space-x-2">
                     {Array.from({ length: Math.max(1, plans.length - 3) }, (_, index) => (
                       <button
                         key={index}
                         onClick={() => setCurrentIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                          index === currentIndex 
-                            ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110' 
-                            : 'bg-gray-300 hover:bg-gray-400'
-                        }`}
+                        className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentIndex
+                          ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-110'
+                          : 'bg-gray-300 hover:bg-gray-400'
+                          }`}
                       />
                     ))}
                   </div>
-                  
+
                   <button
                     onClick={nextSlide}
                     disabled={currentIndex >= Math.max(0, plans.length - 4)}
-                    className={`p-3 rounded-full transition-all duration-200 ${
-                      currentIndex >= Math.max(0, plans.length - 4)
-                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                        : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
-                    }`}
+                    className={`p-3 rounded-full transition-all duration-200 ${currentIndex >= Math.max(0, plans.length - 4)
+                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      : 'bg-white text-gray-600 hover:bg-gray-50 shadow-lg border border-gray-200'
+                      }`}
                   >
                     <ChevronRight className="w-6 h-6" />
                   </button>
@@ -241,14 +238,14 @@ export function MDMPlansSection(): React.JSX.Element {
                         Adicione MDM ao seu plano atual
                       </h3>
                       <p className="text-gray-600 mb-6 leading-relaxed">
-                        Se você já é cliente Vivo, adicione a solução MDM ao seu plano existente 
+                        Se você já é cliente Vivo, adicione a solução MDM ao seu plano existente
                         e tenha controle total dos dispositivos da sua empresa.
                       </p>
-                      <Button 
+                      <Button
                         className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3"
                         asChild
                       >
-                        <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5511989150001?text=Olá! Sou cliente Vivo e quero adicionar MDM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                           Adicionar MDM
                         </a>
                       </Button>
@@ -270,7 +267,7 @@ export function MDMPlansSection(): React.JSX.Element {
                         Contrate apenas a Gestão de Dispositivos
                       </h3>
                       <p className="text-gray-600 mb-6 leading-relaxed">
-                        Se você já tem planos de celular, contrate apenas a solução MDM 
+                        Se você já tem planos de celular, contrate apenas a solução MDM
                         para gerenciar seus dispositivos com segurança e eficiência.
                       </p>
                       <div className="flex items-center gap-4 mb-6">
@@ -286,11 +283,11 @@ export function MDMPlansSection(): React.JSX.Element {
                           Bloqueio de chip
                         </Badge>
                       </div>
-                      <Button 
+                      <Button
                         className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-3"
                         asChild
                       >
-                        <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar apenas o MDM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                           Contratar MDM
                         </a>
                       </Button>

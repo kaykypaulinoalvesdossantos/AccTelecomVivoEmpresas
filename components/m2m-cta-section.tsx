@@ -32,13 +32,13 @@ export function M2MCTASection(): React.JSX.Element {
                   </p>
                 </div>
               </div>
-              
-              <Button 
-                size="lg" 
+
+              <Button
+                size="lg"
                 className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-3"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer mais sobre soluções IoT Vivo Empresas" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   WhatsApp
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>

@@ -13,22 +13,27 @@ export function Router5GCTASection(): React.JSX.Element {
             Pronto para a Velocidade 5G?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Transforme sua conectividade com o Roteador 5G Vivo. 
+            Transforme sua conectividade com o Roteador 5G Vivo.
             Velocidade, estabilidade e cobertura nacional para impulsionar seu negócio.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg">
-              Contratar Agora
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar Roteador 5G agora" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Contratar Agora
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-8 py-4 text-lg"
+              asChild
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Falar com Consultor
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com consultor sobre Roteador 5G" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Falar com Consultor
+              </a>
             </Button>
           </div>
 

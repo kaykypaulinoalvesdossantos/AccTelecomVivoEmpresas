@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import { Button } from "@/components/ui/button"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -25,7 +26,7 @@ export function Microsoft365PlansSection() {
     },
     {
       title: "Aplicativos para negócios",
-      users: "Até 300 Usuários", 
+      users: "Até 300 Usuários",
       price: "R$ 88,00",
       apps: [
         { name: "Outlook", icon: Mail, color: "#0078D4" },
@@ -103,7 +104,7 @@ export function Microsoft365PlansSection() {
                     <h5 className="font-semibold text-gray-900 mb-3">Aplicativos</h5>
                     <div className="flex flex-wrap gap-2">
                       {plan.apps.map((app, appIndex) => (
-                        <div 
+                        <div
                           key={appIndex}
                           className="w-8 h-8 rounded flex items-center justify-center"
                           style={{ backgroundColor: app.color }}
@@ -131,14 +132,16 @@ export function Microsoft365PlansSection() {
                   </div>
 
                   {/* CTA Button */}
-                  <button 
-                    className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" 
+                  <Button
+                    className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
                     style={{ backgroundColor: plan.color }}
-                    onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de contratar o plano ' + plan.title + ' do Microsoft 365', '_blank')}
+                    asChild
                   >
-                    <span>Contratar</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+                    <a href={'https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ' + plan.title + ' do Microsoft 365'} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                      <span>Contratar</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -171,13 +174,15 @@ export function Microsoft365PlansSection() {
                           <td className="py-3 px-4 text-gray-600">{plan.storage}</td>
                           <td className="py-3 px-4 font-bold text-[#660099]">{plan.price}</td>
                           <td className="py-3 px-4">
-                            <button 
-                              className="text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm" 
+                            <Button
+                              className="text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 text-sm"
                               style={{ backgroundColor: '#660099' }}
-                              onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de contratar o plano ' + plan.name + ' do Exchange Online', '_blank')}
+                              asChild
                             >
-                              Contratar
-                            </button>
+                              <a href={'https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ' + plan.name + ' do Exchange Online'} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                                Contratar
+                              </a>
+                            </Button>
                           </td>
                         </tr>
                       ))}
@@ -228,12 +233,16 @@ export function Microsoft365PlansSection() {
               Nossa equipe pode ajudar você a escolher o plano ideal para sua empresa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Preciso de ajuda para escolher o melhor plano Microsoft 365', '_blank')}>
-                Falar com Especialista
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre planos Microsoft 365', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Preciso de ajuda para escolher o melhor plano Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre planos Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

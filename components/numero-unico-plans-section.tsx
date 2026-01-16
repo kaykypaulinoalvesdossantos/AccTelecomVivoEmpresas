@@ -52,7 +52,7 @@ export function NumeroUnicoPlansSection() {
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white"
                 asChild
               >
-                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Contratar Plano de Prateleira
                 </a>
               </Button>
@@ -91,7 +91,7 @@ export function NumeroUnicoPlansSection() {
                 className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white"
                 asChild
               >
-                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Simular Plano Flex
                 </a>
               </Button>

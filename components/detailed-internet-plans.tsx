@@ -176,8 +176,15 @@ export function DetailedInternetPlans() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full" variant={plano.popular ? "default" : "outline"}>
-                      Contratar Agora
+                    <Button className="w-full" variant={plano.popular ? "default" : "outline"} asChild>
+                      <a
+                        href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plano.nome} de ${plano.velocidade}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer"
+                      >
+                        Contratar Agora
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -215,8 +222,15 @@ export function DetailedInternetPlans() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full" variant={plano.popular ? "default" : "outline"}>
-                      Solicitar Orçamento
+                    <Button className="w-full" variant={plano.popular ? "default" : "outline"} asChild>
+                      <a
+                        href={`https://wa.me/5511989150001?text=Olá! Gostaria de um orçamento para ${plano.nome}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer"
+                      >
+                        Solicitar Orçamento
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>

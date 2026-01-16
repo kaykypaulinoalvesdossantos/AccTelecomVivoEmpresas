@@ -62,11 +62,11 @@ export function RoamingSolutionsSection(): React.JSX.Element {
                 <p className="text-white/90 mb-6 leading-relaxed">
                   {solution.description}
                 </p>
-                <Button 
+                <Button
                   className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-lg"
                   asChild
                 >
-                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
                     {solution.button}
                   </a>
                 </Button>

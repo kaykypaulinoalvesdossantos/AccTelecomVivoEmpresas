@@ -75,7 +75,7 @@ export function M2MServicesSection(): React.JSX.Element {
                 SERVIÇOS AVULSOS
               </Badge>
             </div>
-            
+
             <div className="space-y-4">
               {individualServices.map((service, index) => (
                 <Card key={index} className="border-2 border-gray-200 hover:shadow-lg transition-shadow">
@@ -107,7 +107,7 @@ export function M2MServicesSection(): React.JSX.Element {
                 ROAMING INTERNACIONAL
               </Badge>
             </div>
-            
+
             <div className="space-y-4">
               {roamingServices.map((service, index) => (
                 <Card key={index} className="border-2 border-gray-200 hover:shadow-lg transition-shadow">
@@ -146,12 +146,12 @@ export function M2MServicesSection(): React.JSX.Element {
               </ul>
             </div>
             <div className="text-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-8 py-3"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar serviços M2M e Roaming" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Solicitar Serviços
                 </a>
               </Button>

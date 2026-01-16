@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -171,9 +172,11 @@ export function Microsoft365FeaturesSection() {
               <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }}>
                 <FileText className="w-6 h-6 text-white" />
               </div>
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de conhecer todas as funcionalidades do Microsoft 365', '_blank')}>
-                Explorar Todas as Ferramentas
-              </button>
+              <Button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ background: 'linear-gradient(90deg, #660099 0%, #EB3C7D 100%)' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer todas as funcionalidades do Microsoft 365" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Explorar Todas as Ferramentas
+                </a>
+              </Button>
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ export function DedicadaPlansSection() {
                   </Badge>
                 </div>
               )}
-              
+
               <Card className="relative transition-all duration-300 hover:shadow-2xl hover:scale-105 bg-white border border-gray-200">
                 <CardHeader className="text-center pb-4 pt-6 sm:pt-8">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
@@ -70,8 +70,8 @@ export function DedicadaPlansSection() {
                         {plan.button}
                       </a>
                     </Button>
-                    <Button 
-                      variant="ghost" 
+                    <Button
+                      variant="ghost"
                       className="w-full text-xs sm:text-sm"
                       asChild
                     >
@@ -93,12 +93,12 @@ export function DedicadaPlansSection() {
               <h3 className="text-2xl font-bold mb-2">Precisa de ajuda?</h3>
               <p className="text-white/90">(11) 2362-9665</p>
             </div>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
                 WhatsApp
               </a>
             </Button>

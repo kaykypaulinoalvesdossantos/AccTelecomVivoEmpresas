@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -211,12 +212,16 @@ export function AWSResourcesSection() {
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-6">Precisa de ajuda para escolher os serviços ideais?</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de uma consultoria especializada sobre serviços AWS', '_blank')}>
-              Consultoria Especializada
-            </button>
-            <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://aws.amazon.com/pt/services/', '_blank')}>
-              Ver Todos os Serviços
-            </button>
+            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de uma consultoria especializada sobre serviços AWS" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Consultoria Especializada
+              </a>
+            </Button>
+            <Button variant="outline" className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+              <a href="https://aws.amazon.com/pt/services/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Ver Todos os Serviços
+              </a>
+            </Button>
           </div>
         </div>
       </div>

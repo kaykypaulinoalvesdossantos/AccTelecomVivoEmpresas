@@ -21,7 +21,7 @@ export function PacoteEmpresaOfertasSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {ofertasDestaque.map((oferta) => (
+          {ofertasDestaque.map((oferta: any) => (
             <Card
               key={oferta.id}
               className={`relative transition-all duration-300 hover:shadow-2xl ${oferta.popular ? "ring-2 ring-purple-500 scale-105 shadow-xl" : "hover:scale-105"}`}
@@ -36,7 +36,7 @@ export function PacoteEmpresaOfertasSection() {
 
               <CardHeader className="text-center pb-4 pt-6 sm:pt-8">
                 <CardTitle className="text-lg sm:text-xl font-bold mb-3">{oferta.name}</CardTitle>
-                
+
                 <div className="space-y-4">
                   {/* Internet */}
                   {oferta.internet && (
@@ -48,7 +48,7 @@ export function PacoteEmpresaOfertasSection() {
                       </div>
                     </div>
                   )}
-                  
+
                   {/* Mobile */}
                   {oferta.mobile && (
                     <div className="flex items-center justify-center space-x-2">
@@ -81,7 +81,7 @@ export function PacoteEmpresaOfertasSection() {
                 {oferta.features && (
                   <div className="mb-4">
                     <ul className="space-y-2">
-                      {oferta.features.map((feature, index) => (
+                      {oferta.features.map((feature: any, index: number) => (
                         <li key={index} className="flex items-start text-xs sm:text-sm">
                           <Check className="h-3 w-3 sm:h-4 sm:w-4 text-green-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{feature}</span>
@@ -95,7 +95,7 @@ export function PacoteEmpresaOfertasSection() {
                 {oferta.services && (
                   <div className="mb-4">
                     <ul className="space-y-2">
-                      {oferta.services.map((service, index) => (
+                      {oferta.services.map((service: any, index: number) => (
                         <li key={index} className="flex items-start text-xs sm:text-sm">
                           <Shield className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{service}</span>
@@ -109,7 +109,7 @@ export function PacoteEmpresaOfertasSection() {
                 {oferta.checkmarks && (
                   <div className="mb-6">
                     <ul className="space-y-2">
-                      {oferta.checkmarks.map((checkmark, index) => (
+                      {oferta.checkmarks.map((checkmark: any, index: number) => (
                         <li key={index} className="flex items-start text-xs sm:text-sm">
                           <Check className="h-3 w-3 sm:h-4 sm:w-4 text-green-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{checkmark}</span>
@@ -124,7 +124,7 @@ export function PacoteEmpresaOfertasSection() {
                   <div className="mb-6">
                     <p className="text-xs text-gray-600 mb-2">{oferta.details}</p>
                     <div className="flex flex-wrap gap-2">
-                      {oferta.apps.map((app, index) => (
+                      {oferta.apps.map((app: any, index: number) => (
                         <Badge key={index} variant="outline" className="text-xs">
                           {app}
                         </Badge>
@@ -135,15 +135,17 @@ export function PacoteEmpresaOfertasSection() {
 
                 <div className="space-y-2 sm:space-y-3">
                   <a
-                    href={contact.whatsapp}
+                    href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar a oferta ${oferta.name}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full inline-block text-center py-2 px-3 sm:px-4 rounded-md font-medium transition-colors text-sm sm:text-base ${oferta.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white" : "border border-gray-300 text-gray-700 hover:bg-gray-50"}`}
+                    className={`w-full inline-block text-center py-2 px-3 sm:px-4 rounded-md font-medium transition-colors text-sm sm:text-base cursor-pointer ${oferta.popular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white" : "border border-gray-300 text-gray-700 hover:bg-gray-50"}`}
                   >
                     {oferta.button}
                   </a>
-                  <Button variant="ghost" className="w-full text-xs sm:text-sm">
-                    {oferta.buttonSecondary}
+                  <Button variant="ghost" className="w-full text-xs sm:text-sm" asChild>
+                    <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre ${oferta.name}`} target="_blank" rel="noopener noreferrer">
+                      {oferta.buttonSecondary}
+                    </a>
                   </Button>
                 </div>
               </CardContent>

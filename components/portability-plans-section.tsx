@@ -199,19 +199,19 @@ export function PortabilityPlansSection(): React.JSX.Element {
 
         <Tabs defaultValue="portabilidade" className="w-full">
           <TabsList className="grid w-full grid-cols-1 max-w-md mx-auto mb-12 bg-gray-100 p-1 rounded-lg">
-            <TabsTrigger 
-              value="portabilidade" 
+            <TabsTrigger
+              value="portabilidade"
               className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-500 data-[state=active]:text-white data-[state=active]:shadow-sm"
             >
               Planos com Portabilidade
             </TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="portabilidade">
             <div className="relative">
               {/* Carrossel Container */}
               <div className="overflow-hidden px-8 py-8">
-                <div 
+                <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${currentIndex * 25}%)` }}
                 >
@@ -235,15 +235,15 @@ export function PortabilityPlansSection(): React.JSX.Element {
                                 {plan.badge}
                               </Badge>
                             </div>
-                            
+
                             <div
                               className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${plan.color} flex items-center justify-center`}
                             >
                               <Smartphone className="w-8 h-8 text-white" />
                             </div>
-                            
+
                             <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
-                            
+
                             {/* Dados com bônus de portabilidade */}
                             <div className="space-y-2 mb-4">
                               <div className="text-4xl font-bold text-purple-600">{plan.totalData}</div>
@@ -287,14 +287,14 @@ export function PortabilityPlansSection(): React.JSX.Element {
                                 Contratar Agora
                                 <ArrowRight className="ml-2 h-4 w-4" />
                               </Button>
-                              <Button 
-                                variant="ghost" 
+                              <Button
+                                variant="ghost"
                                 className="w-full text-sm"
                                 asChild
                               >
-                                <a 
-                                  href="https://wa.me/551123629665" 
-                                  target="_blank" 
+                                <a
+                                  href="https://wa.me/5511989150001"
+                                  target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                   Mais Detalhes
@@ -320,16 +320,15 @@ export function PortabilityPlansSection(): React.JSX.Element {
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
-                
+
                 {/* Dots Indicator */}
                 <div className="flex space-x-2">
                   {Array.from({ length: Math.max(1, allPlans.length - 3) }).map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentIndex(index)}
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        index === currentIndex ? "bg-purple-600" : "bg-gray-300"
-                      }`}
+                      className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-purple-600" : "bg-gray-300"
+                        }`}
                     />
                   ))}
                 </div>

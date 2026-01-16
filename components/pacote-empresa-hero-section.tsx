@@ -18,8 +18,10 @@ export function PacoteEmpresaHeroSection() {
               <div className="text-2xl sm:text-3xl font-bold text-yellow-300">{banner.price}</div>
             </div>
             <a
-              href={`tel:${contact.phone}`}
-              className="bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 rounded-lg font-semibold transition-colors whitespace-nowrap"
+              href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o ${banner.title}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-purple-900 hover:bg-purple-50 px-6 py-3 rounded-lg font-semibold transition-colors whitespace-nowrap cursor-pointer"
             >
               {banner.button}
             </a>

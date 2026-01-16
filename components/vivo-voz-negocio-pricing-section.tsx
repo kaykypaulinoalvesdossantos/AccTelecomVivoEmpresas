@@ -53,7 +53,7 @@ export function VivoVozNegocioPricingSection() {
                     className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
                     asChild
                   >
-                    <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                    <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                       Contratar
                     </a>
                   </Button>
@@ -94,7 +94,7 @@ export function VivoVozNegocioPricingSection() {
                   className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
                   asChild
                 >
-                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Contratar Call Center
                   </a>
                 </Button>
@@ -145,7 +145,7 @@ export function VivoVozNegocioPricingSection() {
                     className="w-full mt-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
                     asChild
                   >
-                    <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                    <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                       Contratar Serviço
                     </a>
                   </Button>
@@ -232,7 +232,7 @@ export function VivoVozNegocioPricingSection() {
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold"
             asChild
           >
-            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               Falar com Consultor
             </a>
           </Button>

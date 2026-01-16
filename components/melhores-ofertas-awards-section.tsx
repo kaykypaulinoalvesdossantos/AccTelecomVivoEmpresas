@@ -47,7 +47,7 @@ export function MelhoresOfertasAwardsSection() {
                   className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold"
                   asChild
                 >
-                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar Fibra ou plano de celular" target="_blank" rel="noopener noreferrer">
                     Fale Conosco
                   </a>
                 </Button>

@@ -37,11 +37,11 @@ export function ESimCTASection(): React.JSX.Element {
               <p className="text-white/90 mb-4">
                 Fale diretamente com nossos especialistas
               </p>
-              <Button 
+              <Button
                 className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-2 rounded-lg"
                 asChild
               >
-                <a href="tel:1123629665">
+                <a href="tel:11989150001">
                   (11) 2362-9665
                 </a>
               </Button>
@@ -59,11 +59,11 @@ export function ESimCTASection(): React.JSX.Element {
               <p className="text-white/90 mb-4">
                 Tire suas dúvidas em tempo real
               </p>
-              <Button 
+              <Button
                 className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-6 py-2 rounded-lg"
                 asChild
               >
-                <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511989150001?text=Olá! Tenho dúvidas sobre eSIM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   WhatsApp
                 </a>
               </Button>

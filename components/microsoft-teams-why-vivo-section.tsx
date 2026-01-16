@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Shield, Clock, Headphones, ArrowRight } from "lucide-react"
@@ -46,7 +47,7 @@ export function MicrosoftTeamsWhyVivoSection() {
                 Por que contratar o Microsoft Teams com ACC Telecom
               </h2>
               <p className="text-lg text-gray-600">
-                A ACC Telecom oferece uma experiência completa para implementação e uso do Microsoft Teams, 
+                A ACC Telecom oferece uma experiência completa para implementação e uso do Microsoft Teams,
                 com suporte especializado e soluções personalizadas para sua empresa.
               </p>
             </div>
@@ -86,7 +87,7 @@ export function MicrosoftTeamsWhyVivoSection() {
                       A combinação perfeita de tecnologia e suporte especializado
                     </p>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#660099' }}>
@@ -128,13 +129,17 @@ export function MicrosoftTeamsWhyVivoSection() {
               Nossa equipe de especialistas está pronta para ajudar sua empresa a aproveitar todo o potencial do Microsoft Teams
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de implementar Microsoft Teams na minha empresa', '_blank')}>
-                Implementar Microsoft Teams
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de agendar uma consultoria sobre Microsoft Teams', '_blank')}>
-                Agendar Consultoria
-              </button>
+              <Button className="bg-white hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de implementar Microsoft Teams na minha empresa" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Implementar Microsoft Teams
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de agendar uma consultoria sobre Microsoft Teams" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Agendar Consultoria
+                </a>
+              </Button>
             </div>
           </div>
         </div>

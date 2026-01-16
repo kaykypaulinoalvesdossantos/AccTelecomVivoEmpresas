@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react"
@@ -9,8 +10,8 @@ export function AWSFAQSection() {
   const [openItems, setOpenItems] = useState<number[]>([])
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(item => item !== index)
         : [...prev, index]
     )
@@ -111,12 +112,16 @@ export function AWSFAQSection() {
               Nossa equipe de especialistas está pronta para esclarecer todas as suas dúvidas sobre AWS Cloud
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Ainda tenho dúvidas sobre AWS Cloud', '_blank')}>
-                Falar com Especialista
-              </button>
-              <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de solicitar contato sobre AWS Cloud', '_blank')}>
-                Solicitar Contato
-              </button>
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Ainda tenho dúvidas sobre AWS Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar contato sobre AWS Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Solicitar Contato
+                </a>
+              </Button>
             </div>
           </div>
         </div>

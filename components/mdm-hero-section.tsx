@@ -42,12 +42,12 @@ export function MDMHeroSection(): React.JSX.Element {
               </p>
             </div>
 
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre MDM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 WhatsApp
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
@@ -66,14 +66,14 @@ export function MDMHeroSection(): React.JSX.Element {
                   <div className="absolute top-1/2 right-4 w-1 h-1 bg-white rounded-full"></div>
                   <div className="absolute bottom-8 right-1/4 w-2 h-2 bg-white rounded-full"></div>
                 </div>
-                
+
                 <div className="text-center text-white relative z-10">
                   <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Smartphone className="w-12 h-12" />
                   </div>
                   <p className="text-lg font-semibold mb-2">Executiva com Smartphone</p>
                   <p className="text-sm opacity-80">Gestão de dispositivos</p>
-                  
+
                   {/* Security Icons */}
                   <div className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                     <Shield className="w-4 h-4" />
@@ -84,7 +84,7 @@ export function MDMHeroSection(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            
+
             {/* Background Elements */}
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-[#660099]/20 to-[#EB3C7D]/20 rounded-full blur-2xl animate-pulse"></div>
             <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-gradient-to-r from-[#EB3C7D]/20 to-[#660099]/20 rounded-full blur-2xl animate-pulse delay-1000"></div>

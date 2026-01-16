@@ -148,7 +148,7 @@ export function SipTrunkingOferta2PSection() {
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold"
             asChild
           >
-            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               Consultar Valores no Simplifique
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>

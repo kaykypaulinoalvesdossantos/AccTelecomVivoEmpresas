@@ -15,10 +15,10 @@ export function Modem4GEquipmentSection(): React.JSX.Element {
               Conheça o Pen/Box
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              O Pen/Box Vivo é um dispositivo móvel elegante e compacto que oferece conectividade empresarial 
+              O Pen/Box Vivo é um dispositivo móvel elegante e compacto que oferece conectividade empresarial
               de alta velocidade. Basta inserir o chip e você terá acesso à internet móvel 4G/5G com roteador Wi-Fi incluso.
             </p>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-lg flex items-center justify-center">
@@ -49,11 +49,11 @@ export function Modem4GEquipmentSection(): React.JSX.Element {
               </div>
             </div>
 
-            <Button 
+            <Button
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-3"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar o Pen/Box Vivo" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Contratar pelo WhatsApp
               </a>
             </Button>
@@ -65,13 +65,13 @@ export function Modem4GEquipmentSection(): React.JSX.Element {
               <div className="relative">
                 {/* Real Pen/Box image */}
                 <div className="w-full h-80 bg-white rounded-2xl flex items-center justify-center p-8">
-                  <img 
-                    src="/195624372-removebg-preview.png" 
+                  <img
+                    src="/195624372-removebg-preview.png"
                     alt="Pen/Box Vivo - Dispositivo móvel empresarial"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full animate-bounce"></div>
                 <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full animate-bounce delay-500"></div>

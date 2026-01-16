@@ -10,7 +10,7 @@ export const vivoGestaoData = {
         description: "Controle total do uso de dados e voz com relatórios detalhados"
       },
       {
-        icon: "Smartphone", 
+        icon: "Smartphone",
         title: "Controle Remoto",
         description: "Gerencie todos os dispositivos da sua empresa de forma remota"
       },
@@ -23,7 +23,7 @@ export const vivoGestaoData = {
     cta: {
       primary: {
         text: "Acessar Vivo Gestão",
-        href: "https://wa.me/551123629665"
+        href: "https://wa.me/5511989150001?text=Olá! Gostaria de contratar o Vivo Gestão"
       },
       secondary: {
         text: "Ver Planos",
@@ -41,7 +41,7 @@ export const vivoGestaoData = {
     {
       id: 2,
       data: "15 GB",
-      price: "R$ 59,99", 
+      price: "R$ 59,99",
       period: "/mês"
     },
     {
@@ -82,13 +82,13 @@ export const vivoGestaoData = {
       description: "Monitore o consumo de dados de cada linha em tempo real e defina limites personalizados"
     },
     {
-      icon: "Phone", 
+      icon: "Phone",
       title: "Gestão de Voz",
       description: "Controle chamadas, bloqueie números específicos e defina horários permitidos"
     },
     {
       icon: "BarChart3",
-      title: "Relatórios Detalhados", 
+      title: "Relatórios Detalhados",
       description: "Acompanhe o uso em tempo real com relatórios completos e personalizáveis"
     },
     {
@@ -125,7 +125,7 @@ export const vivoGestaoData = {
   ],
   contact: {
     phone: "(11) 2362-9665",
-    whatsapp: "https://wa.me/551123629665",
+    whatsapp: "https://wa.me/5511989150001?text=Olá! Preciso de ajuda com Vivo Gestão",
     email: "vivo.gestao@vivo.com.br",
     hours: "Segunda a Sexta, 8h às 18h"
   }

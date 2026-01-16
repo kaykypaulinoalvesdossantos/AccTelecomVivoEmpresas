@@ -30,7 +30,7 @@ export function RoamingUSASection(): React.JSX.Element {
                       Desligamento das Redes 2G e 3G
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      As operadoras dos EUA descontinuarão as redes 2G e 3G até dezembro, 
+                      As operadoras dos EUA descontinuarão as redes 2G e 3G até dezembro,
                       o que pode impactar suas ligações durante viagens ao país.
                     </p>
                   </div>
@@ -40,7 +40,7 @@ export function RoamingUSASection(): React.JSX.Element {
                   <h4 className="font-semibold text-gray-800 mb-3">
                     Como ativar o VoLTE para continuar fazendo ligações:
                   </h4>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
@@ -48,7 +48,7 @@ export function RoamingUSASection(): React.JSX.Element {
                         <span className="font-medium text-gray-800">iOS</span>
                       </div>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Vá em Configurações > Celular > Opções de Dados Celular > 
+                        Vá em Configurações > Celular > Opções de Dados Celular >
                         Ativar LTE e selecione "Voz e Dados".
                       </p>
                     </div>
@@ -59,7 +59,7 @@ export function RoamingUSASection(): React.JSX.Element {
                         <span className="font-medium text-gray-800">Android</span>
                       </div>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        Acesse Configurações > Conexões > Redes móveis > 
+                        Acesse Configurações > Conexões > Redes móveis >
                         Modo de rede e selecione "4G/3G/2G (automático)".
                       </p>
                     </div>
@@ -74,11 +74,11 @@ export function RoamingUSASection(): React.JSX.Element {
                     </h4>
                   </div>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Verifique se seu dispositivo é compatível com VoLTE para garantir 
+                    Verifique se seu dispositivo é compatível com VoLTE para garantir
                     que suas ligações funcionem normalmente nos EUA.
                   </p>
-                  <a 
-                    href="https://wa.me/551123629665" 
+                  <a
+                    href="https://wa.me/5511989150001"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#660099] hover:underline font-medium inline-flex items-center gap-2"

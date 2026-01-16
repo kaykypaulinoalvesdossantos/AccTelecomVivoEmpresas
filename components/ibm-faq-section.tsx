@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react"
 
@@ -9,8 +10,8 @@ export function IBMFAQSection() {
   const [openItems, setOpenItems] = useState<number[]>([])
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(item => item !== index)
         : [...prev, index]
     )
@@ -97,12 +98,16 @@ export function IBMFAQSection() {
               Nossa equipe de especialistas está pronta para esclarecer todas as suas dúvidas sobre IBM Cloud
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Ainda tenho dúvidas sobre IBM Cloud', '_blank')}>
-                Falar com Especialista
-              </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de solicitar contato sobre IBM Cloud', '_blank')}>
-                Solicitar Contato
-              </button>
+              <Button className="text-white px-8 py-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer hover:opacity-90" style={{ backgroundColor: '#FF9900' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Ainda tenho dúvidas sobre IBM Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Especialista
+                </a>
+              </Button>
+              <Button variant="outline" className="border-2 px-8 py-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer hover:bg-gray-50 bg-transparent" style={{ borderColor: '#660099', color: '#660099' }} asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar contato sobre IBM Cloud" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Solicitar Contato
+                </a>
+              </Button>
             </div>
           </div>
         </div>

@@ -75,7 +75,7 @@ export function FrotaInteligentePlansSection() {
             <span className="block text-[#660099]">sua frota</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Três opções completas para atender desde pequenas frotas até grandes corporações. 
+            Três opções completas para atender desde pequenas frotas até grandes corporações.
             Todos os planos incluem instalação gratuita.
           </p>
         </div>
@@ -83,11 +83,10 @@ export function FrotaInteligentePlansSection() {
         {/* Plans Grid */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan) => (
-            <Card 
-              key={plan.id} 
-              className={`relative group hover:shadow-xl transition-all duration-300 border-0 bg-white ${
-                plan.popular ? 'ring-2 ring-[#EB3C7D] shadow-lg' : ''
-              }`}
+            <Card
+              key={plan.id}
+              className={`relative group hover:shadow-xl transition-all duration-300 border-0 bg-white ${plan.popular ? 'ring-2 ring-[#EB3C7D] shadow-lg' : ''
+                }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -96,10 +95,10 @@ export function FrotaInteligentePlansSection() {
                   </Badge>
                 </div>
               )}
-              
+
               <CardContent className="p-8">
                 <div className="text-center mb-8">
-                  <div 
+                  <div
                     className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center"
                     style={{ backgroundColor: plan.color }}
                   >
@@ -132,22 +131,26 @@ export function FrotaInteligentePlansSection() {
                 </div>
 
                 {/* CTA Button */}
-                <Button 
-                  size="lg" 
-                  className={`w-full px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 cursor-pointer ${
-                    plan.popular 
-                      ? 'bg-gradient-to-r from-[#EB3C7D] to-[#660099] hover:from-[#D63384] hover:to-[#5A0080] text-white shadow-lg hover:shadow-xl' 
-                      : 'bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#5A0080] hover:to-[#D63384] text-white shadow-lg hover:shadow-xl'
-                  }`}
+                <Button
+                  size="lg"
+                  className={`w-full px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 cursor-pointer ${plan.popular
+                    ? 'bg-gradient-to-r from-[#EB3C7D] to-[#660099] hover:from-[#D63384] hover:to-[#5A0080] text-white shadow-lg hover:shadow-xl'
+                    : 'bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#5A0080] hover:to-[#D63384] text-white shadow-lg hover:shadow-xl'
+                    }`}
+                  asChild
                 >
-                  Comprar
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plan.name} de Frota Inteligente`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    Comprar
+                  </a>
                 </Button>
 
                 {/* More Details Link */}
                 <div className="text-center mt-4">
-                  <button className="text-[#660099] hover:text-[#5A0080] text-sm font-medium transition-colors cursor-pointer">
-                    Mais detalhes
-                  </button>
+                  <Button variant="ghost" className="text-[#660099] hover:text-[#5A0080] text-sm font-medium transition-colors cursor-pointer hover:bg-transparent" asChild>
+                    <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o plano ${plan.name} de Frota Inteligente`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                      Mais detalhes
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>

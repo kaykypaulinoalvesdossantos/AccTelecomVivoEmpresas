@@ -4,8 +4,8 @@
 export const fiberConfig = {
   // Configurações gerais
   contact: {
-    phone: "11 2362-9665",
-    whatsapp: "https://wa.me/551123629665",
+    phone: "11 98915-0001",
+    whatsapp: "https://wa.me/5511989150001",
     supportHours: "24 horas por dia, 7 dias por semana"
   },
 
@@ -16,7 +16,7 @@ export const fiberConfig = {
     subtitle: "Empresarial",
     description: "Internet corporativa a partir de R$ 79,99 e Wi-Fi 6 com instalação rápida e atendimento personalizado. Conectividade de alta performance para impulsionar seu negócio.",
     primaryButton: "Assine Já",
-    secondaryButton: "Compre no 11 2362-9665",
+    secondaryButton: "Compre no 11 98915-0001",
     features: [
       {
         icon: "Wifi",
@@ -338,7 +338,7 @@ export const fiberConfig = {
       title: "Comprar online pelo WhatsApp",
       description: "Contrate diretamente pelo WhatsApp com nossos especialistas",
       color: "from-green-500 to-emerald-500",
-      link: "https://wa.me/551123629665"
+      link: "https://wa.me/5511989150001"
     },
     {
       icon: "Users",
@@ -348,7 +348,7 @@ export const fiberConfig = {
     },
     {
       icon: "Phone",
-      title: "Ligue e compre pelo 11 2362-9665",
+      title: "Ligue e compre pelo 11 98915-0001",
       description: "Central de vendas empresariais com consultores dedicados",
       color: "from-purple-500 to-pink-500"
     }
@@ -358,7 +358,7 @@ export const fiberConfig = {
   faqs: [
     {
       question: "Qual o telefone da Vivo Fibra Empresarial para contratar ou pedir suporte?",
-      answer: "Para contratar ou solicitar suporte da Vivo Fibra Empresarial, você pode ligar para 11 2362-9665. Nossa central de atendimento empresarial está disponível 24 horas por dia, 7 dias por semana.",
+      answer: "Para contratar ou solicitar suporte da Vivo Fibra Empresarial, você pode ligar para 11 98915-0001. Nossa central de atendimento empresarial está disponível 24 horas por dia, 7 dias por semana.",
       category: "produtos"
     },
     {
@@ -368,7 +368,7 @@ export const fiberConfig = {
     },
     {
       question: "Já comprei e quero acompanhar meu pedido, como faço?",
-      answer: "Você pode acompanhar seu pedido através do nosso portal empresarial, pelo aplicativo Vivo Empresas ou ligando para nossa central de atendimento no 11 2362-9665.",
+      answer: "Você pode acompanhar seu pedido através do nosso portal empresarial, pelo aplicativo Vivo Empresas ou ligando para nossa central de atendimento no 11 98915-0001.",
       category: "produtos"
     },
     {

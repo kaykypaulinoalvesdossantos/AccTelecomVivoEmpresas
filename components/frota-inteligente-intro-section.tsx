@@ -18,14 +18,14 @@ export function FrotaInteligenteIntroSection() {
                 <Truck className="w-4 h-4 mr-2" />
                 Rastreamento Veicular
               </Badge>
-              
+
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
                 Frota Inteligente: rastreador de carros em
                 <span className="block text-[#660099]">tempo real</span>
               </h2>
-              
+
               <p className="text-xl text-gray-600 leading-relaxed">
-                Transforme a gestão da sua frota com nossa solução completa de rastreamento veicular. 
+                Transforme a gestão da sua frota com nossa solução completa de rastreamento veicular.
                 Monitore todos os seus veículos em tempo real, otimize rotas e reduza custos operacionais.
               </p>
             </div>
@@ -55,11 +55,14 @@ export function FrotaInteligenteIntroSection() {
             </div>
 
             {/* CTA Button */}
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#5A0080] hover:to-[#D63384] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+              asChild
             >
-              Solicitar Contato
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar contato sobre Frota Inteligente" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Solicitar Contato
+              </a>
             </Button>
           </div>
 

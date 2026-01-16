@@ -14,7 +14,7 @@ export function CloudPlusConfigurationsSection() {
       color: "#660099"
     },
     {
-      id: "VM2", 
+      id: "VM2",
       title: "VM 2",
       specs: "4 vCPU de processação",
       details: "4 vCPU, 8GB RAM, 200GB SSD",
@@ -22,7 +22,7 @@ export function CloudPlusConfigurationsSection() {
     },
     {
       id: "VM3",
-      title: "VM 3", 
+      title: "VM 3",
       specs: "4 vCPU de processação",
       details: "4 vCPU, 16GB RAM, 500GB SSD",
       color: "#FF9900"
@@ -30,7 +30,7 @@ export function CloudPlusConfigurationsSection() {
     {
       id: "VM4",
       title: "VM 4",
-      specs: "8 vCPU de processação", 
+      specs: "8 vCPU de processação",
       details: "8 vCPU, 32GB RAM, 1TB SSD",
       color: "#82D400"
     }
@@ -71,7 +71,7 @@ export function CloudPlusConfigurationsSection() {
                     <span>{vm.details}</span>
                   </div>
                 </div>
-                <button className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" style={{ backgroundColor: vm.color }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de saber mais sobre a configuração ' + vm.title, '_blank')}>
+                <button className="w-full text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2" style={{ backgroundColor: vm.color }} onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de saber mais sobre a configuração ' + vm.title, '_blank')}>
                   <span>Detalhamento</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -123,11 +123,11 @@ export function CloudPlusConfigurationsSection() {
               Nossa equipe pode criar uma configuração específica para suas necessidades
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de uma configuração personalizada do Cloud Plus', '_blank')}>
+              <button className="text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center" style={{ backgroundColor: '#FF9900' }} onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de uma configuração personalizada do Cloud Plus', '_blank')}>
                 Solicitar Configuração Personalizada
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/551123629665?text=Olá! Gostaria de falar com um especialista sobre Cloud Plus', '_blank')}>
+              <button className="border-2 px-8 py-3 rounded-lg font-semibold transition-all duration-300" style={{ borderColor: '#660099', color: '#660099' }} onClick={() => window.open('https://wa.me/5511989150001?text=Olá! Gostaria de falar com um especialista sobre Cloud Plus', '_blank')}>
                 Falar com Especialista
               </button>
             </div>

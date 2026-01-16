@@ -169,19 +169,20 @@ export function ESimPlansSection(): React.JSX.Element {
               className={`w-full ${isPopular ? "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" : "bg-purple-600 hover:bg-purple-700"} text-white`}
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar o plano ${plano.nome} com eSIM`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Contratar Agora
               </a>
             </Button>
-            <Button 
-              variant="ghost" 
+            <Button
+              variant="ghost"
               className="w-full text-sm"
               asChild
             >
-              <a 
-                href="https://wa.me/551123629665" 
-                target="_blank" 
+              <a
+                href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre o plano ${plano.nome} com eSIM`}
+                target="_blank"
                 rel="noopener noreferrer"
+                className="cursor-pointer"
               >
                 Mais Detalhes
               </a>
@@ -209,7 +210,7 @@ export function ESimPlansSection(): React.JSX.Element {
         <div className="relative">
           {/* Carrossel Container */}
           <div className="overflow-hidden px-8 py-8">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 25}%)` }}
             >
@@ -242,16 +243,15 @@ export function ESimPlansSection(): React.JSX.Element {
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
-            
+
             {/* Dots Indicator */}
             <div className="flex space-x-2">
               {Array.from({ length: Math.max(1, planosMoveis.length - 3) }).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentSlide ? "bg-purple-600" : "bg-gray-300"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? "bg-purple-600" : "bg-gray-300"
+                    }`}
                 />
               ))}
             </div>
@@ -275,12 +275,12 @@ export function ESimPlansSection(): React.JSX.Element {
               <h3 className="text-2xl font-bold mb-2">Precisa de ajuda?</h3>
               <p className="text-white/90">(11) 2362-9665</p>
             </div>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white"
               asChild
             >
-              <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511989150001?text=Olá! Preciso de ajuda com eSIM" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 WhatsApp
               </a>
             </Button>

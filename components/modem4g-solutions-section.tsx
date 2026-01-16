@@ -51,8 +51,10 @@ export function Modem4GSolutionsSection(): React.JSX.Element {
                 <p className="text-gray-600">
                   {solution.description}
                 </p>
-                <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg">
-                  Confira
+                <Button className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg" asChild>
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de conferir ${solution.title}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    Confira
+                  </a>
                 </Button>
               </CardContent>
             </Card>

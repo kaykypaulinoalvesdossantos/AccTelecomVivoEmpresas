@@ -89,11 +89,15 @@ export function PortabilitySection() {
               </ul>
 
               <div className="space-y-4">
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg py-6">
-                  Solicitar Portabilidade Gratuita
+                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg py-6" asChild>
+                  <a href="https://wa.me/5511989150001?text=Olá! Gostaria de solicitar portabilidade gratuita" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    Solicitar Portabilidade Gratuita
+                  </a>
                 </Button>
-                <Button variant="outline" className="w-full bg-transparent">
-                  Simular Economia
+                <Button variant="outline" className="w-full bg-transparent" asChild>
+                  <a href="https://wa.me/5511989150001?text=Olá! Gostaria de simular economia com portabilidade" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                    Simular Economia
+                  </a>
                 </Button>
               </div>
 
@@ -110,8 +114,10 @@ export function PortabilitySection() {
             Nossa equipe especializada está pronta para ajudar você em todo o processo. Atendimento gratuito e sem
             compromisso.
           </p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50">
-            Falar com Especialista
+          <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50" asChild>
+            <a href="https://wa.me/5511989150001?text=Olá! Tenho dúvidas sobre portabilidade" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              Falar com Especialista
+            </a>
           </Button>
         </div>
       </div>

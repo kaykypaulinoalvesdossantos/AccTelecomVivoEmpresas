@@ -32,7 +32,7 @@ export function SipTrunkingConversorR2Section() {
                 <p className="text-gray-800 text-lg leading-relaxed mb-6">
                   {conversorR2.description}
                 </p>
-                
+
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                   <div className="flex items-start space-x-3">
                     <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
@@ -48,7 +48,7 @@ export function SipTrunkingConversorR2Section() {
                   className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold"
                   asChild
                 >
-                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                  <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     Falar com Consultor
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </a>

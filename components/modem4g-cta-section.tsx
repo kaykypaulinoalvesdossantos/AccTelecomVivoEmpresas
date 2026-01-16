@@ -13,22 +13,27 @@ export function Modem4GCTASection(): React.JSX.Element {
             Pronto para transformar sua conectividade?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Escolha o plano ideal para sua empresa e aproveite toda a tecnologia 4G da Vivo 
+            Escolha o plano ideal para sua empresa e aproveite toda a tecnologia 4G da Vivo
             com equipamentos de última geração.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg">
-              Contratar Agora
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" className="bg-white text-[#660099] hover:bg-white/90 font-semibold px-8 py-4 text-lg" asChild>
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de contratar Modem 4G agora" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                Contratar Agora
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-8 py-4 text-lg"
+              asChild
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Falar com Consultor
+              <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com consultor sobre Modem 4G" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Falar com Consultor
+              </a>
             </Button>
           </div>
 

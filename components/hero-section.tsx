@@ -23,12 +23,16 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
-                Ver Planos
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de conhecer os planos da Vivo Empresas" target="_blank" rel="noopener noreferrer">
+                  Ver Planos
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                Falar com Consultor
+              <Button size="lg" variant="outline" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de falar com um consultor da Vivo Empresas" target="_blank" rel="noopener noreferrer">
+                  Falar com Consultor
+                </a>
               </Button>
             </div>
 

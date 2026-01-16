@@ -98,7 +98,7 @@ export function MelhoresOfertasDigitalSolutionsSection() {
                     className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-3"
                     asChild
                   >
-                    <a href={solution.buttonLink} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de contratar a solução ${solution.title} - ${solution.subtitle}`} target="_blank" rel="noopener noreferrer">
                       {solution.buttonText}
                     </a>
                   </Button>
@@ -107,7 +107,7 @@ export function MelhoresOfertasDigitalSolutionsSection() {
                     className="w-full border-purple-500 text-purple-600 hover:bg-purple-50"
                     asChild
                   >
-                    <a href={solution.detailsLink}>
+                    <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de mais detalhes sobre ${solution.title} - ${solution.subtitle}`} target="_blank" rel="noopener noreferrer">
                       Mais detalhes
                     </a>
                   </Button>

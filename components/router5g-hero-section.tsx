@@ -31,7 +31,7 @@ export function Router5GHeroSection(): React.JSX.Element {
               </h1>
 
               <p className="text-lg md:text-xl text-white max-w-2xl leading-relaxed">
-                Navegue com a tecnologia 5G e descubra novas possibilidades. 
+                Navegue com a tecnologia 5G e descubra novas possibilidades.
                 Conectividade ultra-rápida para impulsionar seu negócio.
               </p>
             </div>
@@ -63,16 +63,21 @@ export function Router5GHeroSection(): React.JSX.Element {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-6 py-3 shadow-lg border-2 border-white">
-                Assine já
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button size="lg" className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-6 py-3 shadow-lg border-2 border-white" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Gostaria de assinar Roteador 5G" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Assine já
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white/10 bg-white/5 backdrop-blur-sm px-6 py-3 shadow-lg"
+                asChild
               >
-                Saiba Mais
+                <a href="#planos" className="cursor-pointer">
+                  Saiba Mais
+                </a>
               </Button>
             </div>
           </div>
@@ -91,7 +96,7 @@ export function Router5GHeroSection(): React.JSX.Element {
                     <p className="text-sm text-white/80">Imagem do equipamento</p>
                   </div>
                 </div>
-                
+
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -left-4 w-8 h-8 bg-white rounded-full animate-bounce shadow-lg border-2 border-white/50"></div>
                 <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-white rounded-full animate-bounce delay-500 shadow-lg border-2 border-white/50"></div>

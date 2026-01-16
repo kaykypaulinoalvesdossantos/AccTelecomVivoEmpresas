@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { ChevronDown, ChevronUp } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { oitoZeroZeroConfig } from "@/data/0800-0300-data"
 
 export function OitoZeroZeroFaqSection(): React.JSX.Element {
@@ -10,8 +11,8 @@ export function OitoZeroZeroFaqSection(): React.JSX.Element {
   const [openItems, setOpenItems] = useState<number[]>([])
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(item => item !== index)
         : [...prev, index]
     )
@@ -52,7 +53,7 @@ export function OitoZeroZeroFaqSection(): React.JSX.Element {
                   )}
                 </div>
               </button>
-              
+
               {openItems.includes(index) && (
                 <div className="px-6 lg:px-8 pb-6 lg:pb-8">
                   <div className="border-t border-gray-200 pt-6">
@@ -75,7 +76,7 @@ export function OitoZeroZeroFaqSection(): React.JSX.Element {
             <p className="text-purple-100 mb-8 text-sm sm:text-base lg:text-lg">
               Nossa equipe de especialistas está pronta para ajudar você a encontrar a melhor solução para sua empresa.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-8">
               <div className="bg-white/20 rounded-2xl p-4 sm:p-6">
                 <div className="text-sm font-medium mb-2">0800 e 0300</div>
@@ -92,22 +93,32 @@ export function OitoZeroZeroFaqSection(): React.JSX.Element {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-              <a
-                href={oitoZeroZeroConfig.contact.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-purple-900 hover:bg-purple-50 px-8 py-4 rounded-xl font-bold text-lg transition-colors duration-300 cursor-pointer"
+              <Button
+                asChild
+                className="bg-white text-purple-900 hover:bg-purple-50 font-bold text-lg px-8 py-6 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Falar com o consultor
-              </a>
-              <a
-                href={oitoZeroZeroConfig.contact.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-900 px-8 py-4 rounded-xl font-bold text-lg transition-colors duration-300 cursor-pointer"
+                <a
+                  href={oitoZeroZeroConfig.contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  Falar com o consultor
+                </a>
+              </Button>
+              <Button
+                asChild
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-900 font-bold text-lg px-8 py-6 h-auto rounded-xl transition-all duration-300"
               >
-                Solicitar proposta
-              </a>
+                <a
+                  href={oitoZeroZeroConfig.contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  Solicitar proposta
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -123,7 +134,7 @@ export function OitoZeroZeroFaqSection(): React.JSX.Element {
                 Confira alguns termos relacionados aos serviços 0800 e 0300 para te ajudar a entender melhor nossas ofertas.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 hover:shadow-md transition-shadow duration-200">
                 <h4 className="font-bold text-base sm:text-lg text-purple-600 mb-3">URA</h4>
@@ -131,14 +142,14 @@ export function OitoZeroZeroFaqSection(): React.JSX.Element {
                   Unidade de Resposta Audível - sistema automatizado que direciona chamadas e fornece informações.
                 </p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 hover:shadow-md transition-shadow duration-200">
                 <h4 className="font-bold text-base sm:text-lg text-purple-600 mb-3">SIP Trunking</h4>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                   Tecnologia que permite fazer chamadas telefônicas através da internet com qualidade HD.
                 </p>
               </div>
-              
+
               <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 hover:shadow-md transition-shadow duration-200">
                 <h4 className="font-bold text-base sm:text-lg text-purple-600 mb-3">PABX Virtual</h4>
                 <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">

@@ -52,11 +52,11 @@ export function MDMSolutionsSection(): React.JSX.Element {
                 <p className="text-gray-600 mb-6">
                   {solution.description}
                 </p>
-                <Button 
+                <Button
                   className="bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold px-6 py-2 rounded-lg"
                   asChild
                 >
-                  <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/5511989150001?text=Olá! Gostaria de conhecer a solução ${solution.title}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                     {solution.button}
                   </a>
                 </Button>
@@ -73,7 +73,7 @@ export function MDMSolutionsSection(): React.JSX.Element {
                 Precisa de ajuda para escolher a solução ideal?
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Nossa equipe de especialistas está pronta para ajudar você a escolher 
+                Nossa equipe de especialistas está pronta para ajudar você a escolher
                 a solução mais adequada para sua empresa.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

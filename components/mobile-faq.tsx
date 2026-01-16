@@ -104,11 +104,16 @@ export function MobileFAQ() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+                asChild
               >
-                Falar com Consultor
+                <a href="https://wa.me/5511989150001?text=Olá! Preciso de falar com um consultor sobre dúvidas" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Falar com Consultor
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                Central de Ajuda
+              <Button size="lg" variant="outline" asChild>
+                <a href="https://wa.me/5511989150001?text=Olá! Preciso de ajuda" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                  Central de Ajuda
+                </a>
               </Button>
             </div>
           </div>

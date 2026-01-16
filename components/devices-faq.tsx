@@ -61,7 +61,7 @@ export function DevicesFAQ() {
             Perguntas Frequentes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tire suas dúvidas sobre nossos dispositivos empresariais e serviços. 
+            Tire suas dúvidas sobre nossos dispositivos empresariais e serviços.
             Se não encontrar a resposta que procura, entre em contato conosco.
           </p>
         </div>
@@ -87,7 +87,7 @@ export function DevicesFAQ() {
               Ainda tem dúvidas?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Nossa equipe de especialistas está pronta para ajudar você a escolher 
+              Nossa equipe de especialistas está pronta para ajudar você a escolher
               os melhores dispositivos para sua empresa.
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-center">
@@ -105,9 +105,14 @@ export function DevicesFAQ() {
               </div>
             </div>
             <div className="mt-8">
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
+              <a
+                href="https://wa.me/5511989150001?text=Olá! Tenho dúvidas sobre os dispositivos empresariais"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 cursor-pointer"
+              >
                 Falar com Especialista
-              </button>
+              </a>
             </div>
           </div>
         </div>

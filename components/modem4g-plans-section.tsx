@@ -107,9 +107,8 @@ export function Modem4GPlansSection(): React.JSX.Element {
 
   const renderPlanCard = (plano: any, isPopular: boolean = false) => {
     return (
-      <Card key={plano.gb} className={`relative bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden ${
-        isPopular ? 'border-[#660099] ring-2 ring-[#660099]/20 shadow-xl' : ''
-      }`}>
+      <Card key={plano.gb} className={`relative bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden ${isPopular ? 'border-[#660099] ring-2 ring-[#660099]/20 shadow-xl' : ''
+        }`}>
         <CardHeader className="pb-4 pt-6">
           <div className="flex justify-between items-start mb-3">
             <Badge className="bg-green-100 text-green-800 px-3 py-1 text-xs font-semibold border border-green-200">
@@ -121,22 +120,22 @@ export function Modem4GPlansSection(): React.JSX.Element {
               </Badge>
             )}
           </div>
-          
+
           <CardTitle className="text-3xl font-bold text-gray-800 mb-3">
             {plano.gb}
           </CardTitle>
-          
+
           <p className="text-sm text-gray-600 mb-3">
             {plano.descricao}
           </p>
         </CardHeader>
-        
+
         <CardContent className="space-y-4">
           <div className="text-center">
             <div className="text-2xl font-bold text-gray-800">{plano.preco}</div>
             <div className="text-gray-600 text-sm">por mês</div>
           </div>
-          
+
           <div className="space-y-3">
             {plano.features.map((feature: string, featureIndex: number) => (
               <div key={featureIndex} className="flex items-start gap-3">
@@ -145,12 +144,12 @@ export function Modem4GPlansSection(): React.JSX.Element {
               </div>
             ))}
           </div>
-          
-          <Button 
+
+          <Button
             className="w-full bg-gradient-to-r from-[#660099] to-[#EB3C7D] hover:from-[#7a0bb3] hover:to-[#ff1a75] text-white font-semibold py-3 rounded-lg transition-all duration-300"
             asChild
           >
-            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
               Assine já
             </a>
           </Button>
@@ -182,7 +181,7 @@ export function Modem4GPlansSection(): React.JSX.Element {
             >
               <ChevronLeft className="w-6 h-6 text-gray-600" />
             </button>
-            
+
             <button
               onClick={nextSlide}
               disabled={currentIndex >= Math.max(0, planosPenBox.length - 3)}
@@ -193,7 +192,7 @@ export function Modem4GPlansSection(): React.JSX.Element {
 
             {/* Carousel Container */}
             <div className="overflow-hidden px-16 py-8">
-              <div 
+              <div
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
               >
@@ -211,14 +210,13 @@ export function Modem4GPlansSection(): React.JSX.Element {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentIndex ? 'bg-purple-500' : 'bg-gray-300'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? 'bg-purple-500' : 'bg-gray-300'
+                    }`}
                 />
               ))}
             </div>
           </div>
-          
+
           <p className="text-sm text-gray-500 text-center mt-6">
             Consulte as informações de input no arquivo de Regras Comerciais.
           </p>
@@ -227,12 +225,12 @@ export function Modem4GPlansSection(): React.JSX.Element {
         {/* Banner CTA */}
         <div className="mt-12 bg-gradient-to-r from-[#660099] to-[#EB3C7D] rounded-2xl p-8 text-center text-white shadow-xl">
           <h3 className="text-2xl font-bold mb-4">Quer contratar agora?</h3>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-white text-[#660099] hover:bg-white/95 font-semibold px-8 py-3 shadow-lg border-2 border-white"
             asChild
           >
-            <a href="https://wa.me/551123629665" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511989150001" target="_blank" rel="noopener noreferrer">
               CONTRATAR PELO WHATSAPP
             </a>
           </Button>

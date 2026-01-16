@@ -4,8 +4,8 @@
 export const dedicadaConfig = {
   // Configurações gerais
   contact: {
-    phone: "11 2362-9665",
-    whatsapp: "https://wa.me/551123629665",
+    phone: "11 98915-0001",
+    whatsapp: "https://wa.me/5511989150001",
     supportHours: "24 horas por dia, 7 dias por semana"
   },
 

@@ -60,7 +60,7 @@ export function OitoZeroZeroFacilidadesSection() {
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white"
                 asChild
               >
-                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                   Adicionar URA
                 </a>
               </Button>
